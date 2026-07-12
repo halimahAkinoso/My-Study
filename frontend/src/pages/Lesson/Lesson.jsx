@@ -5,18 +5,14 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 import { getLesson } from "../../services/lessonService";
 import ReactMarkdown from "react-markdown";
 
-...
-
 <div
   style={{
     lineHeight: 1.8,
     fontSize: "17px",
   }}
 >
-  <ReactMarkdown>
-    {lesson.notes}
-  </ReactMarkdown>
-</div>
+  <ReactMarkdown>{lesson.notes}</ReactMarkdown>
+</div>;
 
 function Lesson() {
   const { topicId } = useParams();
@@ -60,9 +56,7 @@ function Lesson() {
         >
           <h2>No lesson available.</h2>
 
-          <p>
-            This topic does not have lesson content yet.
-          </p>
+          <p>This topic does not have lesson content yet.</p>
         </div>
       </DashboardLayout>
     );
@@ -70,7 +64,6 @@ function Lesson() {
 
   return (
     <DashboardLayout>
-
       <button
         onClick={() => navigate(-1)}
         style={{
@@ -122,7 +115,7 @@ function Lesson() {
             color: "#374151",
           }}
         >
-          {lesson.notes}
+          <ReactMarkdown>{lesson.notes}</ReactMarkdown>
         </p>
       </div>
 
@@ -225,9 +218,7 @@ function Lesson() {
       >
         <h2>Ready to test yourself?</h2>
 
-        <p>
-          Complete a 20-question AI-powered quiz based on this lesson.
-        </p>
+        <p>Complete a 20-question AI-powered quiz based on this lesson.</p>
 
         <button
           onClick={() => navigate(`/quiz/${topicId}`)}
@@ -245,7 +236,6 @@ function Lesson() {
           Start AI Quiz →
         </button>
       </div>
-
     </DashboardLayout>
   );
 }
