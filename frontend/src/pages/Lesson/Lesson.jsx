@@ -1,18 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { getLesson } from "../../services/lessonService";
-import ReactMarkdown from "react-markdown";
-
-<div
-  style={{
-    lineHeight: 1.8,
-    fontSize: "17px",
-  }}
->
-  <ReactMarkdown>{lesson.notes}</ReactMarkdown>
-</div>;
 
 function Lesson() {
   const { topicId } = useParams();
@@ -55,7 +46,6 @@ function Lesson() {
           }}
         >
           <h2>No lesson available.</h2>
-
           <p>This topic does not have lesson content yet.</p>
         </div>
       </DashboardLayout>
@@ -96,8 +86,7 @@ function Lesson() {
         Learn the topic before attempting the AI Quiz.
       </p>
 
-      {/* Notes */}
-
+      {/* Lesson Notes */}
       <div
         style={{
           background: "#fff",
@@ -109,18 +98,19 @@ function Lesson() {
       >
         <h2>📘 Lesson Notes</h2>
 
-        <p
+        <div
           style={{
             lineHeight: "1.8",
             color: "#374151",
           }}
         >
-          <ReactMarkdown>{lesson.notes}</ReactMarkdown>
-        </p>
+          <ReactMarkdown>
+            {lesson.notes}
+          </ReactMarkdown>
+        </div>
       </div>
 
       {/* Image */}
-
       {lesson.image_url && (
         <div
           style={{
@@ -147,7 +137,6 @@ function Lesson() {
       )}
 
       {/* Video */}
-
       {lesson.video_url && (
         <div
           style={{
@@ -175,7 +164,6 @@ function Lesson() {
       )}
 
       {/* PDF */}
-
       {lesson.pdf_url && (
         <div
           style={{
@@ -207,7 +195,6 @@ function Lesson() {
       )}
 
       {/* AI Quiz */}
-
       <div
         style={{
           background: "#DBEAFE",
@@ -218,13 +205,15 @@ function Lesson() {
       >
         <h2>Ready to test yourself?</h2>
 
-        <p>Complete a 20-question AI-powered quiz based on this lesson.</p>
+        <p>
+          Complete a 20-question AI-powered quiz based on this lesson.
+        </p>
 
         <button
           onClick={() => navigate(`/quiz/${topicId}`)}
           style={{
             background: "#2563EB",
-            color: "white",
+            color: "#fff",
             border: "none",
             padding: "15px 35px",
             borderRadius: "10px",
