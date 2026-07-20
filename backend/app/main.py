@@ -1,6 +1,8 @@
 from app.database.init_db import init_db
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from app.routers import auth
 from app.routers import subjects
 from app.routers import topics
@@ -12,6 +14,9 @@ app = FastAPI(
     title="StudyHub API",
     version="1.0.0"
 )
+
+generated_dir = Path(__file__).resolve().parents[1] / "generated"
+generated_dir.mkdir(parents=True, exist_ok=True)
 
 origins = [
     "http://localhost:5173",
@@ -34,6 +39,8 @@ app.include_router(topics.router)
 app.include_router(lessons.router)
 app.include_router(quiz.router)
 app.include_router(ai.router)
+app.mount("/generated", StaticFiles(directory=generated_dir), name="generated")
+
 @app.get("/")
 def root():
     return {

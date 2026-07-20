@@ -1,8 +1,14 @@
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 
 from app.models.lesson import Lesson
 from app.models.topic import Topic
 from app.schemas.lesson import LessonCreate
+from app.services.ai_service import (
+    build_lesson_markdown,
+    build_youtube_embed_url,
+    generate_lesson_data,
+)
+from app.services.pdf_service import ensure_lesson_pdf
 
 
 def create_lesson(db: Session, lesson: LessonCreate):
@@ -15,51 +21,44 @@ def create_lesson(db: Session, lesson: LessonCreate):
     return db_lesson
 
 
-def build_default_lesson(topic: Topic):
-    subject_name = topic.subject.name if topic.subject else "this subject"
-    topic_description = (
-        topic.description
-        or f"This lesson introduces the core ideas in {topic.title}."
+def lesson_needs_enrichment(lesson: Lesson | None) -> bool:
+    if not lesson:
+        return True
+
+    notes = (lesson.notes or "").strip()
+
+    return (
+        len(notes) < 1600
+        or not lesson.video_url
+        or not lesson.pdf_url
     )
 
-    notes = f"""# {topic.title}
 
-## Overview
-{topic_description}
-
-## Learning Goals
-- Understand what {topic.title} means in {subject_name}.
-- Identify the main rules, ideas, or patterns connected to this topic.
-- Apply the concept to simple practice questions.
-
-## Explanation
-{topic.title} is an important part of {subject_name}. Start by defining the concept clearly, then break it into smaller ideas. Focus on what the concept is, when to use it, and how to recognize it in classwork or exam questions.
-
-## Key Ideas
-1. Know the meaning of the topic and the words linked to it.
-2. Look for the rules, formulas, or steps that help solve problems in this area.
-3. Practice with short examples before moving to more difficult questions.
-
-## Worked Example
-Choose one simple example related to {topic.title}, identify the relevant rule, and solve it step by step. After solving it, explain why that method works.
-
-## Study Tips
-- Rewrite the main idea in your own words.
-- Practice at least three short questions on {topic.title}.
-- Review your corrections and note the steps you missed.
-
-## Summary
-{topic.title} helps you build confidence in {subject_name}. Once you understand the basic idea and practice a few examples, the topic becomes much easier to remember and apply.
-"""
-
-    return Lesson(
-        topic_id=topic.id,
-        title=f"{topic.title} Lesson",
-        notes=notes,
-        image_url=None,
-        video_url=None,
-        pdf_url=None,
+def enrich_lesson(db: Session, topic: Topic, lesson: Lesson | None = None):
+    subject_name = topic.subject.name if topic.subject else "General Studies"
+    lesson_data = generate_lesson_data(
+        subject_name,
+        topic.title,
+        topic.description,
     )
+    notes = build_lesson_markdown(lesson_data)
+
+    if not lesson:
+        lesson = Lesson(topic_id=topic.id)
+        db.add(lesson)
+
+    lesson.title = lesson_data["title"]
+    lesson.notes = notes
+    lesson.video_url = build_youtube_embed_url(subject_name, topic.title)
+    lesson.pdf_url = ensure_lesson_pdf(topic.id, lesson.title, lesson.notes)
+
+    if lesson.image_url is None:
+        lesson.image_url = None
+
+    db.commit()
+    db.refresh(lesson)
+
+    return lesson
 
 
 def get_lesson(db: Session, topic_id: int):
@@ -69,11 +68,9 @@ def get_lesson(db: Session, topic_id: int):
         .first()
     )
 
-    if lesson:
-        return lesson
-
     topic = (
         db.query(Topic)
+        .options(joinedload(Topic.subject))
         .filter(Topic.id == topic_id)
         .first()
     )
@@ -81,10 +78,11 @@ def get_lesson(db: Session, topic_id: int):
     if not topic:
         return None
 
-    fallback_lesson = build_default_lesson(topic)
+    if lesson_needs_enrichment(lesson):
+        return enrich_lesson(db, topic, lesson)
 
-    db.add(fallback_lesson)
+    lesson.pdf_url = ensure_lesson_pdf(topic.id, lesson.title, lesson.notes)
     db.commit()
-    db.refresh(fallback_lesson)
+    db.refresh(lesson)
 
-    return fallback_lesson
+    return lesson

@@ -10,6 +10,9 @@ import {
   writeStoredItem,
 } from "../../utils/dashboardStorage";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 function Lesson() {
   const { topicId } = useParams();
   const navigate = useNavigate();
@@ -21,6 +24,18 @@ function Lesson() {
   useEffect(() => {
     loadLesson();
   }, [topicId]);
+
+  function resolveAssetUrl(url) {
+    if (!url) {
+      return "";
+    }
+
+    if (url.startsWith("http://") || url.startsWith("https://")) {
+      return url;
+    }
+
+    return `${API_BASE_URL}${url}`;
+  }
 
   async function loadLesson() {
     setLoading(true);
@@ -213,6 +228,20 @@ function Lesson() {
               borderRadius: "10px",
             }}
           />
+
+          <a
+            href={lesson.video_url.replace("/embed?", "/watch?")}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display: "inline-block",
+              marginTop: "14px",
+              color: "#2563EB",
+              fontWeight: 600,
+            }}
+          >
+            Open this lesson on YouTube
+          </a>
         </div>
       )}
 
@@ -229,7 +258,7 @@ function Lesson() {
           <h2>PDF Resource</h2>
 
           <a
-            href={lesson.pdf_url}
+            href={resolveAssetUrl(lesson.pdf_url)}
             target="_blank"
             rel="noreferrer"
             style={{
