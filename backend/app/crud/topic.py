@@ -10,6 +10,10 @@ def get_topics_by_subject(db: Session, subject_id: int):
     )
 
 
+def get_topic_by_id(db: Session, topic_id: int):
+    return db.query(Topic).filter(Topic.id == topic_id).first()
+
+
 def create_topic(db: Session, topic):
     new_topic = Topic(**topic.model_dump())
 

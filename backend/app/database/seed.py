@@ -1,14 +1,10 @@
-from app.database.database import SessionLocal
+from sqlalchemy.orm import Session
 
 from app.models.subject import Subject
 from app.models.topic import Topic
 
-db = SessionLocal()
-
-subjects = {
-
-    "Mathematics":[
-
+SUBJECT_TOPICS = {
+    "Mathematics": [
         "Algebra",
         "Geometry",
         "Trigonometry",
@@ -29,11 +25,8 @@ subjects = {
         "Sequences",
         "Series",
         "Mensuration",
-
     ],
-
-    "Physics":[
-
+    "Physics": [
         "Motion",
         "Force",
         "Energy",
@@ -54,11 +47,8 @@ subjects = {
         "Gravity",
         "Projectile Motion",
         "Sound",
-
     ],
-
-    "Chemistry":[
-
+    "Chemistry": [
         "Atomic Structure",
         "Periodic Table",
         "Chemical Bonding",
@@ -79,11 +69,8 @@ subjects = {
         "Non-metals",
         "Polymers",
         "Water",
-
     ],
-
-    "Biology":[
-
+    "Biology": [
         "Cell",
         "Genetics",
         "Ecology",
@@ -104,11 +91,8 @@ subjects = {
         "Animals",
         "DNA",
         "Protein Synthesis",
-
     ],
-
-    "English":[
-
+    "English": [
         "Grammar",
         "Comprehension",
         "Vocabulary",
@@ -129,11 +113,8 @@ subjects = {
         "Listening",
         "Writing",
         "Speaking",
-
     ],
-
-    "Computer Science":[
-
+    "Computer Science": [
         "Computer Basics",
         "Programming",
         "Python",
@@ -154,65 +135,48 @@ subjects = {
         "Data Structures",
         "Git",
         "Software Engineering",
-
     ],
-
 }
 
-for subject_name, topics in subjects.items():
 
-    subject = (
-        db.query(Subject)
-        .filter(Subject.name == subject_name)
-        .first()
-    )
+def seed_subjects_and_topics(db: Session):
+    subjects_seeded = False
+    topics_seeded = False
 
-    if not subject:
-
-        subject = Subject(
-            name=subject_name
-        )
-
-        db.add(subject)
-
-        db.commit()
-
-        db.refresh(subject)
-
-    for title in topics:
-
-        exists = (
-
-            db.query(Topic)
-
-            .filter(
-
-                Topic.subject_id == subject.id,
-
-                Topic.title == title,
-
-            )
-
+    for subject_name, topic_titles in SUBJECT_TOPICS.items():
+        subject = (
+            db.query(Subject)
+            .filter(Subject.name == subject_name)
             .first()
-
         )
 
-        if not exists:
+        if not subject:
+            subject = Subject(name=subject_name)
+            db.add(subject)
+            db.flush()
+            subjects_seeded = True
+
+        existing_topics = {
+            title
+            for (title,) in (
+                db.query(Topic.title)
+                .filter(Topic.subject_id == subject.id)
+                .all()
+            )
+        }
+
+        for title in topic_titles:
+            if title in existing_topics:
+                continue
 
             db.add(
-
                 Topic(
-
                     subject_id=subject.id,
-
                     title=title,
-
-                    description=f"Learn {title} in {subject_name}"
-
+                    description=f"Learn {title} in {subject_name}",
                 )
-
             )
+            topics_seeded = True
 
-db.commit()
-
-print("Subjects and Topics seeded successfully.")
+    if subjects_seeded or topics_seeded:
+        db.commit()
