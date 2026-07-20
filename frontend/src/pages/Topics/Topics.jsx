@@ -5,6 +5,11 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 
 import { getSubjects } from "../../services/subjectService";
 import { getTopics } from "../../services/topicService";
+import {
+  LAST_ACTIVE_LESSON_KEY,
+  LAST_ACTIVE_SUBJECT_KEY,
+  writeStoredItem,
+} from "../../utils/dashboardStorage";
 
 function Topics() {
   const navigate = useNavigate();
@@ -12,12 +17,15 @@ function Topics() {
   const [subjects, setSubjects] = useState([]);
   const [topicsBySubject, setTopicsBySubject] = useState({});
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     loadData();
   }, []);
 
   async function loadData() {
+    setError("");
+
     try {
       const subjectData = await getSubjects();
 
@@ -31,11 +39,30 @@ function Topics() {
       }
 
       setTopicsBySubject(groupedTopics);
-    } catch (error) {
-      console.log(error);
+    } catch (loadError) {
+      setError("We couldn't load the topics right now. Please try again.");
+      console.error(loadError);
     } finally {
       setLoading(false);
     }
+  }
+
+  function handleOpenTopic(subject, topic) {
+    writeStoredItem(LAST_ACTIVE_SUBJECT_KEY, {
+      id: subject.id,
+      name: subject.name,
+      updatedAt: new Date().toISOString(),
+    });
+
+    writeStoredItem(LAST_ACTIVE_LESSON_KEY, {
+      topicId: topic.id,
+      title: topic.title,
+      description: topic.description,
+      subjectName: subject.name,
+      updatedAt: new Date().toISOString(),
+    });
+
+    navigate(`/lesson/${topic.id}`);
   }
 
   if (loading) {
@@ -67,6 +94,20 @@ function Topics() {
           Browse every topic available across all subjects.
         </p>
 
+        {error && (
+          <div
+            style={{
+              background: "#FEE2E2",
+              color: "#B91C1C",
+              padding: "16px 18px",
+              borderRadius: "14px",
+              marginBottom: "24px",
+            }}
+          >
+            {error}
+          </div>
+        )}
+
         {subjects.map((subject) => (
           <div
             key={subject.id}
@@ -95,7 +136,7 @@ function Topics() {
                 {topicsBySubject[subject.id].map((topic) => (
                   <div
                     key={topic.id}
-                    onClick={() => navigate(`/lesson/${topic.id}`)}
+                    onClick={() => handleOpenTopic(subject, topic)}
                     style={{
                       background: "#fff",
                       borderRadius: "15px",

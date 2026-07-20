@@ -1,8 +1,10 @@
 import { FaBell, FaUserCircle, FaSearch } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function Navbar() {
   const location = useLocation();
+  const { user } = useAuth();
 
   const pageTitles = {
     "/dashboard": "Dashboard",
@@ -96,6 +98,25 @@ function Navbar() {
           size={36}
           color="#2563EB"
         />
+
+        <div>
+          <div
+            style={{
+              color: "#1E3A8A",
+              fontWeight: 700,
+            }}
+          >
+            {user?.name || "StudyHub Learner"}
+          </div>
+
+          <small
+            style={{
+              color: "#6B7280",
+            }}
+          >
+            {user?.email || "Signed in"}
+          </small>
+        </div>
       </div>
     </header>
   );

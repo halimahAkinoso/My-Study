@@ -57,6 +57,16 @@ body{
 
 }
 
+.login-card input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
 .login-card button{
 
     width:100%;
@@ -91,4 +101,38 @@ body{
 
     text-align:center;
 
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    margin-bottom: 20px;
+    padding-right: 52px;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    width: 36px !important;
+    height: 36px;
+    border: none !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    color: #6b7280 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 !important;
+}
+
+.password-toggle:hover {
+    background: #eff6ff !important;
+    color: #2563eb !important;
 }

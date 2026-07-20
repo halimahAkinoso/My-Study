@@ -24,6 +24,10 @@ function Register() {
             ...formData,
             [e.target.name]: e.target.value,
         });
+
+        if (error) {
+            setError("");
+        }
     };
 
     const handleSubmit = async (e) => {
@@ -88,12 +92,14 @@ function Register() {
                         required
                     />
 
-                    <span
+                    <button
+                        type="button"
                         className="password-toggle"
                         onClick={() => setShowPassword(!showPassword)}
+                        aria-label={showPassword ? "Hide password" : "Show password"}
                     >
                         {showPassword ? <FaEyeSlash /> : <FaEye />}
-                    </span>
+                    </button>
                 </div>
 
                 <button type="submit" disabled={loading}>

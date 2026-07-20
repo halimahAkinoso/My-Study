@@ -4,6 +4,11 @@ import ReactMarkdown from "react-markdown";
 
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { getLesson } from "../../services/lessonService";
+import {
+  LAST_ACTIVE_LESSON_KEY,
+  readStoredItem,
+  writeStoredItem,
+} from "../../utils/dashboardStorage";
 
 function Lesson() {
   const { topicId } = useParams();
@@ -11,17 +16,37 @@ function Lesson() {
 
   const [lesson, setLesson] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     loadLesson();
   }, [topicId]);
 
   async function loadLesson() {
+    setLoading(true);
+    setError("");
+
     try {
       const data = await getLesson(topicId);
       setLesson(data);
-    } catch (error) {
-      console.log(error);
+
+      if (data) {
+        const existingLesson = readStoredItem(LAST_ACTIVE_LESSON_KEY, {});
+
+        writeStoredItem(LAST_ACTIVE_LESSON_KEY, {
+          ...existingLesson,
+          topicId: Number(topicId),
+          title: data.title,
+          description:
+            data.notes?.replace(/[#*_>`-]/g, " ").trim().slice(0, 120) ||
+            existingLesson.description ||
+            "Jump back into your saved lesson.",
+          updatedAt: new Date().toISOString(),
+        });
+      }
+    } catch (loadError) {
+      setError("We couldn't load this lesson right now. Please try again.");
+      console.error(loadError);
     } finally {
       setLoading(false);
     }
@@ -31,6 +56,39 @@ function Lesson() {
     return (
       <DashboardLayout>
         <h2>Loading lesson...</h2>
+      </DashboardLayout>
+    );
+  }
+
+  if (error) {
+    return (
+      <DashboardLayout>
+        <div
+          style={{
+            background: "#FEE2E2",
+            padding: "30px",
+            borderRadius: "15px",
+            color: "#B91C1C",
+          }}
+        >
+          <h2>Lesson unavailable</h2>
+          <p>{error}</p>
+
+          <button
+            onClick={loadLesson}
+            style={{
+              marginTop: "12px",
+              border: "none",
+              background: "#DC2626",
+              color: "#fff",
+              padding: "12px 18px",
+              borderRadius: "10px",
+              cursor: "pointer",
+            }}
+          >
+            Retry
+          </button>
+        </div>
       </DashboardLayout>
     );
   }
@@ -66,7 +124,7 @@ function Lesson() {
           marginBottom: "25px",
         }}
       >
-        ← Back
+        Back
       </button>
 
       <h1
@@ -86,7 +144,6 @@ function Lesson() {
         Learn the topic before attempting the AI Quiz.
       </p>
 
-      {/* Lesson Notes */}
       <div
         style={{
           background: "#fff",
@@ -96,7 +153,7 @@ function Lesson() {
           boxShadow: "0 5px 15px rgba(0,0,0,.08)",
         }}
       >
-        <h2>📘 Lesson Notes</h2>
+        <h2>Lesson Notes</h2>
 
         <div
           style={{
@@ -104,13 +161,10 @@ function Lesson() {
             color: "#374151",
           }}
         >
-          <ReactMarkdown>
-            {lesson.notes}
-          </ReactMarkdown>
+          <ReactMarkdown>{lesson.notes}</ReactMarkdown>
         </div>
       </div>
 
-      {/* Image */}
       {lesson.image_url && (
         <div
           style={{
@@ -121,7 +175,7 @@ function Lesson() {
             boxShadow: "0 5px 15px rgba(0,0,0,.08)",
           }}
         >
-          <h2>🖼 Lesson Illustration</h2>
+          <h2>Lesson Illustration</h2>
 
           <img
             src={lesson.image_url}
@@ -136,7 +190,6 @@ function Lesson() {
         </div>
       )}
 
-      {/* Video */}
       {lesson.video_url && (
         <div
           style={{
@@ -147,7 +200,7 @@ function Lesson() {
             boxShadow: "0 5px 15px rgba(0,0,0,.08)",
           }}
         >
-          <h2>🎥 Watch Video</h2>
+          <h2>Watch Video</h2>
 
           <iframe
             width="100%"
@@ -163,7 +216,6 @@ function Lesson() {
         </div>
       )}
 
-      {/* PDF */}
       {lesson.pdf_url && (
         <div
           style={{
@@ -174,7 +226,7 @@ function Lesson() {
             boxShadow: "0 5px 15px rgba(0,0,0,.08)",
           }}
         >
-          <h2>📄 PDF Resource</h2>
+          <h2>PDF Resource</h2>
 
           <a
             href={lesson.pdf_url}
@@ -194,7 +246,6 @@ function Lesson() {
         </div>
       )}
 
-      {/* AI Quiz */}
       <div
         style={{
           background: "#DBEAFE",
@@ -205,9 +256,7 @@ function Lesson() {
       >
         <h2>Ready to test yourself?</h2>
 
-        <p>
-          Complete a 20-question AI-powered quiz based on this lesson.
-        </p>
+        <p>Complete a 20-question AI-powered quiz based on this lesson.</p>
 
         <button
           onClick={() => navigate(`/quiz/${topicId}`)}
@@ -222,7 +271,7 @@ function Lesson() {
             fontWeight: "bold",
           }}
         >
-          Start AI Quiz →
+          Start AI Quiz
         </button>
       </div>
     </DashboardLayout>

@@ -3,26 +3,59 @@ import { useNavigate } from "react-router-dom";
 
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { getSubjects } from "../../services/subjectService";
+import {
+  DASHBOARD_SUBJECTS_CACHE_KEY,
+  LAST_ACTIVE_SUBJECT_KEY,
+  readStoredItem,
+  writeStoredItem,
+} from "../../utils/dashboardStorage";
 
 function Subjects() {
   const navigate = useNavigate();
 
-  const [subjects, setSubjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [subjects, setSubjects] = useState(() =>
+    readStoredItem(DASHBOARD_SUBJECTS_CACHE_KEY, [])
+  );
+  const [loading, setLoading] = useState(subjects.length === 0);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     loadSubjects();
   }, []);
 
   async function loadSubjects() {
+    setError("");
+
     try {
       const data = await getSubjects();
       setSubjects(data);
-    } catch (error) {
-      console.log(error);
+      writeStoredItem(DASHBOARD_SUBJECTS_CACHE_KEY, data);
+    } catch (loadError) {
+      const cachedSubjects = readStoredItem(
+        DASHBOARD_SUBJECTS_CACHE_KEY,
+        []
+      );
+
+      setSubjects(cachedSubjects);
+      setError(
+        cachedSubjects.length
+          ? "We couldn't refresh your subjects, so we're showing the last saved list."
+          : "We couldn't load the subjects right now. Please try again."
+      );
+      console.error(loadError);
     } finally {
       setLoading(false);
     }
+  }
+
+  function handleOpenSubject(subject) {
+    writeStoredItem(LAST_ACTIVE_SUBJECT_KEY, {
+      id: subject.id,
+      name: subject.name,
+      updatedAt: new Date().toISOString(),
+    });
+
+    navigate(`/subjects/${subject.id}`);
   }
 
   const subjectIcons = {
@@ -55,8 +88,24 @@ function Subjects() {
           Select a subject to begin learning.
         </p>
 
+        {error && (
+          <div
+            style={{
+              background: "#FEF3C7",
+              color: "#92400E",
+              padding: "16px 18px",
+              borderRadius: "14px",
+              marginBottom: "20px",
+            }}
+          >
+            {error}
+          </div>
+        )}
+
         {loading ? (
           <h3>Loading subjects...</h3>
+        ) : subjects.length === 0 ? (
+          <h3>No subjects available yet.</h3>
         ) : (
           <div
             style={{
@@ -68,7 +117,7 @@ function Subjects() {
             {subjects.map((subject) => (
               <div
                 key={subject.id}
-                onClick={() => navigate(`/subjects/${subject.id}`)}
+                onClick={() => handleOpenSubject(subject)}
                 style={{
                   background: "#fff",
                   borderRadius: "18px",

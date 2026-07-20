@@ -5,6 +5,11 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 
 import { getSubject } from "../../services/subjectService";
 import { getTopics } from "../../services/topicService";
+import {
+  LAST_ACTIVE_LESSON_KEY,
+  LAST_ACTIVE_SUBJECT_KEY,
+  writeStoredItem,
+} from "../../utils/dashboardStorage";
 
 function SubjectDetails() {
   const { id } = useParams();
@@ -13,23 +18,48 @@ function SubjectDetails() {
   const [subject, setSubject] = useState(null);
   const [topics, setTopics] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     loadData();
   }, [id]);
 
   async function loadData() {
+    setLoading(true);
+    setError("");
+
     try {
-      const subjectData = await getSubject(id);
-      const topicData = await getTopics(id);
+      const [subjectData, topicData] = await Promise.all([
+        getSubject(id),
+        getTopics(id),
+      ]);
 
       setSubject(subjectData);
       setTopics(topicData);
-    } catch (error) {
-      console.log(error);
+
+      writeStoredItem(LAST_ACTIVE_SUBJECT_KEY, {
+        id: subjectData.id,
+        name: subjectData.name,
+        updatedAt: new Date().toISOString(),
+      });
+    } catch (loadError) {
+      setError("We couldn't load this subject right now. Please try again.");
+      console.error(loadError);
     } finally {
       setLoading(false);
     }
+  }
+
+  function handleOpenLesson(topic) {
+    writeStoredItem(LAST_ACTIVE_LESSON_KEY, {
+      topicId: topic.id,
+      title: topic.title,
+      description: topic.description,
+      subjectName: subject?.name || "",
+      updatedAt: new Date().toISOString(),
+    });
+
+    navigate(`/lesson/${topic.id}`);
   }
 
   return (
@@ -47,7 +77,7 @@ function SubjectDetails() {
             marginBottom: "25px",
           }}
         >
-          ← Back to Subjects
+          Back to Subjects
         </button>
 
         <h1
@@ -56,7 +86,7 @@ function SubjectDetails() {
             marginBottom: "10px",
           }}
         >
-          {subject?.name}
+          {subject?.name || "Subject Details"}
         </h1>
 
         <p
@@ -67,6 +97,20 @@ function SubjectDetails() {
         >
           Select a topic below to start learning.
         </p>
+
+        {error && (
+          <div
+            style={{
+              background: "#FEE2E2",
+              color: "#B91C1C",
+              padding: "16px 18px",
+              borderRadius: "14px",
+              marginBottom: "20px",
+            }}
+          >
+            {error}
+          </div>
+        )}
 
         {loading ? (
           <h3>Loading topics...</h3>
@@ -79,9 +123,7 @@ function SubjectDetails() {
             }}
           >
             <h3>No topics available.</h3>
-            <p>
-              Add topics for this subject in the backend to continue.
-            </p>
+            <p>Add topics for this subject in the backend to continue.</p>
           </div>
         ) : (
           <div
@@ -94,7 +136,7 @@ function SubjectDetails() {
             {topics.map((topic, index) => (
               <div
                 key={topic.id}
-                onClick={() => navigate(`/lesson/${topic.id}`)}
+                onClick={() => handleOpenLesson(topic)}
                 style={{
                   background: "#fff",
                   borderRadius: "18px",
@@ -183,7 +225,7 @@ function SubjectDetails() {
                     fontWeight: "bold",
                   }}
                 >
-                  Open Lesson →
+                  Open Lesson
                 </button>
               </div>
             ))}
