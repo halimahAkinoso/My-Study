@@ -92,3 +92,30 @@ body{
     text-align:center;
 
 }
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle:hover {
+    color: #2563eb;
+}

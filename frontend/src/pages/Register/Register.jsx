@@ -1,68 +1,61 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { register } from "../../services/authService";
 
 import "./Register.css";
 
 function Register() {
-
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
-        name:"",
-        email:"",
-        password:"",
+        name: "",
+        email: "",
+        password: "",
     });
 
-    const [loading,setLoading]=useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
 
-    const [error,setError]=useState("");
-
-    const handleChange=(e)=>{
-
+    const handleChange = (e) => {
         setFormData({
-
             ...formData,
-
-            [e.target.name]:e.target.value
-
+            [e.target.name]: e.target.value,
         });
-
     };
 
-    const handleSubmit=async(e)=>{
-
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         setLoading(true);
-
         setError("");
 
-        try{
-
+        try {
             await register(formData);
 
+            // Clear the form
+            setFormData({
+                name: "",
+                email: "",
+                password: "",
+            });
+
             navigate("/login");
-
-        }catch{
-
-            setError("Registration failed.");
-
+        } catch (err) {
+            setError(
+                err.response?.data?.detail || "Registration failed. Please try again."
+            );
+        } finally {
+            setLoading(false);
         }
-
-        setLoading(false);
-
     };
 
-    return(
-
+    return (
         <div className="login-container">
-
             <form className="login-card" onSubmit={handleSubmit}>
-
                 <h1>StudyHub</h1>
-
                 <h2>Create Account</h2>
 
                 {error && <p className="error">{error}</p>}
@@ -71,6 +64,7 @@ function Register() {
                     type="text"
                     name="name"
                     placeholder="Full Name"
+                    value={formData.name}
                     onChange={handleChange}
                     required
                 />
@@ -78,39 +72,41 @@ function Register() {
                 <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Email Address"
+                    value={formData.email}
                     onChange={handleChange}
                     required
                 />
 
-                <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    onChange={handleChange}
-                    required
-                />
+                <div className="password-container">
+                    <input
+                        type={showPassword ? "text" : "password"}
+                        name="password"
+                        placeholder="Password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        required
+                    />
 
-                <button type="submit">
+                    <span
+                        className="password-toggle"
+                        onClick={() => setShowPassword(!showPassword)}
+                    >
+                        {showPassword ? <FaEyeSlash /> : <FaEye />}
+                    </span>
+                </div>
 
-                    {loading ? "Creating..." : "Register"}
-
+                <button type="submit" disabled={loading}>
+                    {loading ? "Creating Account..." : "Register"}
                 </button>
 
                 <p>
-
                     Already have an account?
-
                     <Link to="/login"> Login</Link>
-
                 </p>
-
             </form>
-
         </div>
-
-    )
-
+    );
 }
 
 export default Register;
