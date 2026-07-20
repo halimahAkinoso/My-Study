@@ -5,9 +5,11 @@ from typing import Any
 from urllib.parse import quote_plus
 
 from openai import OpenAI
+from app.services.curriculum_service import get_curated_topic_profile
 
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key) if api_key else None
+CURATED_LESSON_MARKER = "<!-- curated-topic-v2 -->"
 
 
 def strip_code_fences(content: str) -> str:
@@ -17,9 +19,13 @@ def strip_code_fences(content: str) -> str:
     return cleaned.strip()
 
 
-def build_youtube_embed_url(subject: str, topic: str) -> str:
-    query = quote_plus(f"{subject} {topic} lesson")
-    return f"https://www.youtube.com/embed?listType=search&list={query}"
+def find_youtube_video_url(subject: str, topic: str) -> str:
+    curated_profile = get_curated_topic_profile(subject, topic)
+    query = curated_profile["video_query"]
+    return (
+        "https://www.youtube.com/results?search_query="
+        f"{quote_plus(query)}"
+    )
 
 
 def call_model(prompt: str, temperature: float = 0.5) -> str | None:
@@ -36,7 +42,7 @@ def call_model(prompt: str, temperature: float = 0.5) -> str | None:
                 }
             ],
             temperature=temperature,
-            timeout=25,
+            timeout=8,
         )
         return response.choices[0].message.content
     except Exception:
@@ -48,82 +54,84 @@ def fallback_lesson_data(
     topic: str,
     overview: str | None = None,
 ) -> dict[str, Any]:
-    topic_overview = (
-        overview
-        or f"{topic} is an important concept in {subject}. It helps students understand how ideas in this area work and how to apply them correctly in classwork, assignments, and exams."
-    )
+    curated_profile = get_curated_topic_profile(subject, topic, overview)
+    topic_overview = curated_profile["overview"]
+    focus = curated_profile["focus"]
+    example = curated_profile["example"]
+    mistake = curated_profile["mistake"]
+    practice = curated_profile["practice"]
 
     return {
         "title": f"{topic} Lesson",
         "overview": topic_overview,
         "objectives": [
-            f"Explain the meaning of {topic} in {subject}.",
-            f"Identify the main rules, ideas, or features linked to {topic}.",
-            f"Apply {topic} correctly in worked examples and practice questions.",
-            f"Build confidence in answering exam-style questions on {topic}.",
+            f"Explain the meaning of {topic} in {subject} using accurate subject vocabulary.",
+            f"Describe the key ideas behind {focus}.",
+            f"Apply {topic} to examples such as {example}.",
+            f"Avoid common errors and build confidence through {practice}.",
         ],
         "explanation_sections": [
             {
                 "heading": "What This Topic Means",
-                "body": f"{topic} introduces a key part of {subject}. Before solving questions, students should first understand the meaning of the topic, the language used around it, and why it matters. Once the meaning is clear, it becomes easier to recognize the topic in examples and apply the correct approach.",
+                "body": f"{topic_overview} In {subject}, students do better when they understand not only the definition of {topic}, but also the language, symbols, and patterns that appear whenever this topic is tested.",
             },
             {
                 "heading": "Core Explanation",
-                "body": f"When learning {topic}, it helps to move from simple understanding to correct application. Start by identifying the main principle behind the topic. Next, pay attention to the rules, steps, and patterns that appear repeatedly. Finally, practice using those rules in short examples before attempting more difficult questions.",
+                "body": f"The central focus in {topic} is {focus}. A strong explanation should show the idea clearly, connect it to prior knowledge, and then walk through the method students are expected to use whenever they meet this topic in classwork or examination questions.",
             },
             {
-                "heading": "How To Approach Questions",
-                "body": f"A good way to answer {topic} questions is to read the task carefully, identify what is being asked, recall the relevant rule or method, and work step by step. Students should avoid rushing. Careful reasoning, clear steps, and checking the final answer usually lead to better results in {subject}.",
+                "heading": "Worked Understanding",
+                "body": f"A good classroom illustration for {topic} is {example}. When students can talk through that kind of example slowly and correctly, they usually find it much easier to transfer the same reasoning to new questions.",
             },
             {
                 "heading": "Why Students Find It Difficult",
-                "body": f"Many students struggle with {topic} because they try to memorize answers without understanding the idea behind them. Another challenge is skipping steps or mixing up related rules. The best solution is to practise short examples, compare correct and incorrect methods, and explain the answer in simple words.",
+                "body": f"One frequent problem in {topic} is {mistake}. Students also struggle when they try to memorize final answers without understanding the steps that make the answer valid. Clear explanations, careful checking, and repeated guided practice reduce this difficulty.",
             },
             {
                 "heading": "Real Learning Application",
-                "body": f"In real study situations, {topic} becomes easier when students connect it to familiar examples, classroom activities, or exam questions. Repetition, worked examples, and regular revision help move the topic from short-term memory into long-term understanding.",
+                "body": f"In real study situations, students master {topic} by practising with tasks that mirror {practice}. The topic becomes more meaningful when it is linked to examples, revision drills, and exam-style questions that reflect how {subject} is assessed.",
             },
         ],
         "worked_examples": [
             {
                 "title": "Worked Example 1",
                 "steps": [
-                    f"Read the {topic} question carefully and identify the concept being tested.",
-                    f"Recall the main rule or method used in {topic}.",
-                    "Apply the method step by step without skipping any part.",
+                    f"Start with an example based on {example}.",
+                    f"Identify the exact idea in {focus} that the question is testing.",
+                    f"Apply the correct method for {topic} step by step without skipping reasoning.",
                     "Check the final answer and explain why it is correct.",
                 ],
             },
             {
                 "title": "Worked Example 2",
                 "steps": [
-                    f"Start with a simple example related to {topic}.",
-                    "Break the question into smaller parts if necessary.",
-                    "Show the correct process clearly and neatly.",
-                    "Review the result and compare it with the question requirements.",
+                    f"Choose a second example that still focuses on {practice}.",
+                    "Break the task into smaller parts and link each part to the rule being used.",
+                    f"Point out how to avoid {mistake} while solving it.",
+                    "Review the result and connect it back to the topic overview.",
                 ],
             },
         ],
         "common_mistakes": [
-            f"Confusing the meaning of {topic} with a related idea in {subject}.",
-            "Skipping steps and jumping straight to an answer.",
-            "Using the wrong rule, formula, or method.",
-            "Failing to check the final answer carefully.",
+            f"Misunderstanding the core focus of {topic}: {focus}.",
+            mistake[0].upper() + mistake[1:] + ".",
+            "Jumping to an answer without showing the steps or reasoning clearly.",
+            f"Practising {topic} without checking whether the method matches the question being asked.",
         ],
         "study_tips": [
-            f"Rewrite the meaning of {topic} in your own words.",
-            "Practise short examples before attempting full questions.",
-            "Keep a notebook of rules, mistakes, and corrections.",
-            "Revise the topic regularly instead of waiting until the last minute.",
+            f"Rewrite the overview of {topic} in your own words after studying it.",
+            f"Use short exercises built around {practice} before trying harder tasks.",
+            f"Keep track of mistakes such as {mistake} and write the correction beside each one.",
+            f"Revise {topic} regularly so the method behind {focus} becomes familiar.",
         ],
         "practice_exercises": [
-            f"Define {topic} in your own words and explain why it matters in {subject}.",
-            f"Solve two simple questions based on {topic}.",
-            f"List the most common mistakes students make in {topic} and explain how to avoid them.",
-            f"Create one exam-style question on {topic} and solve it step by step.",
+            f"Explain the overview of {topic} and describe how it fits into {subject}.",
+            f"Work through an example based on {example} and explain each step.",
+            f"Describe why {mistake} causes errors and how to avoid it.",
+            f"Answer an exam-style question that focuses on {practice}.",
         ],
-        "summary": f"{topic} is a valuable part of {subject}. Once students understand the meaning, the rules, and the correct steps, they can answer questions more confidently and avoid common mistakes. Consistent practice is the key to mastering the topic.",
-        "youtube_search_query": f"{subject} {topic} lesson",
+        "summary": f"{topic} is a valuable part of {subject}. Students perform better when they understand {focus}, learn from examples such as {example}, and deliberately avoid mistakes like {mistake}. Regular practice built around {practice} makes the topic easier to remember and apply.",
+        "youtube_search_query": curated_profile["video_query"],
     }
 
 
@@ -152,7 +160,9 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
         f"- {item}" for item in lesson_data["practice_exercises"]
     )
 
-    return f"""# {lesson_data['title']}
+    return f"""{CURATED_LESSON_MARKER}
+
+# {lesson_data['title']}
 
 ## Overview
 {lesson_data['overview']}
@@ -184,6 +194,7 @@ def generate_lesson_data(
     subject: str,
     topic: str,
     overview: str | None = None,
+    use_ai: bool = False,
 ) -> dict[str, Any]:
     prompt = f"""
 You are an experienced secondary school teacher.
@@ -210,7 +221,11 @@ The lesson should be suitable for secondary school students, detailed, clear, an
 Do not wrap the JSON in markdown fences.
 """
 
-    raw_response = call_model(prompt, temperature=0.6)
+    raw_response = (
+        call_model(prompt, temperature=0.6)
+        if use_ai
+        else None
+    )
 
     if raw_response:
         try:
@@ -236,7 +251,7 @@ Do not wrap the JSON in markdown fences.
 
 
 def generate_lesson(subject: str, topic: str) -> str:
-    lesson_data = generate_lesson_data(subject, topic)
+    lesson_data = generate_lesson_data(subject, topic, use_ai=True)
     return build_lesson_markdown(lesson_data)
 
 
@@ -356,6 +371,7 @@ def fallback_quiz_questions(subject: str, topic: str) -> list[dict[str, str]]:
 def generate_quiz_questions(
     subject: str,
     topic: str,
+    use_ai: bool = False,
 ) -> list[dict[str, str]]:
     prompt = f"""
 Create exactly 20 multiple choice questions for secondary school students.
@@ -378,7 +394,11 @@ Rules:
 - Do not include markdown fences or any explanation outside the JSON.
 """
 
-    raw_response = call_model(prompt, temperature=0.4)
+    raw_response = (
+        call_model(prompt, temperature=0.4)
+        if use_ai
+        else None
+    )
 
     if raw_response:
         try:
@@ -412,4 +432,4 @@ Rules:
 
 
 def generate_quiz(subject: str, topic: str) -> str:
-    return json.dumps(generate_quiz_questions(subject, topic))
+    return json.dumps(generate_quiz_questions(subject, topic, use_ai=True))

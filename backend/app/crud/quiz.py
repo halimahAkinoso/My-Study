@@ -50,8 +50,13 @@ def get_quiz_by_topic(db: Session, topic_id: int):
         .all()
     )
 
-    if quiz_items:
+    if len(quiz_items) == 20:
         return quiz_items
+
+    if quiz_items:
+        for item in quiz_items:
+            db.delete(item)
+        db.commit()
 
     topic = (
         db.query(Topic)

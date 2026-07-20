@@ -61,7 +61,7 @@ def build_pdf_bytes(title: str, markdown_text: str) -> bytes:
     objects.append("<< /Type /Catalog /Pages 2 0 R >>")
 
     kids = " ".join(
-        f"{3 + page_index} 0 R"
+        f"{3 + (page_index * 2)} 0 R"
         for page_index in range(page_count)
     )
     objects.append(
@@ -69,8 +69,8 @@ def build_pdf_bytes(title: str, markdown_text: str) -> bytes:
     )
 
     for page_index, page_lines in enumerate(pages):
-        page_object_number = 3 + page_index
-        content_object_number = 3 + page_count + page_index
+        page_object_number = 3 + (page_index * 2)
+        content_object_number = page_object_number + 1
 
         objects.append(
             "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] "

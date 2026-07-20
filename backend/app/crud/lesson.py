@@ -4,8 +4,9 @@ from app.models.lesson import Lesson
 from app.models.topic import Topic
 from app.schemas.lesson import LessonCreate
 from app.services.ai_service import (
+    CURATED_LESSON_MARKER,
     build_lesson_markdown,
-    build_youtube_embed_url,
+    find_youtube_video_url,
     generate_lesson_data,
 )
 from app.services.pdf_service import ensure_lesson_pdf
@@ -28,6 +29,8 @@ def lesson_needs_enrichment(lesson: Lesson | None) -> bool:
     notes = (lesson.notes or "").strip()
 
     return (
+        CURATED_LESSON_MARKER not in notes
+        or
         len(notes) < 1600
         or not lesson.video_url
         or not lesson.pdf_url
@@ -49,7 +52,7 @@ def enrich_lesson(db: Session, topic: Topic, lesson: Lesson | None = None):
 
     lesson.title = lesson_data["title"]
     lesson.notes = notes
-    lesson.video_url = build_youtube_embed_url(subject_name, topic.title)
+    lesson.video_url = find_youtube_video_url(subject_name, topic.title)
     lesson.pdf_url = ensure_lesson_pdf(topic.id, lesson.title, lesson.notes)
 
     if lesson.image_url is None:

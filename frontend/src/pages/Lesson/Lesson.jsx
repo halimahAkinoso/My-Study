@@ -37,6 +37,14 @@ function Lesson() {
     return `${API_BASE_URL}${url}`;
   }
 
+  const resolvedPdfUrl = resolveAssetUrl(lesson?.pdf_url);
+  const isEmbeddableVideo =
+    lesson?.video_url?.includes("youtube.com/embed/") ||
+    lesson?.video_url?.includes("youtube-nocookie.com/embed/");
+  const youtubeWatchUrl = lesson?.video_url?.includes("/embed/")
+    ? lesson.video_url.replace("/embed/", "/watch?v=")
+    : lesson?.video_url;
+
   async function loadLesson() {
     setLoading(true);
     setError("");
@@ -217,31 +225,52 @@ function Lesson() {
         >
           <h2>Watch Video</h2>
 
-          <iframe
-            width="100%"
-            height="500"
-            src={lesson.video_url}
-            title="Lesson Video"
-            allowFullScreen
-            style={{
-              border: "none",
-              borderRadius: "10px",
-            }}
-          />
+          {isEmbeddableVideo ? (
+            <>
+              <iframe
+                width="100%"
+                height="500"
+                src={lesson.video_url}
+                title="Lesson Video"
+                allowFullScreen
+                style={{
+                  border: "none",
+                  borderRadius: "10px",
+                }}
+              />
 
-          <a
-            href={lesson.video_url.replace("/embed?", "/watch?")}
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              display: "inline-block",
-              marginTop: "14px",
-              color: "#2563EB",
-              fontWeight: 600,
-            }}
-          >
-            Open this lesson on YouTube
-          </a>
+              <a
+                href={youtubeWatchUrl}
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: "inline-block",
+                  marginTop: "14px",
+                  color: "#2563EB",
+                  fontWeight: 600,
+                }}
+              >
+                Open this lesson on YouTube
+              </a>
+            </>
+          ) : (
+            <a
+              href={lesson.video_url}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                background: "#FF0000",
+                color: "#fff",
+                textDecoration: "none",
+                padding: "12px 20px",
+                borderRadius: "10px",
+                fontWeight: 600,
+              }}
+            >
+              Search this lesson on YouTube
+            </a>
+          )}
         </div>
       )}
 
@@ -258,7 +287,7 @@ function Lesson() {
           <h2>PDF Resource</h2>
 
           <a
-            href={resolveAssetUrl(lesson.pdf_url)}
+            href={resolvedPdfUrl}
             target="_blank"
             rel="noreferrer"
             style={{

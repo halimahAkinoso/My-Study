@@ -9,6 +9,8 @@ function Quiz() {
   const navigate = useNavigate();
 
   const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
@@ -18,11 +20,17 @@ function Quiz() {
   }, [topicId]);
 
   async function loadQuiz() {
+    setLoading(true);
+    setError("");
+
     try {
       const data = await getQuiz(topicId);
       setQuestions(data);
-    } catch (error) {
-      console.log(error);
+    } catch (loadError) {
+      setError("We couldn't load quiz questions right now. Please try again.");
+      console.error(loadError);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -50,6 +58,64 @@ function Quiz() {
     questions.length > 0
       ? Math.round((score / questions.length) * 100)
       : 0;
+
+  if (loading) {
+    return (
+      <DashboardLayout>
+        <h2>Loading quiz...</h2>
+      </DashboardLayout>
+    );
+  }
+
+  if (error) {
+    return (
+      <DashboardLayout>
+        <div
+          style={{
+            background: "#FEE2E2",
+            padding: "30px",
+            borderRadius: "15px",
+            color: "#B91C1C",
+          }}
+        >
+          <h2>Quiz unavailable</h2>
+          <p>{error}</p>
+
+          <button
+            onClick={loadQuiz}
+            style={{
+              marginTop: "12px",
+              border: "none",
+              background: "#DC2626",
+              color: "#fff",
+              padding: "12px 18px",
+              borderRadius: "10px",
+              cursor: "pointer",
+            }}
+          >
+            Retry
+          </button>
+        </div>
+      </DashboardLayout>
+    );
+  }
+
+  if (questions.length === 0) {
+    return (
+      <DashboardLayout>
+        <div
+          style={{
+            background: "#FEF3C7",
+            padding: "30px",
+            borderRadius: "15px",
+          }}
+        >
+          <h2>No quiz available yet.</h2>
+          <p>This topic does not have quiz questions at the moment.</p>
+        </div>
+      </DashboardLayout>
+    );
+  }
 
   return (
     <DashboardLayout>
