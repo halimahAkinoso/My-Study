@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2246 >>
+<< /Length 2409 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -46,74 +46,120 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Understand heredity and inheritance. In Biology, students do better when they understand) Tj
+(Understand heredity and inheritance. In a textbook lesson, the first goal is to make the) Tj
 T*
-(not only the definition of Genetics, but also the language, symbols, and patterns that) Tj
+(biological idea clear. Students should be able to explain what Genetics means, identify) Tj
 T*
-(appear whenever this topic is tested.) Tj
+(where it appears in Biology, and describe the main purpose of the topic without relying) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in Genetics is genes, alleles, and inheritance patterns. A strong) Tj
-T*
-(explanation should show the idea clearly, connect it to prior knowledge, and then walk) Tj
-T*
-(through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for Genetics is using a Punnett square for a simple trait.) Tj
+(The central focus in Genetics is genes, alleles, and inheritance patterns. This means) Tj
 T*
-(When students can talk through that kind of example slowly and correctly, they usually) Tj
+(students must move beyond the overview and understand how the idea actually works. A) Tj
 T*
-(find it much easier to transfer the same reasoning to new questions.) Tj
+(strong explanation should unpack the rules, relationships, or patterns behind Genetics) Tj
 T*
-() Tj
+(and show how those ideas guide correct answers. In Biology, success usually depends on) Tj
 T*
-(Why Students Find It Difficult) Tj
-T*
-(One frequent problem in Genetics is confusing genotype with phenotype. Students also) Tj
-T*
-(struggle when they try to memorize final answers without understanding the steps that) Tj
-T*
-(make the answer valid. Clear explanations, careful checking, and repeated guided) Tj
-T*
-(practice reduce this difficulty.) Tj
+(understanding the structures, functions, and processes that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master Genetics by practising with tasks that mirror) Tj
+(A useful way to teach Genetics is to connect the explanation directly to using a Punnett) Tj
 T*
-(inheritance and trait prediction. The topic becomes more meaningful when it is linked to) Tj
+(square for a simple trait. That kind of life-process example shows students how the) Tj
 T*
-(examples, revision drills, and exam-style questions that reflect how Biology is) Tj
+(topic moves from theory into use. At this stage, the learner should be able to state the) Tj
+T*
+(relevant rule or principle, explain why it fits the question, and then apply the process) Tj
+T*
+(explanation with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Genetics is confusing genotype with phenotype. This matters) Tj
+T*
+(because many learners can repeat a definition but still fail to use it correctly. A real) Tj
+T*
+(textbook lesson should therefore point out not only the correct method, but also the) Tj
+T*
+(exact place where students often go wrong. Learning improves when the student compares) Tj
+T*
+(correct reasoning with incorrect reasoning.) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2294 >>
+<< /Length 2470 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect inheritance and trait prediction. The most effective habit is to read) Tj
+T*
+(the worked example slowly, restate each step in simple words, and then attempt a similar) Tj
+T*
+(question alone. This turns Genetics into something the student can genuinely study and) Tj
+T*
+(understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Genetics should first be understood as a biological idea before it is treated as an) Tj
+T*
+(exam topic.) Tj
+T*
+(- The learner must understand genes, alleles, and inheritance patterns because it) Tj
+T*
+(controls how questions in Genetics are answered correctly.) Tj
+T*
+(- A strong answer in Genetics uses the correct process explanation and explains why that) Tj
+T*
+(method fits the task.) Tj
+T*
+(- Using a Punnett square for a simple trait is the type of application that helps move) Tj
+T*
+(the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Genetics.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind genes, alleles, and) Tj
+T*
+(inheritance patterns.) Tj
+T*
+(3. Apply the correct process explanation step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -145,6 +191,39 @@ T*
 T*
 () Tj
 T*
+(Lesson Vocabulary) Tj
+T*
+(- Genetics: The main topic being studied, understood here as understand heredity and) Tj
+T*
+(inheritance.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2471 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(- Core Focus: The main idea the learner must understand in this lesson: genes, alleles,) Tj
+T*
+(and inheritance patterns.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as using a) Tj
+T*
+(Punnett square for a simple trait.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example confusing) Tj
+T*
+(genotype with phenotype.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of Genetics: genes, alleles, and inheritance patterns.) Tj
@@ -159,7 +238,21 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Genetics mean in Biology?) Tj
+T*
+(- What part of this lesson explains genes, alleles, and inheritance patterns most) Tj
+T*
+(clearly?) Tj
+T*
+(- Why is using a Punnett square for a simple trait a good example for studying Genetics?) Tj
+T*
+(- How would you avoid the mistake described as confusing genotype with phenotype?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Genetics in your own words after studying it.) Tj
 T*
@@ -177,7 +270,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Genetics and describe how it fits into Biology.) Tj
 T*
@@ -197,45 +290,47 @@ T*
 T*
 (genes, alleles, and inheritance patterns, learn from examples such as using a Punnett) Tj
 T*
-ET
-endstream
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
-endobj
-8 0 obj
-<< /Length 263 >>
-stream
-BT
-/F1 12 Tf
-50 780 Td
-14 TL
 (square for a simple trait, and deliberately avoid mistakes like confusing genotype with) Tj
 T*
 (phenotype. Regular practice built around inheritance and trait prediction makes the) Tj
-T*
-(topic easier to remember and apply.) Tj
 T*
 ET
 endstream
 endobj
 9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 75 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(topic easier to remember and apply.) Tj
+T*
+ET
+endstream
+endobj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002557 00000 n 
-0000002683 00000 n 
-0000005029 00000 n 
-0000005155 00000 n 
-0000005469 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002727 00000 n 
+0000002854 00000 n 
+0000005376 00000 n 
+0000005503 00000 n 
+0000008026 00000 n 
+0000008154 00000 n 
+0000008280 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5539
+8351
 %%EOF

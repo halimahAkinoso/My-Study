@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2093 >>
+<< /Length 2313 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -50,76 +50,124 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Power measures how quickly work is done or energy is transferred. In Physics, students) Tj
+(Power measures how quickly work is done or energy is transferred. In a textbook lesson,) Tj
 T*
-(do better when they understand not only the definition of Power, but also the language,) Tj
+(the first goal is to make the scientific principle clear. Students should be able to) Tj
 T*
-(symbols, and patterns that appear whenever this topic is tested.) Tj
+(explain what Power means, identify where it appears in Physics, and describe the main) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in Power is rate of doing work and interpreting the power formula. A) Tj
-T*
-(strong explanation should show the idea clearly, connect it to prior knowledge, and then) Tj
-T*
-(walk through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for Power is comparing two machines that do the same work) Tj
+(The central focus in Power is rate of doing work and interpreting the power formula.) Tj
 T*
-(in different times. When students can talk through that kind of example slowly and) Tj
+(This means students must move beyond the overview and understand how the idea actually) Tj
 T*
-(correctly, they usually find it much easier to transfer the same reasoning to new) Tj
+(works. A strong explanation should unpack the rules, relationships, or patterns behind) Tj
 T*
-(questions.) Tj
+(Power and show how those ideas guide correct answers. In Physics, success usually) Tj
 T*
-() Tj
+(depends on understanding the quantities, units, and relationships that belong to the) Tj
 T*
-(Why Students Find It Difficult) Tj
-T*
-(One frequent problem in Power is confusing power with energy. Students also struggle) Tj
-T*
-(when they try to memorize final answers without understanding the steps that make the) Tj
-T*
-(answer valid. Clear explanations, careful checking, and repeated guided practice reduce) Tj
-T*
-(this difficulty.) Tj
+(topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
+T*
+(A useful way to teach Power is to connect the explanation directly to comparing two) Tj
+T*
+(machines that do the same work in different times. That kind of scientific example shows) Tj
+T*
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
+T*
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the physical reasoning process with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Power is confusing power with energy. This matters because many) Tj
+T*
+(learners can repeat a definition but still fail to use it correctly. A real textbook) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2433 >>
+<< /Length 2586 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(In real study situations, students master Power by practising with tasks that mirror) Tj
+(lesson should therefore point out not only the correct method, but also the exact place) Tj
 T*
-(power calculations using work and time. The topic becomes more meaningful when it is) Tj
+(where students often go wrong. Learning improves when the student compares correct) Tj
 T*
-(linked to examples, revision drills, and exam-style questions that reflect how Physics) Tj
+(reasoning with incorrect reasoning.) Tj
 T*
-(is assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect power calculations using work and time. The most effective habit is) Tj
+T*
+(to read the worked example slowly, restate each step in simple words, and then attempt a) Tj
+T*
+(similar question alone. This turns Power into something the student can genuinely study) Tj
+T*
+(and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Power should first be understood as a scientific principle before it is treated as an) Tj
+T*
+(exam topic.) Tj
+T*
+(- The learner must understand rate of doing work and interpreting the power formula) Tj
+T*
+(because it controls how questions in Power are answered correctly.) Tj
+T*
+(- A strong answer in Power uses the correct physical reasoning process and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Comparing two machines that do the same work in different times is the type of) Tj
+T*
+(application that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Power.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind rate of doing work and) Tj
+T*
+(interpreting the power formula.) Tj
+T*
+(3. Apply the correct physical reasoning process step by step instead of jumping to the) Tj
+T*
+(answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,7 +197,40 @@ T*
 T*
 (3. Point out how to avoid confusing power with energy while solving it.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2405 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Power: The main topic being studied, understood here as power measures how quickly) Tj
+T*
+(work is done or energy is transferred.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: rate of doing) Tj
+T*
+(work and interpreting the power formula.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as comparing) Tj
+T*
+(two machines that do the same work in different times.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example confusing power) Tj
+T*
+(with energy.) Tj
 T*
 () Tj
 T*
@@ -167,7 +248,23 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Power mean in Physics?) Tj
+T*
+(- What part of this lesson explains rate of doing work and interpreting the power) Tj
+T*
+(formula most clearly?) Tj
+T*
+(- Why is comparing two machines that do the same work in different times a good example) Tj
+T*
+(for studying Power?) Tj
+T*
+(- How would you avoid the mistake described as confusing power with energy?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Power in your own words after studying it.) Tj
 T*
@@ -185,7 +282,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Power and describe how it fits into Physics.) Tj
 T*
@@ -200,10 +297,10 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Length 507 >>
 stream
 BT
@@ -227,23 +324,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002404 00000 n 
-0000002530 00000 n 
-0000005015 00000 n 
-0000005141 00000 n 
-0000005699 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002631 00000 n 
+0000002758 00000 n 
+0000005396 00000 n 
+0000005523 00000 n 
+0000007980 00000 n 
+0000008108 00000 n 
+0000008667 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5769
+8738
 %%EOF

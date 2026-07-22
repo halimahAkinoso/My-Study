@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2183 >>
+<< /Length 2384 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -50,78 +50,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Mensuration deals with measuring length, area, surface area, and volume of shapes. In) Tj
+(Mensuration deals with measuring length, area, surface area, and volume of shapes. In a) Tj
 T*
-(Mathematics, students do better when they understand not only the definition of) Tj
+(textbook lesson, the first goal is to make the mathematical idea clear. Students should) Tj
 T*
-(Mensuration, but also the language, symbols, and patterns that appear whenever this) Tj
+(be able to explain what Mensuration means, identify where it appears in Mathematics, and) Tj
 T*
-(topic is tested.) Tj
+(describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Mensuration is choosing the correct measurement formula for a) Tj
 T*
-(shape. A strong explanation should show the idea clearly, connect it to prior knowledge,) Tj
+(shape. This means students must move beyond the overview and understand how the idea) Tj
 T*
-(and then walk through the method students are expected to use whenever they meet this) Tj
+(actually works. A strong explanation should unpack the rules, relationships, or patterns) Tj
 T*
-(topic in classwork or examination questions.) Tj
+(behind Mensuration and show how those ideas guide correct answers. In Mathematics,) Tj
 T*
-() Tj
+(success usually depends on understanding the symbols, rules, and steps that belong to) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Mensuration is finding the volume of a cylinder or the) Tj
-T*
-(area of a compound shape. When students can talk through that kind of example slowly and) Tj
-T*
-(correctly, they usually find it much easier to transfer the same reasoning to new) Tj
-T*
-(questions.) Tj
+(the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Mensuration is using the wrong units or confusing area with) Tj
+(A useful way to teach Mensuration is to connect the explanation directly to finding the) Tj
 T*
-(volume. Students also struggle when they try to memorize final answers without) Tj
+(volume of a cylinder or the area of a compound shape. That kind of worked calculation) Tj
 T*
-(understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(shows students how the topic moves from theory into use. At this stage, the learner) Tj
 T*
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(should be able to state the relevant rule or principle, explain why it fits the) Tj
+T*
+(question, and then apply the solution method with confidence.) Tj
 T*
 () Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Mensuration is using the wrong units or confusing area with) Tj
+T*
+(volume. This matters because many learners can repeat a definition but still fail to use) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2297 >>
+<< /Length 2642 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Real Learning Application) Tj
+(it correctly. A real textbook lesson should therefore point out not only the correct) Tj
 T*
-(In real study situations, students master Mensuration by practising with tasks that) Tj
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
-(mirror perimeter, area, and volume calculations. The topic becomes more meaningful when) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
-(it is linked to examples, revision drills, and exam-style questions that reflect how) Tj
+() Tj
 T*
-(Mathematics is assessed.) Tj
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect perimeter, area, and volume calculations. The most effective habit is) Tj
+T*
+(to read the worked example slowly, restate each step in simple words, and then attempt a) Tj
+T*
+(similar question alone. This turns Mensuration into something the student can genuinely) Tj
+T*
+(study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Mensuration should first be understood as a mathematical idea before it is treated as) Tj
+T*
+(an exam topic.) Tj
+T*
+(- The learner must understand choosing the correct measurement formula for a shape) Tj
+T*
+(because it controls how questions in Mensuration are answered correctly.) Tj
+T*
+(- A strong answer in Mensuration uses the correct solution method and explains why that) Tj
+T*
+(method fits the task.) Tj
+T*
+(- Finding the volume of a cylinder or the area of a compound shape is the type of) Tj
+T*
+(application that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Mensuration.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind choosing the correct) Tj
+T*
+(measurement formula for a shape.) Tj
+T*
+(3. Apply the correct solution method step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -153,9 +197,42 @@ T*
 T*
 (3. Point out how to avoid using the wrong units or confusing area with volume while) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2383 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (solving it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Mensuration: The main topic being studied, understood here as mensuration deals with) Tj
+T*
+(measuring length, area, surface area, and volume of shapes.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: choosing the) Tj
+T*
+(correct measurement formula for a shape.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as finding the) Tj
+T*
+(volume of a cylinder or the area of a compound shape.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example using the wrong) Tj
+T*
+(units or confusing area with volume.) Tj
 T*
 () Tj
 T*
@@ -175,7 +252,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Mensuration mean in Mathematics?) Tj
+T*
+(- What part of this lesson explains choosing the correct measurement formula for a shape) Tj
+T*
+(most clearly?) Tj
+T*
+(- Why is finding the volume of a cylinder or the area of a compound shape a good example) Tj
+T*
+(for studying Mensuration?) Tj
+T*
+(- How would you avoid the mistake described as using the wrong units or confusing area) Tj
+T*
+(with volume?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Mensuration in your own words after studying it.) Tj
 T*
@@ -193,25 +288,25 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Mensuration and describe how it fits into Mathematics.) Tj
+T*
+(- Work through an example based on finding the volume of a cylinder or the area of a) Tj
 T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 914 >>
+10 0 obj
+<< /Length 821 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(- Work through an example based on finding the volume of a cylinder or the area of a) Tj
-T*
 (compound shape and explain each step.) Tj
 T*
 (- Describe why using the wrong units or confusing area with volume causes errors and how) Tj
@@ -241,23 +336,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002494 00000 n 
-0000002620 00000 n 
-0000004969 00000 n 
-0000005095 00000 n 
-0000006060 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002702 00000 n 
+0000002829 00000 n 
+0000005523 00000 n 
+0000005650 00000 n 
+0000008085 00000 n 
+0000008213 00000 n 
+0000009086 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6130
+9157
 %%EOF

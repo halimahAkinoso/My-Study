@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2270 >>
+<< /Length 2343 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -50,74 +50,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Number theory studies the structure and properties of whole numbers. In Mathematics,) Tj
+(Number theory studies the structure and properties of whole numbers. In a textbook) Tj
 T*
-(students do better when they understand not only the definition of Number Theory, but) Tj
+(lesson, the first goal is to make the mathematical idea clear. Students should be able) Tj
 T*
-(also the language, symbols, and patterns that appear whenever this topic is tested.) Tj
+(to explain what Number Theory means, identify where it appears in Mathematics, and) Tj
+T*
+(describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Number Theory is factors, multiples, primes, divisibility, and) Tj
 T*
-(remainders. A strong explanation should show the idea clearly, connect it to prior) Tj
+(remainders. This means students must move beyond the overview and understand how the) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(idea actually works. A strong explanation should unpack the rules, relationships, or) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(patterns behind Number Theory and show how those ideas guide correct answers. In) Tj
 T*
-() Tj
+(Mathematics, success usually depends on understanding the symbols, rules, and steps that) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Number Theory is using prime factorization to find HCF) Tj
-T*
-(or LCM. When students can talk through that kind of example slowly and correctly, they) Tj
-T*
-(usually find it much easier to transfer the same reasoning to new questions.) Tj
+(belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Number Theory is confusing prime numbers with odd numbers or) Tj
+(A useful way to teach Number Theory is to connect the explanation directly to using) Tj
 T*
-(misusing factor rules. Students also struggle when they try to memorize final answers) Tj
+(prime factorization to find HCF or LCM. That kind of worked calculation shows students) Tj
 T*
-(without understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(how the topic moves from theory into use. At this stage, the learner should be able to) Tj
 T*
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(state the relevant rule or principle, explain why it fits the question, and then apply) Tj
+T*
+(the solution method with confidence.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(4. Why Errors Happen) Tj
 T*
-(In real study situations, students master Number Theory by practising with tasks that) Tj
+(One common difficulty in Number Theory is confusing prime numbers with odd numbers or) Tj
+T*
+(misusing factor rules. This matters because many learners can repeat a definition but) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2439 >>
+<< /Length 2680 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(mirror divisibility tests and factor-based reasoning. The topic becomes more meaningful) Tj
+(still fail to use it correctly. A real textbook lesson should therefore point out not) Tj
 T*
-(when it is linked to examples, revision drills, and exam-style questions that reflect) Tj
+(only the correct method, but also the exact place where students often go wrong.) Tj
 T*
-(how Mathematics is assessed.) Tj
+(Learning improves when the student compares correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect divisibility tests and factor-based reasoning. The most effective) Tj
+T*
+(habit is to read the worked example slowly, restate each step in simple words, and then) Tj
+T*
+(attempt a similar question alone. This turns Number Theory into something the student) Tj
+T*
+(can genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Number Theory should first be understood as a mathematical idea before it is treated) Tj
+T*
+(as an exam topic.) Tj
+T*
+(- The learner must understand factors, multiples, primes, divisibility, and remainders) Tj
+T*
+(because it controls how questions in Number Theory are answered correctly.) Tj
+T*
+(- A strong answer in Number Theory uses the correct solution method and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Using prime factorization to find HCF or LCM is the type of application that helps) Tj
+T*
+(move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Number Theory.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind factors, multiples, primes,) Tj
+T*
+(divisibility, and remainders.) Tj
+T*
+(3. Apply the correct solution method step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,7 +197,40 @@ T*
 T*
 (rules while solving it.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2428 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Number Theory: The main topic being studied, understood here as number theory studies) Tj
+T*
+(the structure and properties of whole numbers.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: factors,) Tj
+T*
+(multiples, primes, divisibility, and remainders.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as using prime) Tj
+T*
+(factorization to find HCF or LCM.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example confusing prime) Tj
+T*
+(numbers with odd numbers or misusing factor rules.) Tj
 T*
 () Tj
 T*
@@ -169,7 +250,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Number Theory mean in Mathematics?) Tj
+T*
+(- What part of this lesson explains factors, multiples, primes, divisibility, and) Tj
+T*
+(remainders most clearly?) Tj
+T*
+(- Why is using prime factorization to find HCF or LCM a good example for studying Number) Tj
+T*
+(Theory?) Tj
+T*
+(- How would you avoid the mistake described as confusing prime numbers with odd numbers) Tj
+T*
+(or misusing factor rules?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Number Theory in your own words after studying it.) Tj
 T*
@@ -187,7 +286,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Number Theory and describe how it fits into Mathematics.) Tj
 T*
@@ -195,21 +294,21 @@ T*
 T*
 (explain each step.) Tj
 T*
-(- Describe why confusing prime numbers with odd numbers or misusing factor rules causes) Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 703 >>
+10 0 obj
+<< /Length 799 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(- Describe why confusing prime numbers with odd numbers or misusing factor rules causes) Tj
+T*
 (errors and how to avoid it.) Tj
 T*
 (- Answer an exam-style question that focuses on divisibility tests and factor-based) Tj
@@ -235,23 +334,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002581 00000 n 
-0000002707 00000 n 
-0000005198 00000 n 
-0000005324 00000 n 
-0000006078 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002661 00000 n 
+0000002788 00000 n 
+0000005520 00000 n 
+0000005647 00000 n 
+0000008127 00000 n 
+0000008255 00000 n 
+0000009106 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6148
+9177
 %%EOF

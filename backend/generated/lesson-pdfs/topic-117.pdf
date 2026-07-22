@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2180 >>
+<< /Length 2235 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -52,76 +52,124 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
 (Programming teaches students how to give computers step-by-step instructions to solve) Tj
 T*
-(problems. In Computer Science, students do better when they understand not only the) Tj
+(problems. In a textbook lesson, the first goal is to make the computing concept clear.) Tj
 T*
-(definition of Programming, but also the language, symbols, and patterns that appear) Tj
+(Students should be able to explain what Programming means, identify where it appears in) Tj
 T*
-(whenever this topic is tested.) Tj
+(Computer Science, and describe the main purpose of the topic without relying on) Tj
+T*
+(memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Programming is algorithms, logic, sequence, selection, and) Tj
 T*
-(repetition. A strong explanation should show the idea clearly, connect it to prior) Tj
+(repetition. This means students must move beyond the overview and understand how the) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(idea actually works. A strong explanation should unpack the rules, relationships, or) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(patterns behind Programming and show how those ideas guide correct answers. In Computer) Tj
 T*
-() Tj
+(Science, success usually depends on understanding the commands, structure, and logic) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Programming is writing a simple program that makes) Tj
-T*
-(decisions. When students can talk through that kind of example slowly and correctly,) Tj
-T*
-(they usually find it much easier to transfer the same reasoning to new questions.) Tj
+(that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Programming is coding without first planning the logic. Students) Tj
+(A useful way to teach Programming is to connect the explanation directly to writing a) Tj
 T*
-(also struggle when they try to memorize final answers without understanding the steps) Tj
+(simple program that makes decisions. That kind of system or code example shows students) Tj
 T*
-(that make the answer valid. Clear explanations, careful checking, and repeated guided) Tj
+(how the topic moves from theory into use. At this stage, the learner should be able to) Tj
 T*
-(practice reduce this difficulty.) Tj
+(state the relevant rule or principle, explain why it fits the question, and then apply) Tj
+T*
+(the logical procedure with confidence.) Tj
 T*
 () Tj
+T*
+(4. Why Errors Happen) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2383 >>
+<< /Length 2706 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Real Learning Application) Tj
+(One common difficulty in Programming is coding without first planning the logic. This) Tj
 T*
-(In real study situations, students master Programming by practising with tasks that) Tj
+(matters because many learners can repeat a definition but still fail to use it) Tj
 T*
-(mirror basic algorithm and control-structure questions. The topic becomes more) Tj
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
 T*
-(meaningful when it is linked to examples, revision drills, and exam-style questions that) Tj
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
-(reflect how Computer Science is assessed.) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect basic algorithm and control-structure questions. The most effective) Tj
+T*
+(habit is to read the worked example slowly, restate each step in simple words, and then) Tj
+T*
+(attempt a similar question alone. This turns Programming into something the student can) Tj
+T*
+(genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Programming should first be understood as a computing concept before it is treated as) Tj
+T*
+(an exam topic.) Tj
+T*
+(- The learner must understand algorithms, logic, sequence, selection, and repetition) Tj
+T*
+(because it controls how questions in Programming are answered correctly.) Tj
+T*
+(- A strong answer in Programming uses the correct logical procedure and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Writing a simple program that makes decisions is the type of application that helps) Tj
+T*
+(move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Programming.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind algorithms, logic, sequence,) Tj
+T*
+(selection, and repetition.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,9 +197,42 @@ T*
 T*
 (2. Break the task into smaller parts and link each part to the rule being used.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2426 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (3. Point out how to avoid coding without first planning the logic while solving it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Programming: The main topic being studied, understood here as programming teaches) Tj
+T*
+(students how to give computers step-by-step instructions to solve problems.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: algorithms,) Tj
+T*
+(logic, sequence, selection, and repetition.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as writing a) Tj
+T*
+(simple program that makes decisions.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example coding without) Tj
+T*
+(first planning the logic.) Tj
 T*
 () Tj
 T*
@@ -171,7 +252,23 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Programming mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains algorithms, logic, sequence, selection, and) Tj
+T*
+(repetition most clearly?) Tj
+T*
+(- Why is writing a simple program that makes decisions a good example for studying) Tj
+T*
+(Programming?) Tj
+T*
+(- How would you avoid the mistake described as coding without first planning the logic?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Programming in your own words after studying it.) Tj
 T*
@@ -189,7 +286,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Programming and describe how it fits into Computer Science.) Tj
 T*
@@ -200,10 +297,10 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Length 745 >>
 stream
 BT
@@ -235,23 +332,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002491 00000 n 
-0000002617 00000 n 
-0000005052 00000 n 
-0000005178 00000 n 
-0000005974 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002553 00000 n 
+0000002680 00000 n 
+0000005438 00000 n 
+0000005565 00000 n 
+0000008043 00000 n 
+0000008171 00000 n 
+0000008968 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6044
+9039
 %%EOF

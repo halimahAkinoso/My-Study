@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2120 >>
+<< /Length 2226 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -54,78 +54,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Data structures organize information so programs can use it efficiently. In Computer) Tj
+(Data structures organize information so programs can use it efficiently. In a textbook) Tj
 T*
-(Science, students do better when they understand not only the definition of Data) Tj
+(lesson, the first goal is to make the computing concept clear. Students should be able) Tj
 T*
-(Structures, but also the language, symbols, and patterns that appear whenever this topic) Tj
+(to explain what Data Structures means, identify where it appears in Computer Science,) Tj
 T*
-(is tested.) Tj
+(and describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Data Structures is lists, stacks, queues, trees, and choosing the) Tj
 T*
-(right structure. A strong explanation should show the idea clearly, connect it to prior) Tj
+(right structure. This means students must move beyond the overview and understand how) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(the idea actually works. A strong explanation should unpack the rules, relationships, or) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(patterns behind Data Structures and show how those ideas guide correct answers. In) Tj
 T*
-() Tj
+(Computer Science, success usually depends on understanding the commands, structure, and) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Data Structures is comparing when to use a stack) Tj
-T*
-(versus a queue. When students can talk through that kind of example slowly and) Tj
-T*
-(correctly, they usually find it much easier to transfer the same reasoning to new) Tj
-T*
-(questions.) Tj
+(logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Data Structures is using a structure without understanding its) Tj
+(A useful way to teach Data Structures is to connect the explanation directly to) Tj
 T*
-(behavior. Students also struggle when they try to memorize final answers without) Tj
+(comparing when to use a stack versus a queue. That kind of system or code example shows) Tj
 T*
-(understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
+T*
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2397 >>
+<< /Length 2836 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(One common difficulty in Data Structures is using a structure without understanding its) Tj
+T*
+(behavior. This matters because many learners can repeat a definition but still fail to) Tj
+T*
+(use it correctly. A real textbook lesson should therefore point out not only the correct) Tj
+T*
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
+T*
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(5. Independent Study Guidance) Tj
 T*
-(In real study situations, students master Data Structures by practising with tasks that) Tj
+(For independent study, the learner should revisit the explanation and then practise with) Tj
 T*
-(mirror structure identification and use cases. The topic becomes more meaningful when it) Tj
+(tasks that reflect structure identification and use cases. The most effective habit is) Tj
 T*
-(is linked to examples, revision drills, and exam-style questions that reflect how) Tj
+(to read the worked example slowly, restate each step in simple words, and then attempt a) Tj
 T*
-(Computer Science is assessed.) Tj
+(similar question alone. This turns Data Structures into something the student can) Tj
+T*
+(genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Data Structures should first be understood as a computing concept before it is treated) Tj
+T*
+(as an exam topic.) Tj
+T*
+(- The learner must understand lists, stacks, queues, trees, and choosing the right) Tj
+T*
+(structure because it controls how questions in Data Structures are answered correctly.) Tj
+T*
+(- A strong answer in Data Structures uses the correct logical procedure and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Comparing when to use a stack versus a queue is the type of application that helps) Tj
+T*
+(move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Data Structures.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind lists, stacks, queues, trees,) Tj
+T*
+(and choosing the right structure.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -153,9 +197,42 @@ T*
 T*
 (3. Point out how to avoid using a structure without understanding its behavior while) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2332 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (solving it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Data Structures: The main topic being studied, understood here as data structures) Tj
+T*
+(organize information so programs can use it efficiently.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: lists, stacks,) Tj
+T*
+(queues, trees, and choosing the right structure.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as comparing) Tj
+T*
+(when to use a stack versus a queue.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example using a) Tj
+T*
+(structure without understanding its behavior.) Tj
 T*
 () Tj
 T*
@@ -175,7 +252,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Data Structures mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains lists, stacks, queues, trees, and choosing the right) Tj
+T*
+(structure most clearly?) Tj
+T*
+(- Why is comparing when to use a stack versus a queue a good example for studying Data) Tj
+T*
+(Structures?) Tj
+T*
+(- How would you avoid the mistake described as using a structure without understanding) Tj
+T*
+(its behavior?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Data Structures in your own words after studying it.) Tj
 T*
@@ -193,25 +288,25 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Data Structures and describe how it fits into Computer) Tj
+T*
+(Science.) Tj
 T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 900 >>
+10 0 obj
+<< /Length 883 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Science.) Tj
-T*
 (- Work through an example based on comparing when to use a stack versus a queue and) Tj
 T*
 (explain each step.) Tj
@@ -241,23 +336,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002431 00000 n 
-0000002557 00000 n 
-0000005006 00000 n 
-0000005132 00000 n 
-0000006083 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002544 00000 n 
+0000002671 00000 n 
+0000005559 00000 n 
+0000005686 00000 n 
+0000008070 00000 n 
+0000008198 00000 n 
+0000009133 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6153
+9204
 %%EOF

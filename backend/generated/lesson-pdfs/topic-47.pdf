@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2229 >>
+<< /Length 2423 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -48,74 +48,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Motion explains how objects change position with time. In Physics, students do better) Tj
+(Motion explains how objects change position with time. In a textbook lesson, the first) Tj
 T*
-(when they understand not only the definition of Motion, but also the language, symbols,) Tj
+(goal is to make the scientific principle clear. Students should be able to explain what) Tj
 T*
-(and patterns that appear whenever this topic is tested.) Tj
+(Motion means, identify where it appears in Physics, and describe the main purpose of the) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in Motion is distance, displacement, speed, and velocity. A strong) Tj
-T*
-(explanation should show the idea clearly, connect it to prior knowledge, and then walk) Tj
-T*
-(through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for Motion is comparing two journeys using distance and) Tj
+(The central focus in Motion is distance, displacement, speed, and velocity. This means) Tj
 T*
-(displacement. When students can talk through that kind of example slowly and correctly,) Tj
+(students must move beyond the overview and understand how the idea actually works. A) Tj
 T*
-(they usually find it much easier to transfer the same reasoning to new questions.) Tj
+(strong explanation should unpack the rules, relationships, or patterns behind Motion and) Tj
 T*
-() Tj
+(show how those ideas guide correct answers. In Physics, success usually depends on) Tj
 T*
-(Why Students Find It Difficult) Tj
-T*
-(One frequent problem in Motion is treating speed and velocity as the same quantity.) Tj
-T*
-(Students also struggle when they try to memorize final answers without understanding the) Tj
-T*
-(steps that make the answer valid. Clear explanations, careful checking, and repeated) Tj
-T*
-(guided practice reduce this difficulty.) Tj
+(understanding the quantities, units, and relationships that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master Motion by practising with tasks that mirror) Tj
+(A useful way to teach Motion is to connect the explanation directly to comparing two) Tj
 T*
-(distance-time and velocity reasoning. The topic becomes more meaningful when it is) Tj
+(journeys using distance and displacement. That kind of scientific example shows students) Tj
+T*
+(how the topic moves from theory into use. At this stage, the learner should be able to) Tj
+T*
+(state the relevant rule or principle, explain why it fits the question, and then apply) Tj
+T*
+(the physical reasoning process with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Motion is treating speed and velocity as the same quantity.) Tj
+T*
+(This matters because many learners can repeat a definition but still fail to use it) Tj
+T*
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
+T*
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2213 >>
+<< /Length 2483 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(linked to examples, revision drills, and exam-style questions that reflect how Physics) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
-(is assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect distance-time and velocity reasoning. The most effective habit is to) Tj
+T*
+(read the worked example slowly, restate each step in simple words, and then attempt a) Tj
+T*
+(similar question alone. This turns Motion into something the student can genuinely study) Tj
+T*
+(and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Motion should first be understood as a scientific principle before it is treated as an) Tj
+T*
+(exam topic.) Tj
+T*
+(- The learner must understand distance, displacement, speed, and velocity because it) Tj
+T*
+(controls how questions in Motion are answered correctly.) Tj
+T*
+(- A strong answer in Motion uses the correct physical reasoning process and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Comparing two journeys using distance and displacement is the type of application that) Tj
+T*
+(helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Motion.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind distance, displacement, speed,) Tj
+T*
+(and velocity.) Tj
+T*
+(3. Apply the correct physical reasoning process step by step instead of jumping to the) Tj
+T*
+(answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,6 +197,39 @@ T*
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2276 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Motion: The main topic being studied, understood here as motion explains how objects) Tj
+T*
+(change position with time.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: distance,) Tj
+T*
+(displacement, speed, and velocity.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as comparing) Tj
+T*
+(two journeys using distance and displacement.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example treating speed) Tj
+T*
+(and velocity as the same quantity.) Tj
+T*
 () Tj
 T*
 (Common Mistakes) Tj
@@ -167,7 +248,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Motion mean in Physics?) Tj
+T*
+(- What part of this lesson explains distance, displacement, speed, and velocity most) Tj
+T*
+(clearly?) Tj
+T*
+(- Why is comparing two journeys using distance and displacement a good example for) Tj
+T*
+(studying Motion?) Tj
+T*
+(- How would you avoid the mistake described as treating speed and velocity as the same) Tj
+T*
+(quantity?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Motion in your own words after studying it.) Tj
 T*
@@ -185,7 +284,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Motion and describe how it fits into Physics.) Tj
 T*
@@ -195,21 +294,21 @@ T*
 T*
 (- Describe why treating speed and velocity as the same quantity causes errors and how to) Tj
 T*
-(avoid it.) Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 602 >>
+10 0 obj
+<< /Length 620 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(avoid it.) Tj
+T*
 (- Answer an exam-style question that focuses on distance-time and velocity reasoning.) Tj
 T*
 () Tj
@@ -229,23 +328,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002540 00000 n 
-0000002666 00000 n 
-0000004931 00000 n 
-0000005057 00000 n 
-0000005710 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002741 00000 n 
+0000002868 00000 n 
+0000005403 00000 n 
+0000005530 00000 n 
+0000007858 00000 n 
+0000007986 00000 n 
+0000008658 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5780
+8729
 %%EOF

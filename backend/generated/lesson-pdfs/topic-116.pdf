@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2155 >>
+<< /Length 2246 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -54,78 +54,124 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Computer basics introduce the major parts of a computer and what each part does. In) Tj
+(Computer basics introduce the major parts of a computer and what each part does. In a) Tj
 T*
-(Computer Science, students do better when they understand not only the definition of) Tj
+(textbook lesson, the first goal is to make the computing concept clear. Students should) Tj
 T*
-(Computer Basics, but also the language, symbols, and patterns that appear whenever this) Tj
+(be able to explain what Computer Basics means, identify where it appears in Computer) Tj
 T*
-(topic is tested.) Tj
+(Science, and describe the main purpose of the topic without relying on memorized) Tj
+T*
+(sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Computer Basics is hardware, software, input, processing, storage,) Tj
 T*
-(and output. A strong explanation should show the idea clearly, connect it to prior) Tj
+(and output. This means students must move beyond the overview and understand how the) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(idea actually works. A strong explanation should unpack the rules, relationships, or) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(patterns behind Computer Basics and show how those ideas guide correct answers. In) Tj
 T*
-() Tj
+(Computer Science, success usually depends on understanding the commands, structure, and) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Computer Basics is tracing how data enters, is) Tj
-T*
-(processed, and is displayed. When students can talk through that kind of example slowly) Tj
-T*
-(and correctly, they usually find it much easier to transfer the same reasoning to new) Tj
-T*
-(questions.) Tj
+(logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Computer Basics is mixing hardware devices with software) Tj
+(A useful way to teach Computer Basics is to connect the explanation directly to tracing) Tj
 T*
-(programs. Students also struggle when they try to memorize final answers without) Tj
+(how data enters, is processed, and is displayed. That kind of system or code example) Tj
 T*
-(understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(shows students how the topic moves from theory into use. At this stage, the learner) Tj
+T*
+(should be able to state the relevant rule or principle, explain why it fits the) Tj
+T*
+(question, and then apply the logical procedure with confidence.) Tj
+T*
+() Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2311 >>
+<< /Length 2707 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Computer Basics is mixing hardware devices with software) Tj
+T*
+(programs. This matters because many learners can repeat a definition but still fail to) Tj
+T*
+(use it correctly. A real textbook lesson should therefore point out not only the correct) Tj
+T*
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
+T*
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(5. Independent Study Guidance) Tj
 T*
-(In real study situations, students master Computer Basics by practising with tasks that) Tj
+(For independent study, the learner should revisit the explanation and then practise with) Tj
 T*
-(mirror identifying system components and their functions. The topic becomes more) Tj
+(tasks that reflect identifying system components and their functions. The most effective) Tj
 T*
-(meaningful when it is linked to examples, revision drills, and exam-style questions that) Tj
+(habit is to read the worked example slowly, restate each step in simple words, and then) Tj
 T*
-(reflect how Computer Science is assessed.) Tj
+(attempt a similar question alone. This turns Computer Basics into something the student) Tj
+T*
+(can genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Computer Basics should first be understood as a computing concept before it is treated) Tj
+T*
+(as an exam topic.) Tj
+T*
+(- The learner must understand hardware, software, input, processing, storage, and output) Tj
+T*
+(because it controls how questions in Computer Basics are answered correctly.) Tj
+T*
+(- A strong answer in Computer Basics uses the correct logical procedure and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Tracing how data enters, is processed, and is displayed is the type of application) Tj
+T*
+(that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Computer Basics.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind hardware, software, input,) Tj
+T*
+(processing, storage, and output.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -151,6 +197,19 @@ T*
 T*
 (1. Choose a second example that still focuses on identifying system components and their) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2392 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (functions.) Tj
 T*
 (2. Break the task into smaller parts and link each part to the rule being used.) Tj
@@ -160,6 +219,26 @@ T*
 (it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Computer Basics: The main topic being studied, understood here as computer basics) Tj
+T*
+(introduce the major parts of a computer and what each part does.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: hardware,) Tj
+T*
+(software, input, processing, storage, and output.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as tracing how) Tj
+T*
+(data enters, is processed, and is displayed.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example mixing hardware) Tj
+T*
+(devices with software programs.) Tj
 T*
 () Tj
 T*
@@ -179,7 +258,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Computer Basics mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains hardware, software, input, processing, storage, and) Tj
+T*
+(output most clearly?) Tj
+T*
+(- Why is tracing how data enters, is processed, and is displayed a good example for) Tj
+T*
+(studying Computer Basics?) Tj
+T*
+(- How would you avoid the mistake described as mixing hardware devices with software) Tj
+T*
+(programs?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Computer Basics in your own words after studying it.) Tj
 T*
@@ -200,17 +297,17 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 1052 >>
+10 0 obj
+<< /Length 1054 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Computer Basics and describe how it fits into Computer) Tj
 T*
@@ -247,23 +344,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002466 00000 n 
-0000002592 00000 n 
-0000004955 00000 n 
-0000005081 00000 n 
-0000006185 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002564 00000 n 
+0000002691 00000 n 
+0000005450 00000 n 
+0000005577 00000 n 
+0000008021 00000 n 
+0000008149 00000 n 
+0000009256 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6255
+9327
 %%EOF

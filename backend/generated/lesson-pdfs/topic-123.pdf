@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2258 >>
+<< /Length 2356 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -48,74 +48,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(JavaScript adds interactivity and logic to web pages. In Computer Science, students do) Tj
+(JavaScript adds interactivity and logic to web pages. In a textbook lesson, the first) Tj
 T*
-(better when they understand not only the definition of JavaScript, but also the) Tj
+(goal is to make the computing concept clear. Students should be able to explain what) Tj
 T*
-(language, symbols, and patterns that appear whenever this topic is tested.) Tj
+(JavaScript means, identify where it appears in Computer Science, and describe the main) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in JavaScript is variables, functions, events, and DOM updates. A) Tj
-T*
-(strong explanation should show the idea clearly, connect it to prior knowledge, and then) Tj
-T*
-(walk through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for JavaScript is making a button change text on a page.) Tj
+(The central focus in JavaScript is variables, functions, events, and DOM updates. This) Tj
 T*
-(When students can talk through that kind of example slowly and correctly, they usually) Tj
+(means students must move beyond the overview and understand how the idea actually works.) Tj
 T*
-(find it much easier to transfer the same reasoning to new questions.) Tj
+(A strong explanation should unpack the rules, relationships, or patterns behind) Tj
 T*
-() Tj
+(JavaScript and show how those ideas guide correct answers. In Computer Science, success) Tj
 T*
-(Why Students Find It Difficult) Tj
+(usually depends on understanding the commands, structure, and logic that belong to the) Tj
 T*
-(One frequent problem in JavaScript is mixing string and number operations or using the) Tj
-T*
-(wrong selector. Students also struggle when they try to memorize final answers without) Tj
-T*
-(understanding the steps that make the answer valid. Clear explanations, careful) Tj
-T*
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master JavaScript by practising with tasks that) Tj
+(A useful way to teach JavaScript is to connect the explanation directly to making a) Tj
 T*
-(mirror simple interactive webpage tasks. The topic becomes more meaningful when it is) Tj
+(button change text on a page. That kind of system or code example shows students how the) Tj
+T*
+(topic moves from theory into use. At this stage, the learner should be able to state the) Tj
+T*
+(relevant rule or principle, explain why it fits the question, and then apply the logical) Tj
+T*
+(procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in JavaScript is mixing string and number operations or using the) Tj
+T*
+(wrong selector. This matters because many learners can repeat a definition but still) Tj
+T*
+(fail to use it correctly. A real textbook lesson should therefore point out not only the) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2361 >>
+<< /Length 2561 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(linked to examples, revision drills, and exam-style questions that reflect how Computer) Tj
+(correct method, but also the exact place where students often go wrong. Learning) Tj
 T*
-(Science is assessed.) Tj
+(improves when the student compares correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect simple interactive webpage tasks. The most effective habit is to read) Tj
+T*
+(the worked example slowly, restate each step in simple words, and then attempt a similar) Tj
+T*
+(question alone. This turns JavaScript into something the student can genuinely study and) Tj
+T*
+(understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- JavaScript should first be understood as a computing concept before it is treated as) Tj
+T*
+(an exam topic.) Tj
+T*
+(- The learner must understand variables, functions, events, and DOM updates because it) Tj
+T*
+(controls how questions in JavaScript are answered correctly.) Tj
+T*
+(- A strong answer in JavaScript uses the correct logical procedure and explains why that) Tj
+T*
+(method fits the task.) Tj
+T*
+(- Making a button change text on a page is the type of application that helps move the) Tj
+T*
+(topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to JavaScript.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind variables, functions, events,) Tj
+T*
+(and DOM updates.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,6 +197,39 @@ T*
 T*
 () Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2444 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(Lesson Vocabulary) Tj
+T*
+(- JavaScript: The main topic being studied, understood here as javascript adds) Tj
+T*
+(interactivity and logic to web pages.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: variables,) Tj
+T*
+(functions, events, and DOM updates.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as making a) Tj
+T*
+(button change text on a page.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example mixing string) Tj
+T*
+(and number operations or using the wrong selector.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of JavaScript: variables, functions, events, and DOM) Tj
@@ -165,7 +246,23 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does JavaScript mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains variables, functions, events, and DOM updates most) Tj
+T*
+(clearly?) Tj
+T*
+(- Why is making a button change text on a page a good example for studying JavaScript?) Tj
+T*
+(- How would you avoid the mistake described as mixing string and number operations or) Tj
+T*
+(using the wrong selector?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of JavaScript in your own words after studying it.) Tj
 T*
@@ -183,7 +280,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of JavaScript and describe how it fits into Computer Science.) Tj
 T*
@@ -200,10 +297,10 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Length 517 >>
 stream
 BT
@@ -227,23 +324,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002569 00000 n 
-0000002695 00000 n 
-0000005108 00000 n 
-0000005234 00000 n 
-0000005802 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002674 00000 n 
+0000002801 00000 n 
+0000005414 00000 n 
+0000005541 00000 n 
+0000008037 00000 n 
+0000008165 00000 n 
+0000008734 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5872
+8805
 %%EOF

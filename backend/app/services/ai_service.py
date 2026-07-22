@@ -9,7 +9,7 @@ from app.services.curriculum_service import get_curated_topic_profile
 
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key) if api_key else None
-CURATED_LESSON_MARKER = "<!-- curated-topic-v2 -->"
+CURATED_LESSON_MARKER = "<!-- curated-topic-v3 -->"
 
 
 def strip_code_fences(content: str) -> str:
@@ -61,6 +61,137 @@ def fallback_lesson_data(
     mistake = curated_profile["mistake"]
     practice = curated_profile["practice"]
 
+    subject_textbook_lens = {
+        "Mathematics": {
+            "concept_label": "mathematical idea",
+            "method_label": "solution method",
+            "evidence_label": "worked calculation",
+            "language_label": "symbols, rules, and steps",
+        },
+        "Physics": {
+            "concept_label": "scientific principle",
+            "method_label": "physical reasoning process",
+            "evidence_label": "scientific example",
+            "language_label": "quantities, units, and relationships",
+        },
+        "Chemistry": {
+            "concept_label": "chemical idea",
+            "method_label": "chemical reasoning process",
+            "evidence_label": "reaction-based example",
+            "language_label": "particles, substances, and reactions",
+        },
+        "Biology": {
+            "concept_label": "biological idea",
+            "method_label": "process explanation",
+            "evidence_label": "life-process example",
+            "language_label": "structures, functions, and processes",
+        },
+        "English": {
+            "concept_label": "language idea",
+            "method_label": "interpretation or writing method",
+            "evidence_label": "language example",
+            "language_label": "meaning, form, and effect",
+        },
+        "Computer Science": {
+            "concept_label": "computing concept",
+            "method_label": "logical procedure",
+            "evidence_label": "system or code example",
+            "language_label": "commands, structure, and logic",
+        },
+    }.get(
+        subject,
+        {
+            "concept_label": "core idea",
+            "method_label": "learning process",
+            "evidence_label": "classroom example",
+            "language_label": "key terms and patterns",
+        },
+    )
+
+    explanation_sections = [
+        {
+            "heading": "1. Introduction To The Topic",
+            "body": (
+                f"{topic_overview} In a textbook lesson, the first goal is to make the {subject_textbook_lens['concept_label']} clear. "
+                f"Students should be able to explain what {topic} means, identify where it appears in {subject}, and describe the "
+                f"main purpose of the topic without relying on memorized sentences."
+            ),
+        },
+        {
+            "heading": "2. Core Teaching",
+            "body": (
+                f"The central focus in {topic} is {focus}. This means students must move beyond the overview and understand how the "
+                f"idea actually works. A strong explanation should unpack the rules, relationships, or patterns behind {topic} and "
+                f"show how those ideas guide correct answers. In {subject}, success usually depends on understanding the "
+                f"{subject_textbook_lens['language_label']} that belong to the topic."
+            ),
+        },
+        {
+            "heading": "3. How The Idea Is Applied",
+            "body": (
+                f"A useful way to teach {topic} is to connect the explanation directly to {example}. That kind of {subject_textbook_lens['evidence_label']} "
+                f"shows students how the topic moves from theory into use. At this stage, the learner should be able to state the relevant rule or principle, "
+                f"explain why it fits the question, and then apply the {subject_textbook_lens['method_label']} with confidence."
+            ),
+        },
+        {
+            "heading": "4. Why Errors Happen",
+            "body": (
+                f"One common difficulty in {topic} is {mistake}. This matters because many learners can repeat a definition but still fail to use it correctly. "
+                f"A real textbook lesson should therefore point out not only the correct method, but also the exact place where students often go wrong. "
+                f"Learning improves when the student compares correct reasoning with incorrect reasoning."
+            ),
+        },
+        {
+            "heading": "5. Independent Study Guidance",
+            "body": (
+                f"For independent study, the learner should revisit the explanation and then practise with tasks that reflect {practice}. "
+                f"The most effective habit is to read the worked example slowly, restate each step in simple words, and then attempt a similar question alone. "
+                f"This turns {topic} into something the student can genuinely study and understand without depending completely on a teacher."
+            ),
+        },
+    ]
+
+    key_points = [
+        f"{topic} should first be understood as a {subject_textbook_lens['concept_label']} before it is treated as an exam topic.",
+        f"The learner must understand {focus} because it controls how questions in {topic} are answered correctly.",
+        f"A strong answer in {topic} uses the correct {subject_textbook_lens['method_label']} and explains why that method fits the task.",
+        f"{example[0].upper() + example[1:]} is the type of application that helps move the topic from explanation to mastery.",
+    ]
+
+    method_steps = [
+        f"Read the question or example and identify the part connected to {topic}.",
+        f"Recall the specific rule, process, or principle behind {focus}.",
+        f"Apply the correct {subject_textbook_lens['method_label']} step by step instead of jumping to the answer.",
+        f"Check the result carefully and confirm that it matches the requirement of the topic.",
+    ]
+
+    glossary = [
+        {
+            "term": topic,
+            "meaning": f"The main topic being studied, understood here as {topic_overview.lower()}",
+        },
+        {
+            "term": "Core Focus",
+            "meaning": f"The main idea the learner must understand in this lesson: {focus}.",
+        },
+        {
+            "term": "Application",
+            "meaning": f"The point where the explanation is used in practice, such as {example}.",
+        },
+        {
+            "term": "Common Error",
+            "meaning": f"A repeated learner difficulty in this topic, for example {mistake}.",
+        },
+    ]
+
+    quick_check = [
+        f"In your own words, what does {topic} mean in {subject}?",
+        f"What part of this lesson explains {focus} most clearly?",
+        f"Why is {example} a good example for studying {topic}?",
+        f"How would you avoid the mistake described as {mistake}?",
+    ]
+
     return {
         "title": f"{topic} Lesson",
         "overview": topic_overview,
@@ -70,28 +201,9 @@ def fallback_lesson_data(
             f"Apply {topic} to examples such as {example}.",
             f"Avoid common errors and build confidence through {practice}.",
         ],
-        "explanation_sections": [
-            {
-                "heading": "What This Topic Means",
-                "body": f"{topic_overview} In {subject}, students do better when they understand not only the definition of {topic}, but also the language, symbols, and patterns that appear whenever this topic is tested.",
-            },
-            {
-                "heading": "Core Explanation",
-                "body": f"The central focus in {topic} is {focus}. A strong explanation should show the idea clearly, connect it to prior knowledge, and then walk through the method students are expected to use whenever they meet this topic in classwork or examination questions.",
-            },
-            {
-                "heading": "Worked Understanding",
-                "body": f"A good classroom illustration for {topic} is {example}. When students can talk through that kind of example slowly and correctly, they usually find it much easier to transfer the same reasoning to new questions.",
-            },
-            {
-                "heading": "Why Students Find It Difficult",
-                "body": f"One frequent problem in {topic} is {mistake}. Students also struggle when they try to memorize final answers without understanding the steps that make the answer valid. Clear explanations, careful checking, and repeated guided practice reduce this difficulty.",
-            },
-            {
-                "heading": "Real Learning Application",
-                "body": f"In real study situations, students master {topic} by practising with tasks that mirror {practice}. The topic becomes more meaningful when it is linked to examples, revision drills, and exam-style questions that reflect how {subject} is assessed.",
-            },
-        ],
+        "explanation_sections": explanation_sections,
+        "key_points": key_points,
+        "method_steps": method_steps,
         "worked_examples": [
             {
                 "title": "Worked Example 1",
@@ -124,6 +236,8 @@ def fallback_lesson_data(
             f"Keep track of mistakes such as {mistake} and write the correction beside each one.",
             f"Revise {topic} regularly so the method behind {focus} becomes familiar.",
         ],
+        "glossary": glossary,
+        "quick_check": quick_check,
         "practice_exercises": [
             f"Explain the overview of {topic} and describe how it fits into {subject}.",
             f"Work through an example based on {example} and explain each step.",
@@ -143,6 +257,13 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
         f"## {section['heading']}\n{section['body']}"
         for section in lesson_data["explanation_sections"]
     )
+    key_points = "\n".join(
+        f"- {item}" for item in lesson_data["key_points"]
+    )
+    method_steps = "\n".join(
+        f"{index}. {step}"
+        for index, step in enumerate(lesson_data["method_steps"], start=1)
+    )
     worked_examples = "\n\n".join(
         "\n".join(
             [f"## {example['title']}"]
@@ -150,11 +271,18 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
         )
         for example in lesson_data["worked_examples"]
     )
+    glossary = "\n".join(
+        f"- **{item['term']}**: {item['meaning']}"
+        for item in lesson_data["glossary"]
+    )
     common_mistakes = "\n".join(
         f"- {item}" for item in lesson_data["common_mistakes"]
     )
     study_tips = "\n".join(
         f"- {item}" for item in lesson_data["study_tips"]
+    )
+    quick_check = "\n".join(
+        f"- {item}" for item in lesson_data["quick_check"]
     )
     practice_exercises = "\n".join(
         f"- {item}" for item in lesson_data["practice_exercises"]
@@ -170,19 +298,31 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
 ## Learning Objectives
 {objectives}
 
-## Detailed Explanation
+## Main Lesson
 {explanation_sections}
+
+## Key Ideas To Remember
+{key_points}
+
+## Step-By-Step Method
+{method_steps}
 
 ## Worked Examples
 {worked_examples}
 
+## Lesson Vocabulary
+{glossary}
+
 ## Common Mistakes
 {common_mistakes}
 
-## Study Tips
+## Quick Check
+{quick_check}
+
+## Study Tips After Reading
 {study_tips}
 
-## Practice Exercises
+## Independent Practice
 {practice_exercises}
 
 ## Summary
@@ -210,8 +350,12 @@ Return valid JSON with these exact keys:
 - overview: string
 - objectives: array of 4 strings
 - explanation_sections: array of 5 objects with keys "heading" and "body"
+- key_points: array of 4 strings
+- method_steps: array of 4 strings
 - worked_examples: array of 2 objects with keys "title" and "steps" where "steps" is an array of 4 strings
+- glossary: array of 4 objects with keys "term" and "meaning"
 - common_mistakes: array of 4 strings
+- quick_check: array of 4 strings
 - study_tips: array of 4 strings
 - practice_exercises: array of 4 strings
 - summary: string
@@ -235,8 +379,12 @@ Do not wrap the JSON in markdown fences.
                 "overview",
                 "objectives",
                 "explanation_sections",
+                "key_points",
+                "method_steps",
                 "worked_examples",
+                "glossary",
                 "common_mistakes",
+                "quick_check",
                 "study_tips",
                 "practice_exercises",
                 "summary",

@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2251 >>
+<< /Length 2428 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -48,72 +48,120 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(SQL is used to query and manage data in relational databases. In Computer Science,) Tj
+(SQL is used to query and manage data in relational databases. In a textbook lesson, the) Tj
 T*
-(students do better when they understand not only the definition of SQL, but also the) Tj
+(first goal is to make the computing concept clear. Students should be able to explain) Tj
 T*
-(language, symbols, and patterns that appear whenever this topic is tested.) Tj
+(what SQL means, identify where it appears in Computer Science, and describe the main) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in SQL is SELECT, INSERT, UPDATE, DELETE, and filtering data. A strong) Tj
-T*
-(explanation should show the idea clearly, connect it to prior knowledge, and then walk) Tj
-T*
-(through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for SQL is writing a query to retrieve students with a) Tj
+(The central focus in SQL is SELECT, INSERT, UPDATE, DELETE, and filtering data. This) Tj
 T*
-(certain score. When students can talk through that kind of example slowly and correctly,) Tj
+(means students must move beyond the overview and understand how the idea actually works.) Tj
 T*
-(they usually find it much easier to transfer the same reasoning to new questions.) Tj
+(A strong explanation should unpack the rules, relationships, or patterns behind SQL and) Tj
 T*
-() Tj
+(show how those ideas guide correct answers. In Computer Science, success usually depends) Tj
 T*
-(Why Students Find It Difficult) Tj
-T*
-(One frequent problem in SQL is forgetting conditions or selecting the wrong field.) Tj
-T*
-(Students also struggle when they try to memorize final answers without understanding the) Tj
-T*
-(steps that make the answer valid. Clear explanations, careful checking, and repeated) Tj
-T*
-(guided practice reduce this difficulty.) Tj
+(on understanding the commands, structure, and logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master SQL by practising with tasks that mirror basic) Tj
+(A useful way to teach SQL is to connect the explanation directly to writing a query to) Tj
 T*
-(query writing. The topic becomes more meaningful when it is linked to examples, revision) Tj
+(retrieve students with a certain score. That kind of system or code example shows) Tj
+T*
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
+T*
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in SQL is forgetting conditions or selecting the wrong field. This) Tj
+T*
+(matters because many learners can repeat a definition but still fail to use it) Tj
+T*
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
+T*
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2263 >>
+<< /Length 2440 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(drills, and exam-style questions that reflect how Computer Science is assessed.) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect basic query writing. The most effective habit is to read the worked) Tj
+T*
+(example slowly, restate each step in simple words, and then attempt a similar question) Tj
+T*
+(alone. This turns SQL into something the student can genuinely study and understand) Tj
+T*
+(without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- SQL should first be understood as a computing concept before it is treated as an exam) Tj
+T*
+(topic.) Tj
+T*
+(- The learner must understand SELECT, INSERT, UPDATE, DELETE, and filtering data because) Tj
+T*
+(it controls how questions in SQL are answered correctly.) Tj
+T*
+(- A strong answer in SQL uses the correct logical procedure and explains why that method) Tj
+T*
+(fits the task.) Tj
+T*
+(- Writing a query to retrieve students with a certain score is the type of application) Tj
+T*
+(that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to SQL.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind SELECT, INSERT, UPDATE,) Tj
+T*
+(DELETE, and filtering data.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,6 +197,39 @@ T*
 T*
 () Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2386 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(Lesson Vocabulary) Tj
+T*
+(- SQL: The main topic being studied, understood here as sql is used to query and manage) Tj
+T*
+(data in relational databases.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: SELECT, INSERT,) Tj
+T*
+(UPDATE, DELETE, and filtering data.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as writing a) Tj
+T*
+(query to retrieve students with a certain score.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example forgetting) Tj
+T*
+(conditions or selecting the wrong field.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of SQL: SELECT, INSERT, UPDATE, DELETE, and filtering) Tj
@@ -163,7 +244,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does SQL mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains SELECT, INSERT, UPDATE, DELETE, and filtering data) Tj
+T*
+(most clearly?) Tj
+T*
+(- Why is writing a query to retrieve students with a certain score a good example for) Tj
+T*
+(studying SQL?) Tj
+T*
+(- How would you avoid the mistake described as forgetting conditions or selecting the) Tj
+T*
+(wrong field?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of SQL in your own words after studying it.) Tj
 T*
@@ -179,7 +278,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of SQL and describe how it fits into Computer Science.) Tj
 T*
@@ -195,21 +294,21 @@ T*
 T*
 () Tj
 T*
-(Summary) Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 484 >>
+10 0 obj
+<< /Length 500 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(Summary) Tj
+T*
 (SQL is a valuable part of Computer Science. Students perform better when they understand) Tj
 T*
 (SELECT, INSERT, UPDATE, DELETE, and filtering data, learn from examples such as writing) Tj
@@ -223,23 +322,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002562 00000 n 
-0000002688 00000 n 
-0000005003 00000 n 
-0000005129 00000 n 
-0000005664 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002746 00000 n 
+0000002873 00000 n 
+0000005365 00000 n 
+0000005492 00000 n 
+0000007930 00000 n 
+0000008058 00000 n 
+0000008610 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5734
+8681
 %%EOF

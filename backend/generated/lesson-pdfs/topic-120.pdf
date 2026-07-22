@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2209 >>
+<< /Length 2475 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -48,74 +48,120 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
 (C++ is a powerful programming language used for systems and high-performance software.) Tj
 T*
-(In Computer Science, students do better when they understand not only the definition of) Tj
+(In a textbook lesson, the first goal is to make the computing concept clear. Students) Tj
 T*
-(C++, but also the language, symbols, and patterns that appear whenever this topic is) Tj
+(should be able to explain what C++ means, identify where it appears in Computer Science,) Tj
 T*
-(tested.) Tj
-T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in C++ is variables, functions, data types, and program compilation. A) Tj
-T*
-(strong explanation should show the idea clearly, connect it to prior knowledge, and then) Tj
-T*
-(walk through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(and describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for C++ is writing and compiling a simple console program.) Tj
+(The central focus in C++ is variables, functions, data types, and program compilation.) Tj
 T*
-(When students can talk through that kind of example slowly and correctly, they usually) Tj
+(This means students must move beyond the overview and understand how the idea actually) Tj
 T*
-(find it much easier to transfer the same reasoning to new questions.) Tj
+(works. A strong explanation should unpack the rules, relationships, or patterns behind) Tj
 T*
-() Tj
+(C++ and show how those ideas guide correct answers. In Computer Science, success usually) Tj
 T*
-(Why Students Find It Difficult) Tj
-T*
-(One frequent problem in C++ is ignoring semicolons, headers, or data-type rules.) Tj
-T*
-(Students also struggle when they try to memorize final answers without understanding the) Tj
-T*
-(steps that make the answer valid. Clear explanations, careful checking, and repeated) Tj
-T*
-(guided practice reduce this difficulty.) Tj
+(depends on understanding the commands, structure, and logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master C++ by practising with tasks that mirror basic) Tj
+(A useful way to teach C++ is to connect the explanation directly to writing and) Tj
+T*
+(compiling a simple console program. That kind of system or code example shows students) Tj
+T*
+(how the topic moves from theory into use. At this stage, the learner should be able to) Tj
+T*
+(state the relevant rule or principle, explain why it fits the question, and then apply) Tj
+T*
+(the logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in C++ is ignoring semicolons, headers, or data-type rules. This) Tj
+T*
+(matters because many learners can repeat a definition but still fail to use it) Tj
+T*
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
+T*
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2363 >>
+<< /Length 2469 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(C++ syntax and logic. The topic becomes more meaningful when it is linked to examples,) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
-(revision drills, and exam-style questions that reflect how Computer Science is assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect basic C++ syntax and logic. The most effective habit is to read the) Tj
+T*
+(worked example slowly, restate each step in simple words, and then attempt a similar) Tj
+T*
+(question alone. This turns C++ into something the student can genuinely study and) Tj
+T*
+(understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- C++ should first be understood as a computing concept before it is treated as an exam) Tj
+T*
+(topic.) Tj
+T*
+(- The learner must understand variables, functions, data types, and program compilation) Tj
+T*
+(because it controls how questions in C++ are answered correctly.) Tj
+T*
+(- A strong answer in C++ uses the correct logical procedure and explains why that method) Tj
+T*
+(fits the task.) Tj
+T*
+(- Writing and compiling a simple console program is the type of application that helps) Tj
+T*
+(move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to C++.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind variables, functions, data) Tj
+T*
+(types, and program compilation.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,6 +195,39 @@ T*
 T*
 () Tj
 T*
+(Lesson Vocabulary) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2401 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(- C++: The main topic being studied, understood here as c++ is a powerful programming) Tj
+T*
+(language used for systems and high-performance software.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: variables,) Tj
+T*
+(functions, data types, and program compilation.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as writing and) Tj
+T*
+(compiling a simple console program.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example ignoring) Tj
+T*
+(semicolons, headers, or data-type rules.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of C++: variables, functions, data types, and program) Tj
@@ -163,7 +242,23 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does C++ mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains variables, functions, data types, and program) Tj
+T*
+(compilation most clearly?) Tj
+T*
+(- Why is writing and compiling a simple console program a good example for studying C++?) Tj
+T*
+(- How would you avoid the mistake described as ignoring semicolons, headers, or data-) Tj
+T*
+(type rules?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of C++ in your own words after studying it.) Tj
 T*
@@ -181,7 +276,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of C++ and describe how it fits into Computer Science.) Tj
 T*
@@ -197,21 +292,21 @@ T*
 T*
 () Tj
 T*
+(Summary) Tj
+T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 501 >>
+10 0 obj
+<< /Length 485 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Summary) Tj
-T*
 (C++ is a valuable part of Computer Science. Students perform better when they understand) Tj
 T*
 (variables, functions, data types, and program compilation, learn from examples such as) Tj
@@ -225,23 +320,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002520 00000 n 
-0000002646 00000 n 
-0000005061 00000 n 
-0000005187 00000 n 
-0000005739 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002793 00000 n 
+0000002920 00000 n 
+0000005441 00000 n 
+0000005568 00000 n 
+0000008021 00000 n 
+0000008149 00000 n 
+0000008686 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5809
+8757
 %%EOF

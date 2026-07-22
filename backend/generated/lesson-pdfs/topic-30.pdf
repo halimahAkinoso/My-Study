@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2132 >>
+<< /Length 2246 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -52,74 +52,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Networking connects computers so they can share data and resources. In Computer Science,) Tj
+(Networking connects computers so they can share data and resources. In a textbook) Tj
 T*
-(students do better when they understand not only the definition of Networking, but also) Tj
+(lesson, the first goal is to make the computing concept clear. Students should be able) Tj
 T*
-(the language, symbols, and patterns that appear whenever this topic is tested.) Tj
+(to explain what Networking means, identify where it appears in Computer Science, and) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in Networking is network types, devices, and communication basics. A) Tj
-T*
-(strong explanation should show the idea clearly, connect it to prior knowledge, and then) Tj
-T*
-(walk through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for Networking is explaining how computers connect through) Tj
+(The central focus in Networking is network types, devices, and communication basics.) Tj
 T*
-(a router. When students can talk through that kind of example slowly and correctly, they) Tj
+(This means students must move beyond the overview and understand how the idea actually) Tj
 T*
-(usually find it much easier to transfer the same reasoning to new questions.) Tj
+(works. A strong explanation should unpack the rules, relationships, or patterns behind) Tj
 T*
-() Tj
+(Networking and show how those ideas guide correct answers. In Computer Science, success) Tj
 T*
-(Why Students Find It Difficult) Tj
+(usually depends on understanding the commands, structure, and logic that belong to the) Tj
 T*
-(One frequent problem in Networking is confusing the internet with a local network.) Tj
-T*
-(Students also struggle when they try to memorize final answers without understanding the) Tj
-T*
-(steps that make the answer valid. Clear explanations, careful checking, and repeated) Tj
-T*
-(guided practice reduce this difficulty.) Tj
+(topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
+T*
+(A useful way to teach Networking is to connect the explanation directly to explaining) Tj
+T*
+(how computers connect through a router. That kind of system or code example shows) Tj
+T*
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
+T*
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Networking is confusing the internet with a local network. This) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2416 >>
+<< /Length 2736 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(In real study situations, students master Networking by practising with tasks that) Tj
+(matters because many learners can repeat a definition but still fail to use it) Tj
 T*
-(mirror network device and topology questions. The topic becomes more meaningful when it) Tj
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
 T*
-(is linked to examples, revision drills, and exam-style questions that reflect how) Tj
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
-(Computer Science is assessed.) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect network device and topology questions. The most effective habit is to) Tj
+T*
+(read the worked example slowly, restate each step in simple words, and then attempt a) Tj
+T*
+(similar question alone. This turns Networking into something the student can genuinely) Tj
+T*
+(study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Networking should first be understood as a computing concept before it is treated as) Tj
+T*
+(an exam topic.) Tj
+T*
+(- The learner must understand network types, devices, and communication basics because) Tj
+T*
+(it controls how questions in Networking are answered correctly.) Tj
+T*
+(- A strong answer in Networking uses the correct logical procedure and explains why that) Tj
+T*
+(method fits the task.) Tj
+T*
+(- Explaining how computers connect through a router is the type of application that) Tj
+T*
+(helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Networking.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind network types, devices, and) Tj
+T*
+(communication basics.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,6 +197,39 @@ T*
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2320 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Networking: The main topic being studied, understood here as networking connects) Tj
+T*
+(computers so they can share data and resources.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: network types,) Tj
+T*
+(devices, and communication basics.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as explaining) Tj
+T*
+(how computers connect through a router.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example confusing the) Tj
+T*
+(internet with a local network.) Tj
+T*
 () Tj
 T*
 (Common Mistakes) Tj
@@ -167,7 +248,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Networking mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains network types, devices, and communication basics) Tj
+T*
+(most clearly?) Tj
+T*
+(- Why is explaining how computers connect through a router a good example for studying) Tj
+T*
+(Networking?) Tj
+T*
+(- How would you avoid the mistake described as confusing the internet with a local) Tj
+T*
+(network?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Networking in your own words after studying it.) Tj
 T*
@@ -185,7 +284,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Networking and describe how it fits into Computer Science.) Tj
 T*
@@ -195,21 +294,21 @@ T*
 T*
 (- Describe why confusing the internet with a local network causes errors and how to) Tj
 T*
-(avoid it.) Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 612 >>
+10 0 obj
+<< /Length 630 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(avoid it.) Tj
+T*
 (- Answer an exam-style question that focuses on network device and topology questions.) Tj
 T*
 () Tj
@@ -229,23 +328,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002443 00000 n 
-0000002569 00000 n 
-0000005037 00000 n 
-0000005163 00000 n 
-0000005826 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002564 00000 n 
+0000002691 00000 n 
+0000005479 00000 n 
+0000005606 00000 n 
+0000007978 00000 n 
+0000008106 00000 n 
+0000008788 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5896
+8859
 %%EOF

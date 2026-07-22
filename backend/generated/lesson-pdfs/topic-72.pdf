@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2155 >>
+<< /Length 2286 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -50,78 +50,126 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
 (Chemical equilibrium describes reversible reactions where forward and reverse rates) Tj
 T*
-(balance. In Chemistry, students do better when they understand not only the definition) Tj
+(balance. In a textbook lesson, the first goal is to make the chemical idea clear.) Tj
 T*
-(of Equilibrium, but also the language, symbols, and patterns that appear whenever this) Tj
+(Students should be able to explain what Equilibrium means, identify where it appears in) Tj
 T*
-(topic is tested.) Tj
+(Chemistry, and describe the main purpose of the topic without relying on memorized) Tj
+T*
+(sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Equilibrium is dynamic balance and factors that shift equilibrium.) Tj
 T*
-(A strong explanation should show the idea clearly, connect it to prior knowledge, and) Tj
+(This means students must move beyond the overview and understand how the idea actually) Tj
 T*
-(then walk through the method students are expected to use whenever they meet this topic) Tj
+(works. A strong explanation should unpack the rules, relationships, or patterns behind) Tj
 T*
-(in classwork or examination questions.) Tj
+(Equilibrium and show how those ideas guide correct answers. In Chemistry, success) Tj
 T*
-() Tj
+(usually depends on understanding the particles, substances, and reactions that belong to) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Equilibrium is explaining what happens when) Tj
-T*
-(concentration changes. When students can talk through that kind of example slowly and) Tj
-T*
-(correctly, they usually find it much easier to transfer the same reasoning to new) Tj
-T*
-(questions.) Tj
+(the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Equilibrium is thinking equilibrium means the reaction has) Tj
+(A useful way to teach Equilibrium is to connect the explanation directly to explaining) Tj
 T*
-(stopped. Students also struggle when they try to memorize final answers without) Tj
+(what happens when concentration changes. That kind of reaction-based example shows) Tj
 T*
-(understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
 T*
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the chemical reasoning process with confidence.) Tj
 T*
 () Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Equilibrium is thinking equilibrium means the reaction has) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2346 >>
+<< /Length 2692 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Real Learning Application) Tj
+(stopped. This matters because many learners can repeat a definition but still fail to) Tj
 T*
-(In real study situations, students master Equilibrium by practising with tasks that) Tj
+(use it correctly. A real textbook lesson should therefore point out not only the correct) Tj
 T*
-(mirror Le Chatelier style reasoning. The topic becomes more meaningful when it is linked) Tj
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
-(to examples, revision drills, and exam-style questions that reflect how Chemistry is) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
-(assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect Le Chatelier style reasoning. The most effective habit is to read the) Tj
+T*
+(worked example slowly, restate each step in simple words, and then attempt a similar) Tj
+T*
+(question alone. This turns Equilibrium into something the student can genuinely study) Tj
+T*
+(and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Equilibrium should first be understood as a chemical idea before it is treated as an) Tj
+T*
+(exam topic.) Tj
+T*
+(- The learner must understand dynamic balance and factors that shift equilibrium because) Tj
+T*
+(it controls how questions in Equilibrium are answered correctly.) Tj
+T*
+(- A strong answer in Equilibrium uses the correct chemical reasoning process and) Tj
+T*
+(explains why that method fits the task.) Tj
+T*
+(- Explaining what happens when concentration changes is the type of application that) Tj
+T*
+(helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Equilibrium.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind dynamic balance and factors) Tj
+T*
+(that shift equilibrium.) Tj
+T*
+(3. Apply the correct chemical reasoning process step by step instead of jumping to the) Tj
+T*
+(answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,9 +197,42 @@ T*
 T*
 (3. Point out how to avoid thinking equilibrium means the reaction has stopped while) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2342 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (solving it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Equilibrium: The main topic being studied, understood here as chemical equilibrium) Tj
+T*
+(describes reversible reactions where forward and reverse rates balance.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: dynamic balance) Tj
+T*
+(and factors that shift equilibrium.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as explaining) Tj
+T*
+(what happens when concentration changes.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example thinking) Tj
+T*
+(equilibrium means the reaction has stopped.) Tj
 T*
 () Tj
 T*
@@ -171,7 +252,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Equilibrium mean in Chemistry?) Tj
+T*
+(- What part of this lesson explains dynamic balance and factors that shift equilibrium) Tj
+T*
+(most clearly?) Tj
+T*
+(- Why is explaining what happens when concentration changes a good example for studying) Tj
+T*
+(Equilibrium?) Tj
+T*
+(- How would you avoid the mistake described as thinking equilibrium means the reaction) Tj
+T*
+(has stopped?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Equilibrium in your own words after studying it.) Tj
 T*
@@ -189,27 +288,27 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Equilibrium and describe how it fits into Chemistry.) Tj
 T*
 (- Work through an example based on explaining what happens when concentration changes) Tj
 T*
-(and explain each step.) Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 717 >>
+10 0 obj
+<< /Length 748 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(and explain each step.) Tj
+T*
 (- Describe why thinking equilibrium means the reaction has stopped causes errors and how) Tj
 T*
 (to avoid it.) Tj
@@ -233,23 +332,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002466 00000 n 
-0000002592 00000 n 
-0000004990 00000 n 
-0000005116 00000 n 
-0000005884 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002604 00000 n 
+0000002731 00000 n 
+0000005475 00000 n 
+0000005602 00000 n 
+0000007996 00000 n 
+0000008124 00000 n 
+0000008924 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5954
+8995
 %%EOF

@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2326 >>
+<< /Length 2483 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -46,74 +46,120 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(CSS controls the appearance and layout of web pages. In Computer Science, students do) Tj
+(CSS controls the appearance and layout of web pages. In a textbook lesson, the first) Tj
 T*
-(better when they understand not only the definition of CSS, but also the language,) Tj
+(goal is to make the computing concept clear. Students should be able to explain what CSS) Tj
 T*
-(symbols, and patterns that appear whenever this topic is tested.) Tj
+(means, identify where it appears in Computer Science, and describe the main purpose of) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in CSS is selectors, properties, spacing, colors, and layout. A strong) Tj
-T*
-(explanation should show the idea clearly, connect it to prior knowledge, and then walk) Tj
-T*
-(through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for CSS is styling a page with classes and simple layout) Tj
+(The central focus in CSS is selectors, properties, spacing, colors, and layout. This) Tj
 T*
-(rules. When students can talk through that kind of example slowly and correctly, they) Tj
+(means students must move beyond the overview and understand how the idea actually works.) Tj
 T*
-(usually find it much easier to transfer the same reasoning to new questions.) Tj
+(A strong explanation should unpack the rules, relationships, or patterns behind CSS and) Tj
 T*
-() Tj
+(show how those ideas guide correct answers. In Computer Science, success usually depends) Tj
 T*
-(Why Students Find It Difficult) Tj
-T*
-(One frequent problem in CSS is targeting the wrong element or mixing up property names.) Tj
-T*
-(Students also struggle when they try to memorize final answers without understanding the) Tj
-T*
-(steps that make the answer valid. Clear explanations, careful checking, and repeated) Tj
-T*
-(guided practice reduce this difficulty.) Tj
+(on understanding the commands, structure, and logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master CSS by practising with tasks that mirror basic) Tj
+(A useful way to teach CSS is to connect the explanation directly to styling a page with) Tj
 T*
-(styling and layout exercises. The topic becomes more meaningful when it is linked to) Tj
+(classes and simple layout rules. That kind of system or code example shows students how) Tj
 T*
-(examples, revision drills, and exam-style questions that reflect how Computer Science is) Tj
+(the topic moves from theory into use. At this stage, the learner should be able to state) Tj
+T*
+(the relevant rule or principle, explain why it fits the question, and then apply the) Tj
+T*
+(logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in CSS is targeting the wrong element or mixing up property names.) Tj
+T*
+(This matters because many learners can repeat a definition but still fail to use it) Tj
+T*
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
+T*
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
+T*
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2246 >>
+<< /Length 2504 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect basic styling and layout exercises. The most effective habit is to) Tj
+T*
+(read the worked example slowly, restate each step in simple words, and then attempt a) Tj
+T*
+(similar question alone. This turns CSS into something the student can genuinely study) Tj
+T*
+(and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- CSS should first be understood as a computing concept before it is treated as an exam) Tj
+T*
+(topic.) Tj
+T*
+(- The learner must understand selectors, properties, spacing, colors, and layout because) Tj
+T*
+(it controls how questions in CSS are answered correctly.) Tj
+T*
+(- A strong answer in CSS uses the correct logical procedure and explains why that method) Tj
+T*
+(fits the task.) Tj
+T*
+(- Styling a page with classes and simple layout rules is the type of application that) Tj
+T*
+(helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to CSS.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind selectors, properties,) Tj
+T*
+(spacing, colors, and layout.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -147,6 +193,39 @@ T*
 T*
 () Tj
 T*
+(Lesson Vocabulary) Tj
+T*
+(- CSS: The main topic being studied, understood here as css controls the appearance and) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2316 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(layout of web pages.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: selectors,) Tj
+T*
+(properties, spacing, colors, and layout.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as styling a) Tj
+T*
+(page with classes and simple layout rules.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example targeting the) Tj
+T*
+(wrong element or mixing up property names.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of CSS: selectors, properties, spacing, colors, and) Tj
@@ -161,7 +240,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does CSS mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains selectors, properties, spacing, colors, and layout) Tj
+T*
+(most clearly?) Tj
+T*
+(- Why is styling a page with classes and simple layout rules a good example for studying) Tj
+T*
+(CSS?) Tj
+T*
+(- How would you avoid the mistake described as targeting the wrong element or mixing up) Tj
+T*
+(property names?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of CSS in your own words after studying it.) Tj
 T*
@@ -179,7 +276,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of CSS and describe how it fits into Computer Science.) Tj
 T*
@@ -200,10 +297,10 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Length 498 >>
 stream
 BT
@@ -223,23 +320,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002637 00000 n 
-0000002763 00000 n 
-0000005061 00000 n 
-0000005187 00000 n 
-0000005736 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002801 00000 n 
+0000002928 00000 n 
+0000005484 00000 n 
+0000005611 00000 n 
+0000007979 00000 n 
+0000008107 00000 n 
+0000008657 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5806
+8728
 %%EOF

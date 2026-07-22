@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2223 >>
+<< /Length 2304 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -54,78 +54,124 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
 (Software engineering applies planning, design, testing, and maintenance to build quality) Tj
 T*
-(software. In Computer Science, students do better when they understand not only the) Tj
+(software. In a textbook lesson, the first goal is to make the computing concept clear.) Tj
 T*
-(definition of Software Engineering, but also the language, symbols, and patterns that) Tj
+(Students should be able to explain what Software Engineering means, identify where it) Tj
 T*
-(appear whenever this topic is tested.) Tj
+(appears in Computer Science, and describe the main purpose of the topic without relying) Tj
+T*
+(on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Software Engineering is requirements, design, testing, teamwork,) Tj
 T*
-(and lifecycle. A strong explanation should show the idea clearly, connect it to prior) Tj
+(and lifecycle. This means students must move beyond the overview and understand how the) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(idea actually works. A strong explanation should unpack the rules, relationships, or) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(patterns behind Software Engineering and show how those ideas guide correct answers. In) Tj
 T*
-() Tj
+(Computer Science, success usually depends on understanding the commands, structure, and) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Software Engineering is moving from problem definition) Tj
-T*
-(to design and testing. When students can talk through that kind of example slowly and) Tj
-T*
-(correctly, they usually find it much easier to transfer the same reasoning to new) Tj
-T*
-(questions.) Tj
+(logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Software Engineering is treating coding as the only part of) Tj
+(A useful way to teach Software Engineering is to connect the explanation directly to) Tj
 T*
-(software development. Students also struggle when they try to memorize final answers) Tj
+(moving from problem definition to design and testing. That kind of system or code) Tj
 T*
-(without understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(example shows students how the topic moves from theory into use. At this stage, the) Tj
+T*
+(learner should be able to state the relevant rule or principle, explain why it fits the) Tj
+T*
+(question, and then apply the logical procedure with confidence.) Tj
+T*
+() Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2344 >>
+<< /Length 2726 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Software Engineering is treating coding as the only part of) Tj
+T*
+(software development. This matters because many learners can repeat a definition but) Tj
+T*
+(still fail to use it correctly. A real textbook lesson should therefore point out not) Tj
+T*
+(only the correct method, but also the exact place where students often go wrong.) Tj
+T*
+(Learning improves when the student compares correct reasoning with incorrect reasoning.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(5. Independent Study Guidance) Tj
 T*
-(In real study situations, students master Software Engineering by practising with tasks) Tj
+(For independent study, the learner should revisit the explanation and then practise with) Tj
 T*
-(that mirror development lifecycle and team-role questions. The topic becomes more) Tj
+(tasks that reflect development lifecycle and team-role questions. The most effective) Tj
 T*
-(meaningful when it is linked to examples, revision drills, and exam-style questions that) Tj
+(habit is to read the worked example slowly, restate each step in simple words, and then) Tj
 T*
-(reflect how Computer Science is assessed.) Tj
+(attempt a similar question alone. This turns Software Engineering into something the) Tj
+T*
+(student can genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Software Engineering should first be understood as a computing concept before it is) Tj
+T*
+(treated as an exam topic.) Tj
+T*
+(- The learner must understand requirements, design, testing, teamwork, and lifecycle) Tj
+T*
+(because it controls how questions in Software Engineering are answered correctly.) Tj
+T*
+(- A strong answer in Software Engineering uses the correct logical procedure and) Tj
+T*
+(explains why that method fits the task.) Tj
+T*
+(- Moving from problem definition to design and testing is the type of application that) Tj
+T*
+(helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Software Engineering.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind requirements, design, testing,) Tj
+T*
+(teamwork, and lifecycle.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -151,6 +197,19 @@ T*
 T*
 (1. Choose a second example that still focuses on development lifecycle and team-role) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2468 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (questions.) Tj
 T*
 (2. Break the task into smaller parts and link each part to the rule being used.) Tj
@@ -160,6 +219,28 @@ T*
 (solving it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Software Engineering: The main topic being studied, understood here as software) Tj
+T*
+(engineering applies planning, design, testing, and maintenance to build quality) Tj
+T*
+(software.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: requirements,) Tj
+T*
+(design, testing, teamwork, and lifecycle.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as moving from) Tj
+T*
+(problem definition to design and testing.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example treating coding) Tj
+T*
+(as the only part of software development.) Tj
 T*
 () Tj
 T*
@@ -179,7 +260,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Software Engineering mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains requirements, design, testing, teamwork, and) Tj
+T*
+(lifecycle most clearly?) Tj
+T*
+(- Why is moving from problem definition to design and testing a good example for) Tj
+T*
+(studying Software Engineering?) Tj
+T*
+(- How would you avoid the mistake described as treating coding as the only part of) Tj
+T*
+(software development?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Software Engineering in your own words after studying it.) Tj
 T*
@@ -195,22 +294,22 @@ T*
 T*
 (testing, teamwork, and lifecycle becomes familiar.) Tj
 T*
-() Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 1064 >>
+10 0 obj
+<< /Length 1075 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(Practice Exercises) Tj
+() Tj
+T*
+(Independent Practice) Tj
 T*
 (- Explain the overview of Software Engineering and describe how it fits into Computer) Tj
 T*
@@ -247,23 +346,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002534 00000 n 
-0000002660 00000 n 
-0000005056 00000 n 
-0000005182 00000 n 
-0000006298 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002622 00000 n 
+0000002749 00000 n 
+0000005527 00000 n 
+0000005654 00000 n 
+0000008174 00000 n 
+0000008302 00000 n 
+0000009430 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6368
+9501
 %%EOF

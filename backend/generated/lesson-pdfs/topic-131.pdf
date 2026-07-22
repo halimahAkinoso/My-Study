@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2203 >>
+<< /Length 2313 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -50,74 +50,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Algorithms are logical step-by-step procedures for solving problems. In Computer) Tj
+(Algorithms are logical step-by-step procedures for solving problems. In a textbook) Tj
 T*
-(Science, students do better when they understand not only the definition of Algorithms,) Tj
+(lesson, the first goal is to make the computing concept clear. Students should be able) Tj
 T*
-(but also the language, symbols, and patterns that appear whenever this topic is tested.) Tj
+(to explain what Algorithms means, identify where it appears in Computer Science, and) Tj
 T*
-() Tj
-T*
-(Core Explanation) Tj
-T*
-(The central focus in Algorithms is clear instructions, efficiency, and correctness. A) Tj
-T*
-(strong explanation should show the idea clearly, connect it to prior knowledge, and then) Tj
-T*
-(walk through the method students are expected to use whenever they meet this topic in) Tj
-T*
-(classwork or examination questions.) Tj
+(describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Worked Understanding) Tj
+(2. Core Teaching) Tj
 T*
-(A good classroom illustration for Algorithms is writing an algorithm to sort items or) Tj
+(The central focus in Algorithms is clear instructions, efficiency, and correctness. This) Tj
 T*
-(search a list. When students can talk through that kind of example slowly and correctly,) Tj
+(means students must move beyond the overview and understand how the idea actually works.) Tj
 T*
-(they usually find it much easier to transfer the same reasoning to new questions.) Tj
+(A strong explanation should unpack the rules, relationships, or patterns behind) Tj
 T*
-() Tj
+(Algorithms and show how those ideas guide correct answers. In Computer Science, success) Tj
 T*
-(Why Students Find It Difficult) Tj
+(usually depends on understanding the commands, structure, and logic that belong to the) Tj
 T*
-(One frequent problem in Algorithms is leaving steps ambiguous or unordered. Students) Tj
-T*
-(also struggle when they try to memorize final answers without understanding the steps) Tj
-T*
-(that make the answer valid. Clear explanations, careful checking, and repeated guided) Tj
-T*
-(practice reduce this difficulty.) Tj
+(topic.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(In real study situations, students master Algorithms by practising with tasks that) Tj
+(A useful way to teach Algorithms is to connect the explanation directly to writing an) Tj
+T*
+(algorithm to sort items or search a list. That kind of system or code example shows) Tj
+T*
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
+T*
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Algorithms is leaving steps ambiguous or unordered. This) Tj
+T*
+(matters because many learners can repeat a definition but still fail to use it) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2358 >>
+<< /Length 2634 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(mirror algorithm design and tracing. The topic becomes more meaningful when it is linked) Tj
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
 T*
-(to examples, revision drills, and exam-style questions that reflect how Computer Science) Tj
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
-(is assessed.) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect algorithm design and tracing. The most effective habit is to read the) Tj
+T*
+(worked example slowly, restate each step in simple words, and then attempt a similar) Tj
+T*
+(question alone. This turns Algorithms into something the student can genuinely study and) Tj
+T*
+(understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Algorithms should first be understood as a computing concept before it is treated as) Tj
+T*
+(an exam topic.) Tj
+T*
+(- The learner must understand clear instructions, efficiency, and correctness because it) Tj
+T*
+(controls how questions in Algorithms are answered correctly.) Tj
+T*
+(- A strong answer in Algorithms uses the correct logical procedure and explains why that) Tj
+T*
+(method fits the task.) Tj
+T*
+(- Writing an algorithm to sort items or search a list is the type of application that) Tj
+T*
+(helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Algorithms.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind clear instructions,) Tj
+T*
+(efficiency, and correctness.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,6 +197,39 @@ T*
 T*
 () Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2367 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(Lesson Vocabulary) Tj
+T*
+(- Algorithms: The main topic being studied, understood here as algorithms are logical) Tj
+T*
+(step-by-step procedures for solving problems.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: clear) Tj
+T*
+(instructions, efficiency, and correctness.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as writing an) Tj
+T*
+(algorithm to sort items or search a list.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example leaving steps) Tj
+T*
+(ambiguous or unordered.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of Algorithms: clear instructions, efficiency, and) Tj
@@ -165,7 +246,23 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Algorithms mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains clear instructions, efficiency, and correctness most) Tj
+T*
+(clearly?) Tj
+T*
+(- Why is writing an algorithm to sort items or search a list a good example for studying) Tj
+T*
+(Algorithms?) Tj
+T*
+(- How would you avoid the mistake described as leaving steps ambiguous or unordered?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Algorithms in your own words after studying it.) Tj
 T*
@@ -183,7 +280,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Algorithms and describe how it fits into Computer Science.) Tj
 T*
@@ -200,10 +297,10 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Length 493 >>
 stream
 BT
@@ -225,23 +322,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002514 00000 n 
-0000002640 00000 n 
-0000005050 00000 n 
-0000005176 00000 n 
-0000005720 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002631 00000 n 
+0000002758 00000 n 
+0000005444 00000 n 
+0000005571 00000 n 
+0000007990 00000 n 
+0000008118 00000 n 
+0000008663 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5790
+8734
 %%EOF

@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2155 >>
+<< /Length 2282 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -48,74 +48,124 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Understand sound and light waves. In Physics, students do better when they understand) Tj
+(Understand sound and light waves. In a textbook lesson, the first goal is to make the) Tj
 T*
-(not only the definition of Waves, but also the language, symbols, and patterns that) Tj
+(scientific principle clear. Students should be able to explain what Waves means,) Tj
 T*
-(appear whenever this topic is tested.) Tj
+(identify where it appears in Physics, and describe the main purpose of the topic without) Tj
+T*
+(relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Waves is wave properties such as wavelength, frequency, and) Tj
 T*
-(amplitude. A strong explanation should show the idea clearly, connect it to prior) Tj
+(amplitude. This means students must move beyond the overview and understand how the idea) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(actually works. A strong explanation should unpack the rules, relationships, or patterns) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(behind Waves and show how those ideas guide correct answers. In Physics, success usually) Tj
 T*
-() Tj
+(depends on understanding the quantities, units, and relationships that belong to the) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Waves is reading wave features from a diagram. When) Tj
-T*
-(students can talk through that kind of example slowly and correctly, they usually find) Tj
-T*
-(it much easier to transfer the same reasoning to new questions.) Tj
+(topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Waves is confusing amplitude with wavelength. Students also) Tj
+(A useful way to teach Waves is to connect the explanation directly to reading wave) Tj
 T*
-(struggle when they try to memorize final answers without understanding the steps that) Tj
+(features from a diagram. That kind of scientific example shows students how the topic) Tj
 T*
-(make the answer valid. Clear explanations, careful checking, and repeated guided) Tj
+(moves from theory into use. At this stage, the learner should be able to state the) Tj
 T*
-(practice reduce this difficulty.) Tj
+(relevant rule or principle, explain why it fits the question, and then apply the) Tj
+T*
+(physical reasoning process with confidence.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(4. Why Errors Happen) Tj
 T*
-(In real study situations, students master Waves by practising with tasks that mirror) Tj
+(One common difficulty in Waves is confusing amplitude with wavelength. This matters) Tj
 T*
-(wave terms and calculations. The topic becomes more meaningful when it is linked to) Tj
+(because many learners can repeat a definition but still fail to use it correctly. A real) Tj
+T*
+(textbook lesson should therefore point out not only the correct method, but also the) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2315 >>
+<< /Length 2528 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(examples, revision drills, and exam-style questions that reflect how Physics is) Tj
+(exact place where students often go wrong. Learning improves when the student compares) Tj
 T*
-(assessed.) Tj
+(correct reasoning with incorrect reasoning.) Tj
+T*
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect wave terms and calculations. The most effective habit is to read the) Tj
+T*
+(worked example slowly, restate each step in simple words, and then attempt a similar) Tj
+T*
+(question alone. This turns Waves into something the student can genuinely study and) Tj
+T*
+(understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Waves should first be understood as a scientific principle before it is treated as an) Tj
+T*
+(exam topic.) Tj
+T*
+(- The learner must understand wave properties such as wavelength, frequency, and) Tj
+T*
+(amplitude because it controls how questions in Waves are answered correctly.) Tj
+T*
+(- A strong answer in Waves uses the correct physical reasoning process and explains why) Tj
+T*
+(that method fits the task.) Tj
+T*
+(- Reading wave features from a diagram is the type of application that helps move the) Tj
+T*
+(topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Waves.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind wave properties such as) Tj
+T*
+(wavelength, frequency, and amplitude.) Tj
+T*
+(3. Apply the correct physical reasoning process step by step instead of jumping to the) Tj
+T*
+(answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -147,6 +197,39 @@ T*
 T*
 () Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2369 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
+(Lesson Vocabulary) Tj
+T*
+(- Waves: The main topic being studied, understood here as understand sound and light) Tj
+T*
+(waves.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: wave properties) Tj
+T*
+(such as wavelength, frequency, and amplitude.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as reading wave) Tj
+T*
+(features from a diagram.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example confusing) Tj
+T*
+(amplitude with wavelength.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of Waves: wave properties such as wavelength,) Tj
@@ -161,7 +244,21 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Waves mean in Physics?) Tj
+T*
+(- What part of this lesson explains wave properties such as wavelength, frequency, and) Tj
+T*
+(amplitude most clearly?) Tj
+T*
+(- Why is reading wave features from a diagram a good example for studying Waves?) Tj
+T*
+(- How would you avoid the mistake described as confusing amplitude with wavelength?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Waves in your own words after studying it.) Tj
 T*
@@ -179,7 +276,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Waves and describe how it fits into Physics.) Tj
 T*
@@ -200,10 +297,10 @@ T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
+10 0 obj
 << /Length 364 >>
 stream
 BT
@@ -221,23 +318,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002466 00000 n 
-0000002592 00000 n 
-0000004959 00000 n 
-0000005085 00000 n 
-0000005500 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002600 00000 n 
+0000002727 00000 n 
+0000005307 00000 n 
+0000005434 00000 n 
+0000007855 00000 n 
+0000007983 00000 n 
+0000008399 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5570
+8470
 %%EOF

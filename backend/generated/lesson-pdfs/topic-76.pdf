@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2138 >>
+<< /Length 2333 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -50,76 +50,124 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Gas laws connect pressure, volume, and temperature in gases. In Chemistry, students do) Tj
+(Gas laws connect pressure, volume, and temperature in gases. In a textbook lesson, the) Tj
 T*
-(better when they understand not only the definition of Gas Laws, but also the language,) Tj
+(first goal is to make the chemical idea clear. Students should be able to explain what) Tj
 T*
-(symbols, and patterns that appear whenever this topic is tested.) Tj
+(Gas Laws means, identify where it appears in Chemistry, and describe the main purpose of) Tj
+T*
+(the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Gas Laws is relationships between gas variables and interpreting) Tj
 T*
-(experiments. A strong explanation should show the idea clearly, connect it to prior) Tj
+(experiments. This means students must move beyond the overview and understand how the) Tj
 T*
-(knowledge, and then walk through the method students are expected to use whenever they) Tj
+(idea actually works. A strong explanation should unpack the rules, relationships, or) Tj
 T*
-(meet this topic in classwork or examination questions.) Tj
+(patterns behind Gas Laws and show how those ideas guide correct answers. In Chemistry,) Tj
 T*
-() Tj
+(success usually depends on understanding the particles, substances, and reactions that) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Gas Laws is explaining what happens to gas volume when) Tj
-T*
-(temperature rises. When students can talk through that kind of example slowly and) Tj
-T*
-(correctly, they usually find it much easier to transfer the same reasoning to new) Tj
-T*
-(questions.) Tj
+(belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Gas Laws is mixing up direct and inverse relationships. Students) Tj
+(A useful way to teach Gas Laws is to connect the explanation directly to explaining what) Tj
 T*
-(also struggle when they try to memorize final answers without understanding the steps) Tj
+(happens to gas volume when temperature rises. That kind of reaction-based example shows) Tj
 T*
-(that make the answer valid. Clear explanations, careful checking, and repeated guided) Tj
+(students how the topic moves from theory into use. At this stage, the learner should be) Tj
 T*
-(practice reduce this difficulty.) Tj
+(able to state the relevant rule or principle, explain why it fits the question, and then) Tj
+T*
+(apply the chemical reasoning process with confidence.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Gas Laws is mixing up direct and inverse relationships. This) Tj
+T*
+(matters because many learners can repeat a definition but still fail to use it) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2441 >>
+<< /Length 2658 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(In real study situations, students master Gas Laws by practising with tasks that mirror) Tj
+(correctly. A real textbook lesson should therefore point out not only the correct) Tj
 T*
-(Boyle's and Charles' law reasoning. The topic becomes more meaningful when it is linked) Tj
+(method, but also the exact place where students often go wrong. Learning improves when) Tj
 T*
-(to examples, revision drills, and exam-style questions that reflect how Chemistry is) Tj
+(the student compares correct reasoning with incorrect reasoning.) Tj
 T*
-(assessed.) Tj
+() Tj
+T*
+(5. Independent Study Guidance) Tj
+T*
+(For independent study, the learner should revisit the explanation and then practise with) Tj
+T*
+(tasks that reflect Boyle's and Charles' law reasoning. The most effective habit is to) Tj
+T*
+(read the worked example slowly, restate each step in simple words, and then attempt a) Tj
+T*
+(similar question alone. This turns Gas Laws into something the student can genuinely) Tj
+T*
+(study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Gas Laws should first be understood as a chemical idea before it is treated as an exam) Tj
+T*
+(topic.) Tj
+T*
+(- The learner must understand relationships between gas variables and interpreting) Tj
+T*
+(experiments because it controls how questions in Gas Laws are answered correctly.) Tj
+T*
+(- A strong answer in Gas Laws uses the correct chemical reasoning process and explains) Tj
+T*
+(why that method fits the task.) Tj
+T*
+(- Explaining what happens to gas volume when temperature rises is the type of) Tj
+T*
+(application that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Gas Laws.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind relationships between gas) Tj
+T*
+(variables and interpreting experiments.) Tj
+T*
+(3. Apply the correct chemical reasoning process step by step instead of jumping to the) Tj
+T*
+(answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -149,7 +197,40 @@ T*
 T*
 (3. Point out how to avoid mixing up direct and inverse relationships while solving it.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2353 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Gas Laws: The main topic being studied, understood here as gas laws connect pressure,) Tj
+T*
+(volume, and temperature in gases.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: relationships) Tj
+T*
+(between gas variables and interpreting experiments.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as explaining) Tj
+T*
+(what happens to gas volume when temperature rises.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example mixing up) Tj
+T*
+(direct and inverse relationships.) Tj
 T*
 () Tj
 T*
@@ -169,7 +250,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Gas Laws mean in Chemistry?) Tj
+T*
+(- What part of this lesson explains relationships between gas variables and interpreting) Tj
+T*
+(experiments most clearly?) Tj
+T*
+(- Why is explaining what happens to gas volume when temperature rises a good example for) Tj
+T*
+(studying Gas Laws?) Tj
+T*
+(- How would you avoid the mistake described as mixing up direct and inverse) Tj
+T*
+(relationships?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Gas Laws in your own words after studying it.) Tj
 T*
@@ -187,7 +286,7 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Gas Laws and describe how it fits into Chemistry.) Tj
 T*
@@ -195,21 +294,21 @@ T*
 T*
 (temperature rises and explain each step.) Tj
 T*
-(- Describe why mixing up direct and inverse relationships causes errors and how to avoid) Tj
-T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 635 >>
+10 0 obj
+<< /Length 732 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(- Describe why mixing up direct and inverse relationships causes errors and how to avoid) Tj
+T*
 (it.) Tj
 T*
 (- Answer an exam-style question that focuses on Boyle's and Charles' law reasoning.) Tj
@@ -231,23 +330,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002449 00000 n 
-0000002575 00000 n 
-0000005068 00000 n 
-0000005194 00000 n 
-0000005880 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002651 00000 n 
+0000002778 00000 n 
+0000005488 00000 n 
+0000005615 00000 n 
+0000008020 00000 n 
+0000008148 00000 n 
+0000008932 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-5950
+9003
 %%EOF

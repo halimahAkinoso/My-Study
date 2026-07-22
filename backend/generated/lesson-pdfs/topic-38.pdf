@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2189 >>
+<< /Length 2334 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -56,78 +56,128 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
 (Quadratic equations involve squared terms and can be solved by factorization, formula,) Tj
 T*
-(or completing the square. In Mathematics, students do better when they understand not) Tj
+(or completing the square. In a textbook lesson, the first goal is to make the) Tj
 T*
-(only the definition of Quadratic Equations, but also the language, symbols, and patterns) Tj
+(mathematical idea clear. Students should be able to explain what Quadratic Equations) Tj
 T*
-(that appear whenever this topic is tested.) Tj
+(means, identify where it appears in Mathematics, and describe the main purpose of the) Tj
+T*
+(topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Quadratic Equations is recognizing quadratic form and selecting a) Tj
 T*
-(suitable solving method. A strong explanation should show the idea clearly, connect it) Tj
+(suitable solving method. This means students must move beyond the overview and) Tj
 T*
-(to prior knowledge, and then walk through the method students are expected to use) Tj
+(understand how the idea actually works. A strong explanation should unpack the rules,) Tj
 T*
-(whenever they meet this topic in classwork or examination questions.) Tj
+(relationships, or patterns behind Quadratic Equations and show how those ideas guide) Tj
 T*
-() Tj
+(correct answers. In Mathematics, success usually depends on understanding the symbols,) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Quadratic Equations is solving a quadratic by) Tj
-T*
-(factorization and checking the roots. When students can talk through that kind of) Tj
-T*
-(example slowly and correctly, they usually find it much easier to transfer the same) Tj
-T*
-(reasoning to new questions.) Tj
+(rules, and steps that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Quadratic Equations is sign errors while factorizing or misusing) Tj
+(A useful way to teach Quadratic Equations is to connect the explanation directly to) Tj
 T*
-(the quadratic formula. Students also struggle when they try to memorize final answers) Tj
+(solving a quadratic by factorization and checking the roots. That kind of worked) Tj
+T*
+(calculation shows students how the topic moves from theory into use. At this stage, the) Tj
+T*
+(learner should be able to state the relevant rule or principle, explain why it fits the) Tj
+T*
+(question, and then apply the solution method with confidence.) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2423 >>
+<< /Length 2612 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(without understanding the steps that make the answer valid. Clear explanations, careful) Tj
+() Tj
 T*
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Quadratic Equations is sign errors while factorizing or) Tj
+T*
+(misusing the quadratic formula. This matters because many learners can repeat a) Tj
+T*
+(definition but still fail to use it correctly. A real textbook lesson should therefore) Tj
+T*
+(point out not only the correct method, but also the exact place where students often go) Tj
+T*
+(wrong. Learning improves when the student compares correct reasoning with incorrect) Tj
+T*
+(reasoning.) Tj
 T*
 () Tj
 T*
-(Real Learning Application) Tj
+(5. Independent Study Guidance) Tj
 T*
-(In real study situations, students master Quadratic Equations by practising with tasks) Tj
+(For independent study, the learner should revisit the explanation and then practise with) Tj
 T*
-(that mirror solving and interpreting roots of quadratics. The topic becomes more) Tj
+(tasks that reflect solving and interpreting roots of quadratics. The most effective) Tj
 T*
-(meaningful when it is linked to examples, revision drills, and exam-style questions that) Tj
+(habit is to read the worked example slowly, restate each step in simple words, and then) Tj
 T*
-(reflect how Mathematics is assessed.) Tj
+(attempt a similar question alone. This turns Quadratic Equations into something the) Tj
+T*
+(student can genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Quadratic Equations should first be understood as a mathematical idea before it is) Tj
+T*
+(treated as an exam topic.) Tj
+T*
+(- The learner must understand recognizing quadratic form and selecting a suitable) Tj
+T*
+(solving method because it controls how questions in Quadratic Equations are answered) Tj
+T*
+(correctly.) Tj
+T*
+(- A strong answer in Quadratic Equations uses the correct solution method and explains) Tj
+T*
+(why that method fits the task.) Tj
+T*
+(- Solving a quadratic by factorization and checking the roots is the type of application) Tj
+T*
+(that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Quadratic Equations.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind recognizing quadratic form and) Tj
+T*
+(selecting a suitable solving method.) Tj
+T*
+(3. Apply the correct solution method step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -147,6 +197,19 @@ T*
 T*
 (reasoning.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2441 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (4. Check the final answer and explain why it is correct.) Tj
 T*
 () Tj
@@ -167,6 +230,28 @@ T*
 T*
 () Tj
 T*
+(Lesson Vocabulary) Tj
+T*
+(- Quadratic Equations: The main topic being studied, understood here as quadratic) Tj
+T*
+(equations involve squared terms and can be solved by factorization, formula, or) Tj
+T*
+(completing the square.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: recognizing) Tj
+T*
+(quadratic form and selecting a suitable solving method.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as solving a) Tj
+T*
+(quadratic by factorization and checking the roots.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example sign errors) Tj
+T*
+(while factorizing or misusing the quadratic formula.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of Quadratic Equations: recognizing quadratic form and) Tj
@@ -183,7 +268,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Quadratic Equations mean in Mathematics?) Tj
+T*
+(- What part of this lesson explains recognizing quadratic form and selecting a suitable) Tj
+T*
+(solving method most clearly?) Tj
+T*
+(- Why is solving a quadratic by factorization and checking the roots a good example for) Tj
+T*
+(studying Quadratic Equations?) Tj
+T*
+(- How would you avoid the mistake described as sign errors while factorizing or misusing) Tj
+T*
+(the quadratic formula?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Quadratic Equations in your own words after studying it.) Tj
 T*
@@ -191,30 +294,30 @@ T*
 T*
 (trying harder tasks.) Tj
 T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 1409 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (- Keep track of mistakes such as sign errors while factorizing or misusing the quadratic) Tj
 T*
 (formula and write the correction beside each one.) Tj
 T*
 (- Revise Quadratic Equations regularly so the method behind recognizing quadratic form) Tj
 T*
-ET
-endstream
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
-endobj
-8 0 obj
-<< /Length 1157 >>
-stream
-BT
-/F1 12 Tf
-50 780 Td
-14 TL
 (and selecting a suitable solving method becomes familiar.) Tj
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Quadratic Equations and describe how it fits into Mathematics.) Tj
 T*
@@ -249,23 +352,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002500 00000 n 
-0000002626 00000 n 
-0000005101 00000 n 
-0000005227 00000 n 
-0000006436 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002652 00000 n 
+0000002779 00000 n 
+0000005443 00000 n 
+0000005570 00000 n 
+0000008063 00000 n 
+0000008191 00000 n 
+0000009653 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6506
+9724
 %%EOF

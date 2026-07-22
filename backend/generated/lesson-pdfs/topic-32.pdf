@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2220 >>
+<< /Length 2325 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -52,78 +52,122 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Probability measures how likely events are and helps students reason about chance. In) Tj
+(Probability measures how likely events are and helps students reason about chance. In a) Tj
 T*
-(Mathematics, students do better when they understand not only the definition of) Tj
+(textbook lesson, the first goal is to make the mathematical idea clear. Students should) Tj
 T*
-(Probability, but also the language, symbols, and patterns that appear whenever this) Tj
+(be able to explain what Probability means, identify where it appears in Mathematics, and) Tj
 T*
-(topic is tested.) Tj
+(describe the main purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Probability is sample spaces, favorable outcomes, and probability) Tj
 T*
-(rules. A strong explanation should show the idea clearly, connect it to prior knowledge,) Tj
+(rules. This means students must move beyond the overview and understand how the idea) Tj
 T*
-(and then walk through the method students are expected to use whenever they meet this) Tj
+(actually works. A strong explanation should unpack the rules, relationships, or patterns) Tj
 T*
-(topic in classwork or examination questions.) Tj
+(behind Probability and show how those ideas guide correct answers. In Mathematics,) Tj
 T*
-() Tj
+(success usually depends on understanding the symbols, rules, and steps that belong to) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Probability is finding the probability of drawing a) Tj
-T*
-(particular card or rolling a number. When students can talk through that kind of example) Tj
-T*
-(slowly and correctly, they usually find it much easier to transfer the same reasoning to) Tj
-T*
-(new questions.) Tj
+(the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Probability is counting outcomes incorrectly or forgetting total) Tj
+(A useful way to teach Probability is to connect the explanation directly to finding the) Tj
 T*
-(outcomes. Students also struggle when they try to memorize final answers without) Tj
+(probability of drawing a particular card or rolling a number. That kind of worked) Tj
 T*
-(understanding the steps that make the answer valid. Clear explanations, careful) Tj
+(calculation shows students how the topic moves from theory into use. At this stage, the) Tj
 T*
-(checking, and repeated guided practice reduce this difficulty.) Tj
+(learner should be able to state the relevant rule or principle, explain why it fits the) Tj
+T*
+(question, and then apply the solution method with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
+T*
+(One common difficulty in Probability is counting outcomes incorrectly or forgetting) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2279 >>
+<< /Length 2697 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(total outcomes. This matters because many learners can repeat a definition but still) Tj
+T*
+(fail to use it correctly. A real textbook lesson should therefore point out not only the) Tj
+T*
+(correct method, but also the exact place where students often go wrong. Learning) Tj
+T*
+(improves when the student compares correct reasoning with incorrect reasoning.) Tj
+T*
 () Tj
 T*
-(Real Learning Application) Tj
+(5. Independent Study Guidance) Tj
 T*
-(In real study situations, students master Probability by practising with tasks that) Tj
+(For independent study, the learner should revisit the explanation and then practise with) Tj
 T*
-(mirror simple events, combined events, and complements. The topic becomes more) Tj
+(tasks that reflect simple events, combined events, and complements. The most effective) Tj
 T*
-(meaningful when it is linked to examples, revision drills, and exam-style questions that) Tj
+(habit is to read the worked example slowly, restate each step in simple words, and then) Tj
 T*
-(reflect how Mathematics is assessed.) Tj
+(attempt a similar question alone. This turns Probability into something the student can) Tj
+T*
+(genuinely study and understand without depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Probability should first be understood as a mathematical idea before it is treated as) Tj
+T*
+(an exam topic.) Tj
+T*
+(- The learner must understand sample spaces, favorable outcomes, and probability rules) Tj
+T*
+(because it controls how questions in Probability are answered correctly.) Tj
+T*
+(- A strong answer in Probability uses the correct solution method and explains why that) Tj
+T*
+(method fits the task.) Tj
+T*
+(- Finding the probability of drawing a particular card or rolling a number is the type) Tj
+T*
+(of application that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Probability.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind sample spaces, favorable) Tj
+T*
+(outcomes, and probability rules.) Tj
+T*
+(3. Apply the correct solution method step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -153,11 +197,44 @@ T*
 T*
 (2. Break the task into smaller parts and link each part to the rule being used.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2456 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (3. Point out how to avoid counting outcomes incorrectly or forgetting total outcomes) Tj
 T*
 (while solving it.) Tj
 T*
 (4. Review the result and connect it back to the topic overview.) Tj
+T*
+() Tj
+T*
+(Lesson Vocabulary) Tj
+T*
+(- Probability: The main topic being studied, understood here as probability measures how) Tj
+T*
+(likely events are and helps students reason about chance.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: sample spaces,) Tj
+T*
+(favorable outcomes, and probability rules.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as finding the) Tj
+T*
+(probability of drawing a particular card or rolling a number.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example counting) Tj
+T*
+(outcomes incorrectly or forgetting total outcomes.) Tj
 T*
 () Tj
 T*
@@ -177,7 +254,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Probability mean in Mathematics?) Tj
+T*
+(- What part of this lesson explains sample spaces, favorable outcomes, and probability) Tj
+T*
+(rules most clearly?) Tj
+T*
+(- Why is finding the probability of drawing a particular card or rolling a number a good) Tj
+T*
+(example for studying Probability?) Tj
+T*
+(- How would you avoid the mistake described as counting outcomes incorrectly or) Tj
+T*
+(forgetting total outcomes?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Probability in your own words after studying it.) Tj
 T*
@@ -195,23 +290,23 @@ T*
 T*
 () Tj
 T*
-(Practice Exercises) Tj
+(Independent Practice) Tj
+T*
+(- Explain the overview of Probability and describe how it fits into Mathematics.) Tj
 T*
 ET
 endstream
 endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
 endobj
-8 0 obj
-<< /Length 1051 >>
+10 0 obj
+<< /Length 962 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
-(- Explain the overview of Probability and describe how it fits into Mathematics.) Tj
-T*
 (- Work through an example based on finding the probability of drawing a particular card) Tj
 T*
 (or rolling a number and explain each step.) Tj
@@ -243,23 +338,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002531 00000 n 
-0000002657 00000 n 
-0000004988 00000 n 
-0000005114 00000 n 
-0000006217 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002643 00000 n 
+0000002770 00000 n 
+0000005519 00000 n 
+0000005646 00000 n 
+0000008154 00000 n 
+0000008282 00000 n 
+0000009296 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6287
+9367
 %%EOF

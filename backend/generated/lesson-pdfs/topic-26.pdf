@@ -4,13 +4,13 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 2280 >>
+<< /Length 2291 >>
 stream
 BT
 /F1 12 Tf
@@ -20,7 +20,7 @@ BT
 T*
 () Tj
 T*
-(<!-- curated-topic-v2 -->) Tj
+(<!-- curated-topic-v3 -->) Tj
 T*
 () Tj
 T*
@@ -54,76 +54,130 @@ T*
 T*
 () Tj
 T*
-(Detailed Explanation) Tj
+(Main Lesson) Tj
 T*
-(What This Topic Means) Tj
+(1. Introduction To The Topic) Tj
 T*
-(Introduction to programming concepts. In Computer Science, students do better when they) Tj
+(Introduction to programming concepts. In a textbook lesson, the first goal is to make) Tj
 T*
-(understand not only the definition of Programming Fundamentals, but also the language,) Tj
+(the computing concept clear. Students should be able to explain what Programming) Tj
 T*
-(symbols, and patterns that appear whenever this topic is tested.) Tj
+(Fundamentals means, identify where it appears in Computer Science, and describe the main) Tj
+T*
+(purpose of the topic without relying on memorized sentences.) Tj
 T*
 () Tj
 T*
-(Core Explanation) Tj
+(2. Core Teaching) Tj
 T*
 (The central focus in Programming Fundamentals is the main ideas and methods involved in) Tj
 T*
-(Programming Fundamentals. A strong explanation should show the idea clearly, connect it) Tj
+(Programming Fundamentals. This means students must move beyond the overview and) Tj
 T*
-(to prior knowledge, and then walk through the method students are expected to use) Tj
+(understand how the idea actually works. A strong explanation should unpack the rules,) Tj
 T*
-(whenever they meet this topic in classwork or examination questions.) Tj
+(relationships, or patterns behind Programming Fundamentals and show how those ideas) Tj
 T*
-() Tj
+(guide correct answers. In Computer Science, success usually depends on understanding the) Tj
 T*
-(Worked Understanding) Tj
-T*
-(A good classroom illustration for Programming Fundamentals is a simple classroom example) Tj
-T*
-(involving Programming Fundamentals. When students can talk through that kind of example) Tj
-T*
-(slowly and correctly, they usually find it much easier to transfer the same reasoning to) Tj
-T*
-(new questions.) Tj
+(commands, structure, and logic that belong to the topic.) Tj
 T*
 () Tj
 T*
-(Why Students Find It Difficult) Tj
+(3. How The Idea Is Applied) Tj
 T*
-(One frequent problem in Programming Fundamentals is treating Programming Fundamentals as) Tj
+(A useful way to teach Programming Fundamentals is to connect the explanation directly to) Tj
 T*
-(a memorization task instead of understanding it. Students also struggle when they try to) Tj
+(a simple classroom example involving Programming Fundamentals. That kind of system or) Tj
 T*
-(memorize final answers without understanding the steps that make the answer valid. Clear) Tj
+(code example shows students how the topic moves from theory into use. At this stage, the) Tj
 T*
-(explanations, careful checking, and repeated guided practice reduce this difficulty.) Tj
+(learner should be able to state the relevant rule or principle, explain why it fits the) Tj
+T*
+(question, and then apply the logical procedure with confidence.) Tj
+T*
+() Tj
+T*
+(4. Why Errors Happen) Tj
 T*
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 2486 >>
+<< /Length 2666 >>
 stream
 BT
 /F1 12 Tf
 50 780 Td
 14 TL
+(One common difficulty in Programming Fundamentals is treating Programming Fundamentals) Tj
+T*
+(as a memorization task instead of understanding it. This matters because many learners) Tj
+T*
+(can repeat a definition but still fail to use it correctly. A real textbook lesson) Tj
+T*
+(should therefore point out not only the correct method, but also the exact place where) Tj
+T*
+(students often go wrong. Learning improves when the student compares correct reasoning) Tj
+T*
+(with incorrect reasoning.) Tj
+T*
 () Tj
 T*
-(Real Learning Application) Tj
+(5. Independent Study Guidance) Tj
 T*
-(In real study situations, students master Programming Fundamentals by practising with) Tj
+(For independent study, the learner should revisit the explanation and then practise with) Tj
 T*
-(tasks that mirror short questions that build confidence in Programming Fundamentals. The) Tj
+(tasks that reflect short questions that build confidence in Programming Fundamentals.) Tj
 T*
-(topic becomes more meaningful when it is linked to examples, revision drills, and exam-) Tj
+(The most effective habit is to read the worked example slowly, restate each step in) Tj
 T*
-(style questions that reflect how Computer Science is assessed.) Tj
+(simple words, and then attempt a similar question alone. This turns Programming) Tj
+T*
+(Fundamentals into something the student can genuinely study and understand without) Tj
+T*
+(depending completely on a teacher.) Tj
+T*
+() Tj
+T*
+(Key Ideas To Remember) Tj
+T*
+(- Programming Fundamentals should first be understood as a computing concept before it) Tj
+T*
+(is treated as an exam topic.) Tj
+T*
+(- The learner must understand the main ideas and methods involved in Programming) Tj
+T*
+(Fundamentals because it controls how questions in Programming Fundamentals are answered) Tj
+T*
+(correctly.) Tj
+T*
+(- A strong answer in Programming Fundamentals uses the correct logical procedure and) Tj
+T*
+(explains why that method fits the task.) Tj
+T*
+(- A simple classroom example involving Programming Fundamentals is the type of) Tj
+T*
+(application that helps move the topic from explanation to mastery.) Tj
+T*
+() Tj
+T*
+(Step-By-Step Method) Tj
+T*
+(1. Read the question or example and identify the part connected to Programming) Tj
+T*
+(Fundamentals.) Tj
+T*
+(2. Recall the specific rule, process, or principle behind the main ideas and methods) Tj
+T*
+(involved in Programming Fundamentals.) Tj
+T*
+(3. Apply the correct logical procedure step by step instead of jumping to the answer.) Tj
+T*
+(4. Check the result carefully and confirm that it matches the requirement of the topic.) Tj
 T*
 () Tj
 T*
@@ -143,6 +197,19 @@ T*
 T*
 (reasoning.) Tj
 T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2607 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (4. Check the final answer and explain why it is correct.) Tj
 T*
 () Tj
@@ -163,6 +230,26 @@ T*
 T*
 () Tj
 T*
+(Lesson Vocabulary) Tj
+T*
+(- Programming Fundamentals: The main topic being studied, understood here as) Tj
+T*
+(introduction to programming concepts.) Tj
+T*
+(- Core Focus: The main idea the learner must understand in this lesson: the main ideas) Tj
+T*
+(and methods involved in Programming Fundamentals.) Tj
+T*
+(- Application: The point where the explanation is used in practice, such as a simple) Tj
+T*
+(classroom example involving Programming Fundamentals.) Tj
+T*
+(- Common Error: A repeated learner difficulty in this topic, for example treating) Tj
+T*
+(Programming Fundamentals as a memorization task instead of understanding it.) Tj
+T*
+() Tj
+T*
 (Common Mistakes) Tj
 T*
 (- Misunderstanding the core focus of Programming Fundamentals: the main ideas and) Tj
@@ -179,7 +266,25 @@ T*
 T*
 () Tj
 T*
-(Study Tips) Tj
+(Quick Check) Tj
+T*
+(- In your own words, what does Programming Fundamentals mean in Computer Science?) Tj
+T*
+(- What part of this lesson explains the main ideas and methods involved in Programming) Tj
+T*
+(Fundamentals most clearly?) Tj
+T*
+(- Why is a simple classroom example involving Programming Fundamentals a good example) Tj
+T*
+(for studying Programming Fundamentals?) Tj
+T*
+(- How would you avoid the mistake described as treating Programming Fundamentals as a) Tj
+T*
+(memorization task instead of understanding it?) Tj
+T*
+() Tj
+T*
+(Study Tips After Reading) Tj
 T*
 (- Rewrite the overview of Programming Fundamentals in your own words after studying it.) Tj
 T*
@@ -189,6 +294,19 @@ T*
 T*
 (- Keep track of mistakes such as treating Programming Fundamentals as a memorization) Tj
 T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 1460 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+14 TL
 (task instead of understanding it and write the correction beside each one.) Tj
 T*
 (- Revise Programming Fundamentals regularly so the method behind the main ideas and) Tj
@@ -197,20 +315,7 @@ T*
 T*
 () Tj
 T*
-ET
-endstream
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
-endobj
-8 0 obj
-<< /Length 1203 >>
-stream
-BT
-/F1 12 Tf
-50 780 Td
-14 TL
-(Practice Exercises) Tj
+(Independent Practice) Tj
 T*
 (- Explain the overview of Programming Fundamentals and describe how it fits into) Tj
 T*
@@ -249,23 +354,25 @@ T*
 ET
 endstream
 endobj
-9 0 obj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 10
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000133 00000 n 
-0000000259 00000 n 
-0000002591 00000 n 
-0000002717 00000 n 
-0000005255 00000 n 
-0000005381 00000 n 
-0000006636 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000002609 00000 n 
+0000002736 00000 n 
+0000005454 00000 n 
+0000005581 00000 n 
+0000008240 00000 n 
+0000008368 00000 n 
+0000009881 00000 n 
 trailer
-<< /Size 10 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-6706
+9952
 %%EOF
