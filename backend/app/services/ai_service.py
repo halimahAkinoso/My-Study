@@ -802,3 +802,338 @@ Rules:
 
 def generate_quiz(subject: str, topic: str) -> str:
     return json.dumps(generate_quiz_questions(subject, topic, use_ai=True))
+
+
+def markdown_to_plain_text(markdown: str | None) -> str:
+    if not markdown:
+        return ""
+
+    text = markdown.replace(CURATED_LESSON_MARKER, "")
+    text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
+    text = re.sub(r"\[(.*?)\]\(.*?\)", r"\1", text)
+    text = re.sub(r"^#{1,6}\s*", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s*[-*]\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s*\d+\.\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)
+    text = re.sub(r"`([^`]+)`", r"\1", text)
+    text = re.sub(r"[>\t]", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def split_lesson_sections(markdown: str | None) -> list[dict[str, str]]:
+    if not markdown:
+        return []
+
+    cleaned = markdown.replace(CURATED_LESSON_MARKER, "").strip()
+    matches = list(re.finditer(r"^##\s+(.+?)\s*$", cleaned, flags=re.MULTILINE))
+
+    sections: list[dict[str, str]] = []
+
+    for index, match in enumerate(matches):
+        start = match.end()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(cleaned)
+        heading = match.group(1).strip()
+        content = cleaned[start:end].strip()
+
+        if content:
+            sections.append(
+                {
+                    "heading": heading,
+                    "content": content,
+                }
+            )
+
+    return sections
+
+
+def tokenize_keywords(text: str) -> set[str]:
+    stop_words = {
+        "about",
+        "after",
+        "again",
+        "also",
+        "and",
+        "answer",
+        "because",
+        "before",
+        "could",
+        "does",
+        "from",
+        "have",
+        "into",
+        "just",
+        "lesson",
+        "make",
+        "more",
+        "please",
+        "should",
+        "show",
+        "tell",
+        "than",
+        "that",
+        "their",
+        "them",
+        "then",
+        "there",
+        "these",
+        "they",
+        "this",
+        "topic",
+        "what",
+        "when",
+        "where",
+        "which",
+        "with",
+        "would",
+        "your",
+    }
+
+    return {
+        word
+        for word in re.findall(r"[a-zA-Z]{4,}", text.lower())
+        if word not in stop_words
+    }
+
+
+def get_relevant_lesson_sections(
+    markdown: str | None,
+    question: str,
+    limit: int = 2,
+) -> list[dict[str, str]]:
+    sections = split_lesson_sections(markdown)
+
+    if not sections:
+        return []
+
+    question_terms = tokenize_keywords(question)
+    prioritized_headings = {
+        "summary": {"summary", "revise", "revision", "overview"},
+        "worked examples": {"example", "examples", "solve", "solution"},
+        "review questions": {"question", "questions", "quiz", "test", "practice"},
+        "independent practice": {"question", "questions", "quiz", "test", "practice"},
+        "lesson vocabulary": {"meaning", "define", "definition", "term", "vocabulary"},
+        "step-by-step method": {"steps", "method", "process", "how"},
+    }
+
+    scored_sections = []
+
+    for section in sections:
+        heading = section["heading"]
+        content = section["content"]
+        heading_terms = tokenize_keywords(heading)
+        content_terms = tokenize_keywords(content)
+
+        score = 0
+        score += len(question_terms & heading_terms) * 5
+        score += len(question_terms & content_terms) * 2
+
+        lowered_heading = heading.lower()
+        for section_name, trigger_terms in prioritized_headings.items():
+            if section_name in lowered_heading and question_terms & trigger_terms:
+                score += 6
+
+        if heading in {"Overview", "Lesson Content", "Summary"}:
+            score += 1
+
+        scored_sections.append((score, section))
+
+    scored_sections.sort(key=lambda item: item[0], reverse=True)
+    selected = [section for score, section in scored_sections if score > 0][:limit]
+
+    if selected:
+        return selected
+
+    return sections[:limit]
+
+
+def build_quiz_revision_block(quiz_items) -> str:
+    if not quiz_items:
+        return ""
+
+    revision_lines = []
+
+    for index, item in enumerate(quiz_items[:3], start=1):
+        revision_lines.append(
+            f"{index}. {item.question}\n"
+            f"   - Correct answer: {item.correct_answer}"
+        )
+
+    return "\n".join(revision_lines)
+
+
+def fallback_tutor_response(
+    student_name: str,
+    subject: str,
+    topic: str,
+    message: str,
+    lesson_notes: str | None,
+    quiz_items,
+) -> dict[str, Any]:
+    relevant_sections = get_relevant_lesson_sections(lesson_notes, message)
+    plain_lesson = markdown_to_plain_text(lesson_notes)
+    lowered_message = message.lower()
+
+    opening = f"{student_name}, let's work through {topic} in {subject}."
+    focus_area = (
+        relevant_sections[0]["heading"]
+        if relevant_sections
+        else "Overview"
+    )
+
+    if any(word in lowered_message for word in ["quiz", "test", "practice", "question"]):
+        revision_block = build_quiz_revision_block(quiz_items)
+        reply = (
+            f"{opening}\n\n"
+            "Here are a few checkpoint questions from this topic to practise with:\n\n"
+            f"{revision_block or '1. Review the overview, worked examples, and summary before attempting the quiz.'}\n\n"
+            "Try answering them first on your own, then compare your thinking with the lesson notes."
+        )
+        follow_up_questions = [
+            f"Explain the first {topic} quiz question step by step.",
+            f"Give me another practice question on {topic}.",
+            f"What mistakes should I avoid in {topic} questions?",
+        ]
+    elif any(word in lowered_message for word in ["summary", "summarize", "revision", "revise"]):
+        summary_section = next(
+            (
+                section["content"]
+                for section in split_lesson_sections(lesson_notes)
+                if section["heading"] == "Summary"
+            ),
+            plain_lesson[:700],
+        )
+        reply = (
+            f"{opening}\n\n"
+            "Here is a revision-friendly summary:\n\n"
+            f"{summary_section}\n\n"
+            "Read that first, then return to the worked examples if you need to see the idea in action."
+        )
+        follow_up_questions = [
+            f"Give me a one-minute revision note for {topic}.",
+            f"What are the key ideas to remember in {topic}?",
+            f"Can you turn this summary into flashcards?",
+        ]
+    else:
+        explanation_parts = []
+        for section in relevant_sections:
+            explanation_parts.append(
+                f"**{section['heading']}**\n{section['content']}"
+            )
+
+        if not explanation_parts and plain_lesson:
+            explanation_parts.append(plain_lesson[:900])
+
+        reply = (
+            f"{opening}\n\n"
+            "The lesson content most relevant to your question is:\n\n"
+            f"{chr(10).join(explanation_parts)}\n\n"
+            "If any step feels unclear, ask me to break it down more simply or to give you a fresh example."
+        )
+        follow_up_questions = [
+            f"Explain {topic} in simpler words.",
+            f"Give me a worked example on {topic}.",
+            f"What are the main mistakes students make in {topic}?",
+        ]
+
+    return {
+        "reply": reply,
+        "follow_up_questions": follow_up_questions,
+        "focus_area": focus_area,
+        "used_ai": False,
+    }
+
+
+def generate_tutor_response(
+    student_name: str,
+    subject: str,
+    topic: str,
+    message: str,
+    lesson_notes: str | None,
+    quiz_items,
+    history: list[dict[str, str]] | None = None,
+) -> dict[str, Any]:
+    history = history or []
+    lesson_context = markdown_to_plain_text(lesson_notes)
+    relevant_sections = get_relevant_lesson_sections(lesson_notes, message, limit=3)
+    section_context = "\n\n".join(
+        f"{section['heading']}:\n{markdown_to_plain_text(section['content'])}"
+        for section in relevant_sections
+    )
+    quiz_context = build_quiz_revision_block(quiz_items)
+    recent_history = "\n".join(
+        f"{item['role'].title()}: {item['content']}"
+        for item in history[-6:]
+        if item.get("role") in {"user", "assistant"} and item.get("content")
+    )
+
+    prompt = f"""
+You are a warm, accurate secondary-school tutor helping a student study independently.
+
+Student name: {student_name}
+Subject: {subject}
+Topic: {topic}
+Student question: {message}
+
+Recent conversation:
+{recent_history or "No prior messages."}
+
+Relevant lesson sections:
+{section_context or lesson_context[:3500] or "No lesson notes available."}
+
+Sample quiz checkpoints:
+{quiz_context or "No quiz questions available."}
+
+Return valid JSON with exactly these keys:
+- reply: string
+- follow_up_questions: array of 3 strings
+- focus_area: string
+
+Rules:
+- Teach from the provided lesson context only.
+- Answer like a real tutor, not like a generic chatbot.
+- Give explanation, not just tips.
+- If the student asks for practice, include a short practice prompt or question inside the reply.
+- Keep the tone encouraging and clear.
+- Do not wrap the JSON in markdown fences.
+"""
+
+    raw_response = call_model(
+        prompt,
+        temperature=0.4,
+        max_completion_tokens=1400,
+    )
+
+    if raw_response:
+        try:
+            parsed = json.loads(strip_code_fences(raw_response))
+            reply = parsed.get("reply")
+            follow_up_questions = parsed.get("follow_up_questions")
+            focus_area = parsed.get("focus_area")
+
+            if (
+                isinstance(reply, str)
+                and reply.strip()
+                and isinstance(follow_up_questions, list)
+                and len(follow_up_questions) == 3
+                and all(isinstance(item, str) and item.strip() for item in follow_up_questions)
+                and isinstance(focus_area, str)
+                and focus_area.strip()
+            ):
+                return {
+                    "reply": reply.strip(),
+                    "follow_up_questions": [item.strip() for item in follow_up_questions],
+                    "focus_area": focus_area.strip(),
+                    "used_ai": True,
+                }
+        except Exception:
+            pass
+
+    return fallback_tutor_response(
+        student_name,
+        subject,
+        topic,
+        message,
+        lesson_notes,
+        quiz_items,
+    )

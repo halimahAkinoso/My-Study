@@ -169,6 +169,45 @@ function Lesson() {
 
       <div
         style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "12px",
+          marginBottom: "24px",
+        }}
+      >
+        <button
+          onClick={() => navigate(`/chat?topicId=${topicId}`)}
+          style={{
+            border: "none",
+            background: "#0F766E",
+            color: "#fff",
+            padding: "12px 18px",
+            borderRadius: "10px",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          Ask AI Tutor About This Lesson
+        </button>
+
+        <button
+          onClick={() => navigate(`/quiz/${topicId}`)}
+          style={{
+            border: "1px solid #BFDBFE",
+            background: "#EFF6FF",
+            color: "#1D4ED8",
+            padding: "12px 18px",
+            borderRadius: "10px",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          Practice with Quiz
+        </button>
+      </div>
+
+      <div
+        style={{
           background: "#fff",
           padding: "25px",
           borderRadius: "15px",
