@@ -43,6 +43,7 @@ def enrich_lesson(db: Session, topic: Topic, lesson: Lesson | None = None):
         subject_name,
         topic.title,
         topic.description,
+        use_ai=True,
     )
     notes = build_lesson_markdown(lesson_data)
 

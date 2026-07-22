@@ -5,11 +5,22 @@ from typing import Any
 from urllib.parse import quote_plus
 
 from openai import OpenAI
+from dotenv import load_dotenv
 from app.services.curriculum_service import get_curated_topic_profile
 
+load_dotenv()
+
 api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key) if api_key else None
-CURATED_LESSON_MARKER = "<!-- curated-topic-v3 -->"
+client = (
+    OpenAI(
+        api_key=api_key,
+        max_retries=0,
+        timeout=20,
+    )
+    if api_key
+    else None
+)
+CURATED_LESSON_MARKER = "<!-- curated-topic-v5 -->"
 
 
 def strip_code_fences(content: str) -> str:
@@ -17,6 +28,208 @@ def strip_code_fences(content: str) -> str:
     cleaned = re.sub(r"^```(?:json|markdown)?\s*", "", cleaned)
     cleaned = re.sub(r"\s*```$", "", cleaned)
     return cleaned.strip()
+
+
+def normalize_text_items(items) -> list[str]:
+    normalized: list[str] = []
+
+    if not isinstance(items, list):
+        return normalized
+
+    for item in items:
+        if isinstance(item, str):
+            normalized.append(item)
+        elif isinstance(item, dict):
+            question = item.get("question")
+            answer = item.get("answer")
+            problem = item.get("problem")
+
+            if question and answer:
+                normalized.append(f"{question} Answer: {answer}")
+            elif problem and answer:
+                normalized.append(f"{problem} Answer: {answer}")
+
+    return normalized
+
+
+def normalize_lesson_data(
+    parsed: dict[str, Any],
+    subject: str,
+    topic: str,
+    overview: str | None = None,
+) -> dict[str, Any] | None:
+    if not isinstance(parsed, dict):
+        return None
+
+    title = parsed.get("title")
+    parsed_overview = parsed.get("overview")
+    explanation_sections_raw = parsed.get("explanation_sections")
+    worked_examples_raw = parsed.get("worked_examples")
+
+    if not title or not parsed_overview:
+        return None
+
+    explanation_sections = []
+    if isinstance(explanation_sections_raw, list):
+        for section in explanation_sections_raw:
+            if not isinstance(section, dict):
+                continue
+
+            heading = section.get("heading") or section.get("title")
+            body = section.get("body") or section.get("content")
+
+            if heading and body:
+                explanation_sections.append(
+                    {
+                        "heading": heading,
+                        "body": body,
+                    }
+                )
+
+    worked_examples = []
+    if isinstance(worked_examples_raw, list):
+        for index, example in enumerate(worked_examples_raw, start=1):
+            if not isinstance(example, dict):
+                continue
+
+            steps = example.get("steps")
+            if not isinstance(steps, list):
+                steps = []
+
+            worked_examples.append(
+                {
+                    "title": example.get("title") or f"Worked Example {index}",
+                    "problem": example.get("problem") or "Study the example carefully.",
+                    "steps": [step for step in steps if isinstance(step, str)],
+                    "answer": (
+                        example.get("answer")
+                        or example.get("final_answer")
+                        or "Review the completed method to identify the final result."
+                    ),
+                    "explanation": (
+                        example.get("explanation")
+                        or "This example demonstrates how the method should be applied."
+                    ),
+                }
+            )
+
+    glossary_raw = parsed.get("glossary")
+    glossary = []
+    if isinstance(glossary_raw, dict):
+        glossary = [
+            {
+                "term": key,
+                "meaning": value,
+            }
+            for key, value in glossary_raw.items()
+            if isinstance(key, str) and isinstance(value, str)
+        ]
+    elif isinstance(glossary_raw, list):
+        glossary = [
+            {
+                "term": item.get("term"),
+                "meaning": item.get("meaning"),
+            }
+            for item in glossary_raw
+            if isinstance(item, dict)
+            and item.get("term")
+            and item.get("meaning")
+        ]
+
+    normalized = {
+        "title": title,
+        "overview": parsed_overview,
+        "objectives": normalize_text_items(parsed.get("objectives")) or (
+            parsed.get("objectives") if isinstance(parsed.get("objectives"), list) else []
+        ),
+        "explanation_sections": explanation_sections,
+        "key_points": normalize_text_items(parsed.get("key_points")) or (
+            parsed.get("key_points") if isinstance(parsed.get("key_points"), list) else []
+        ),
+        "method_steps": normalize_text_items(parsed.get("method_steps")) or (
+            parsed.get("method_steps") if isinstance(parsed.get("method_steps"), list) else []
+        ),
+        "worked_examples": worked_examples,
+        "glossary": glossary,
+        "common_mistakes": normalize_text_items(parsed.get("common_mistakes")) or (
+            parsed.get("common_mistakes") if isinstance(parsed.get("common_mistakes"), list) else []
+        ),
+        "quick_check": normalize_text_items(parsed.get("quick_check")),
+        "practice_exercises": normalize_text_items(parsed.get("practice_exercises")),
+        "summary": parsed.get("summary"),
+        "youtube_search_query": parsed.get("youtube_search_query"),
+    }
+
+    required_fields = [
+        normalized["title"],
+        normalized["overview"],
+        normalized["summary"],
+    ]
+
+    if (
+        not all(required_fields)
+        or len(normalized["explanation_sections"]) < 3
+        or len(normalized["worked_examples"]) < 1
+    ):
+        return None
+
+    if len(normalized["objectives"]) < 3:
+        normalized["objectives"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["objectives"]
+
+    if len(normalized["key_points"]) < 3:
+        normalized["key_points"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["key_points"]
+
+    if len(normalized["method_steps"]) < 3:
+        normalized["method_steps"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["method_steps"]
+
+    if len(normalized["glossary"]) < 3:
+        normalized["glossary"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["glossary"]
+
+    if len(normalized["common_mistakes"]) < 3:
+        normalized["common_mistakes"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["common_mistakes"]
+
+    if len(normalized["quick_check"]) < 3:
+        normalized["quick_check"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["quick_check"]
+
+    if len(normalized["practice_exercises"]) < 3:
+        normalized["practice_exercises"] = fallback_lesson_data(
+            subject,
+            topic,
+            overview,
+        )["practice_exercises"]
+
+    if not normalized["youtube_search_query"]:
+        normalized["youtube_search_query"] = get_curated_topic_profile(
+            subject,
+            topic,
+            overview,
+        )["video_query"]
+
+    return normalized
 
 
 def find_youtube_video_url(subject: str, topic: str) -> str:
@@ -28,7 +241,11 @@ def find_youtube_video_url(subject: str, topic: str) -> str:
     )
 
 
-def call_model(prompt: str, temperature: float = 0.5) -> str | None:
+def call_model(
+    prompt: str,
+    temperature: float = 0.5,
+    max_completion_tokens: int = 2200,
+) -> str | None:
     if not client:
         return None
 
@@ -41,8 +258,9 @@ def call_model(prompt: str, temperature: float = 0.5) -> str | None:
                     "content": prompt,
                 }
             ],
+            response_format={"type": "json_object"},
             temperature=temperature,
-            timeout=8,
+            max_completion_tokens=max_completion_tokens,
         )
         return response.choices[0].message.content
     except Exception:
@@ -207,21 +425,27 @@ def fallback_lesson_data(
         "worked_examples": [
             {
                 "title": "Worked Example 1",
+                "problem": f"Study a basic question built around {example}.",
                 "steps": [
                     f"Start with an example based on {example}.",
                     f"Identify the exact idea in {focus} that the question is testing.",
                     f"Apply the correct method for {topic} step by step without skipping reasoning.",
                     "Check the final answer and explain why it is correct.",
                 ],
+                "answer": f"A correct solution will follow the method linked to {focus}.",
+                "explanation": f"This example matters because it shows how {topic} moves from explanation into practical use.",
             },
             {
                 "title": "Worked Example 2",
+                "problem": f"Work through a second example focused on {practice}.",
                 "steps": [
                     f"Choose a second example that still focuses on {practice}.",
                     "Break the task into smaller parts and link each part to the rule being used.",
                     f"Point out how to avoid {mistake} while solving it.",
                     "Review the result and connect it back to the topic overview.",
                 ],
+                "answer": f"The final answer should show that the learner understands both the method and the reason for each step.",
+                "explanation": f"This second example helps the student practise the same idea in a slightly different form.",
             },
         ],
         "common_mistakes": [
@@ -229,12 +453,6 @@ def fallback_lesson_data(
             mistake[0].upper() + mistake[1:] + ".",
             "Jumping to an answer without showing the steps or reasoning clearly.",
             f"Practising {topic} without checking whether the method matches the question being asked.",
-        ],
-        "study_tips": [
-            f"Rewrite the overview of {topic} in your own words after studying it.",
-            f"Use short exercises built around {practice} before trying harder tasks.",
-            f"Keep track of mistakes such as {mistake} and write the correction beside each one.",
-            f"Revise {topic} regularly so the method behind {focus} becomes familiar.",
         ],
         "glossary": glossary,
         "quick_check": quick_check,
@@ -266,8 +484,22 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
     )
     worked_examples = "\n\n".join(
         "\n".join(
-            [f"## {example['title']}"]
-            + [f"{index}. {step}" for index, step in enumerate(example["steps"], start=1)]
+            [
+                f"## {example['title']}",
+                f"**Problem:** {example['problem']}",
+                "",
+                "**Solution Steps**",
+            ]
+            + [
+                f"{index}. {step}"
+                for index, step in enumerate(example["steps"], start=1)
+            ]
+            + [
+                "",
+                f"**Answer:** {example['answer']}",
+                "",
+                f"**Why this works:** {example['explanation']}",
+            ]
         )
         for example in lesson_data["worked_examples"]
     )
@@ -277,9 +509,6 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
     )
     common_mistakes = "\n".join(
         f"- {item}" for item in lesson_data["common_mistakes"]
-    )
-    study_tips = "\n".join(
-        f"- {item}" for item in lesson_data["study_tips"]
     )
     quick_check = "\n".join(
         f"- {item}" for item in lesson_data["quick_check"]
@@ -298,7 +527,7 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
 ## Learning Objectives
 {objectives}
 
-## Main Lesson
+## Lesson Content
 {explanation_sections}
 
 ## Key Ideas To Remember
@@ -316,11 +545,11 @@ def build_lesson_markdown(lesson_data: dict[str, Any]) -> str:
 ## Common Mistakes
 {common_mistakes}
 
-## Quick Check
+## Review Questions
 {quick_check}
 
-## Study Tips After Reading
-{study_tips}
+## Quick Check
+Use the review questions above to confirm your understanding before moving to practice.
 
 ## Independent Practice
 {practice_exercises}
@@ -352,16 +581,18 @@ Return valid JSON with these exact keys:
 - explanation_sections: array of 5 objects with keys "heading" and "body"
 - key_points: array of 4 strings
 - method_steps: array of 4 strings
-- worked_examples: array of 2 objects with keys "title" and "steps" where "steps" is an array of 4 strings
+- worked_examples: array of 2 objects with keys "title", "problem", "steps", "answer", and "explanation" where "steps" is an array of 4 strings
 - glossary: array of 4 objects with keys "term" and "meaning"
 - common_mistakes: array of 4 strings
 - quick_check: array of 4 strings
-- study_tips: array of 4 strings
 - practice_exercises: array of 4 strings
 - summary: string
 - youtube_search_query: string
 
-The lesson should be suitable for secondary school students, detailed, clear, and practical.
+The lesson should read like real textbook material that a student can study independently.
+Focus the biggest part of the answer on teaching the topic itself, not on study advice.
+Each explanation section should contain actual content, definitions, development of ideas, and subject-specific explanation.
+Worked examples must include a real problem, the steps, the final answer, and a brief explanation of why the method works.
 Do not wrap the JSON in markdown fences.
 """
 
@@ -374,24 +605,14 @@ Do not wrap the JSON in markdown fences.
     if raw_response:
         try:
             parsed = json.loads(strip_code_fences(raw_response))
-            required_keys = {
-                "title",
-                "overview",
-                "objectives",
-                "explanation_sections",
-                "key_points",
-                "method_steps",
-                "worked_examples",
-                "glossary",
-                "common_mistakes",
-                "quick_check",
-                "study_tips",
-                "practice_exercises",
-                "summary",
-                "youtube_search_query",
-            }
-            if required_keys.issubset(parsed):
-                return parsed
+            normalized = normalize_lesson_data(
+                parsed,
+                subject,
+                topic,
+                overview,
+            )
+            if normalized:
+                return normalized
         except Exception:
             pass
 
