@@ -33,6 +33,12 @@ export const getCurrentUser = async () => {
     return response.data;
 };
 
+export const updateCurrentUser = async (userData) => {
+    const response = await api.put("/auth/me", userData);
+    setSession(getToken(), response.data.user);
+    return response.data;
+};
+
 export const logout = () => {
     clearSession();
 };

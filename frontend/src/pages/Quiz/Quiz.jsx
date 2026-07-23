@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { getQuiz } from "../../services/quizService";
+import { readStoredItem, LAST_ACTIVE_LESSON_KEY } from "../../utils/dashboardStorage";
+import { recordQuizResult } from "../../utils/studyProgress";
 
 function Quiz() {
   const { topicId } = useParams();
@@ -48,6 +50,21 @@ function Quiz() {
       if (answers[question.id] === question.correct_answer) {
         total++;
       }
+    });
+
+    const percentageScore =
+      questions.length > 0
+        ? Math.round((total / questions.length) * 100)
+        : 0;
+    const storedLesson = readStoredItem(LAST_ACTIVE_LESSON_KEY, {});
+
+    recordQuizResult({
+      topicId: Number(topicId),
+      title: storedLesson.title || "Topic Quiz",
+      subjectName: storedLesson.subjectName || "",
+      score: total,
+      totalQuestions: questions.length,
+      percentage: percentageScore,
     });
 
     setScore(total);

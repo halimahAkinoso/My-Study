@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { getLesson } from "../../services/lessonService";
+import { recordLessonVisit } from "../../utils/studyProgress";
 import {
   LAST_ACTIVE_LESSON_KEY,
   readStoredItem,
@@ -55,8 +56,7 @@ function Lesson() {
 
       if (data) {
         const existingLesson = readStoredItem(LAST_ACTIVE_LESSON_KEY, {});
-
-        writeStoredItem(LAST_ACTIVE_LESSON_KEY, {
+        const nextStoredLesson = {
           ...existingLesson,
           topicId: Number(topicId),
           title: data.title,
@@ -65,7 +65,10 @@ function Lesson() {
             existingLesson.description ||
             "Jump back into your saved lesson.",
           updatedAt: new Date().toISOString(),
-        });
+        };
+
+        writeStoredItem(LAST_ACTIVE_LESSON_KEY, nextStoredLesson);
+        recordLessonVisit(nextStoredLesson);
       }
     } catch (loadError) {
       setError("We couldn't load this lesson right now. Please try again.");

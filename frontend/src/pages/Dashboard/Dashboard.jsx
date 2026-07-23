@@ -8,6 +8,7 @@ import ProgressChart from "../../components/ProgressChart";
 import RecommendationCard from "../../components/RecommendationCard";
 import { useAuth } from "../../context/AuthContext";
 import { getSubjects } from "../../services/subjectService";
+import { getStudyPreferences } from "../../utils/studyPreferences";
 import {
   DASHBOARD_SUBJECTS_CACHE_KEY,
   LAST_ACTIVE_LESSON_KEY,
@@ -15,6 +16,7 @@ import {
   readStoredItem,
   writeStoredItem,
 } from "../../utils/dashboardStorage";
+import { summarizeStudyProgress } from "../../utils/studyProgress";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -31,6 +33,8 @@ function Dashboard() {
   );
   const [loading, setLoading] = useState(subjects.length === 0);
   const [error, setError] = useState("");
+  const preferences = getStudyPreferences();
+  const progressSummary = summarizeStudyProgress();
 
   useEffect(() => {
     setRecentSubject(readStoredItem(LAST_ACTIVE_SUBJECT_KEY));
@@ -276,26 +280,26 @@ function Dashboard() {
           }}
         >
           <DashboardCard
-            title="Courses Completed"
-            value="12"
+            title="Lessons Started"
+            value={String(progressSummary.lessonsStarted)}
             color="#2563EB"
           />
 
           <DashboardCard
             title="Quiz Average"
-            value="87%"
+            value={`${progressSummary.averageScore}%`}
             color="#16A34A"
           />
 
           <DashboardCard
-            title="Learning Hours"
-            value="58 hrs"
+            title="Study Days"
+            value={String(progressSummary.activeDays)}
             color="#EA580C"
           />
 
           <DashboardCard
             title="Current Streak"
-            value="12 Days"
+            value={`${progressSummary.streak} Day${progressSummary.streak === 1 ? "" : "s"}`}
             color="#9333EA"
           />
         </div>
@@ -304,7 +308,10 @@ function Dashboard() {
 
         <h2>Learning Progress</h2>
 
-        <ProgressChart />
+        <ProgressChart
+          labels={progressSummary.chartData.labels}
+          values={progressSummary.chartData.values}
+        />
 
         <br />
 
@@ -406,12 +413,34 @@ function Dashboard() {
 
         <br />
 
-        <h2>AI Recommendations</h2>
+        {preferences.showStudyRecommendations && (
+          <>
+            <h2>AI Recommendations</h2>
 
-        <RecommendationCard text="Continue Algebra." />
-        <RecommendationCard text="Practice Physics formulas." />
-        <RecommendationCard text="Revise Organic Chemistry." />
-        <RecommendationCard text="Ask the AI Tutor difficult questions." />
+            <RecommendationCard
+              text={
+                recentLesson?.title
+                  ? `Continue ${recentLesson.title}.`
+                  : "Open a lesson and continue where you left off."
+              }
+            />
+            <RecommendationCard
+              text={
+                progressSummary.recentQuizzes[0]
+                  ? `Retake ${progressSummary.recentQuizzes[0].title} to improve your ${progressSummary.recentQuizzes[0].percentage}% score.`
+                  : "Complete a quiz after your next lesson to start tracking performance."
+              }
+            />
+            <RecommendationCard
+              text={
+                progressSummary.topSubjects[0]
+                  ? `You are most active in ${progressSummary.topSubjects[0].subjectName}. Build momentum there today.`
+                  : "Study at least one topic today to build your learning streak."
+              }
+            />
+            <RecommendationCard text="Ask the AI Tutor to explain any part you still find difficult." />
+          </>
+        )}
       </div>
     </DashboardLayout>
   );

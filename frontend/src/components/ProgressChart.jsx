@@ -15,18 +15,42 @@ ChartJS.register(
   LineElement
 );
 
-function ProgressChart() {
+function ProgressChart({
+  labels = ["Mon", "Tue", "Wed", "Thu", "Fri"],
+  values = [20, 35, 50, 70, 90],
+}) {
   const data = {
-    labels: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    labels,
     datasets: [
       {
         label: "Progress",
-        data: [20, 35, 50, 70, 90],
+        data: values,
+        borderColor: "#2563EB",
+        backgroundColor: "rgba(37, 99, 235, 0.16)",
+        tension: 0.35,
+        fill: true,
       },
     ],
   };
 
-  return <Line data={data} />;
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          precision: 0,
+        },
+      },
+    },
+  };
+
+  return <Line data={data} options={options} />;
 }
 
 export default ProgressChart;

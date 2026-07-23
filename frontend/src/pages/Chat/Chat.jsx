@@ -7,6 +7,7 @@ import { useAuth } from "../../context/AuthContext";
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { getLesson } from "../../services/lessonService";
 import { sendTutorMessage } from "../../services/tutorService";
+import { recordTutorSession } from "../../utils/studyProgress";
 import {
   LAST_ACTIVE_LESSON_KEY,
   readStoredItem,
@@ -169,6 +170,12 @@ function Chat() {
           ? response.follow_up_questions
           : buildStarterPrompts(activeLesson)
       );
+      recordTutorSession({
+        topicId: activeLesson.topicId,
+        title: activeLesson.title,
+        subjectName: activeLesson.subjectName || "",
+        prompt: outgoingMessage,
+      });
     } catch (sendError) {
       console.error(sendError);
       setError(
